@@ -3041,7 +3041,7 @@
       "archived": false,
       "checked": "2026-11-19",
       "full_name": "brave-eai/dexjoco",
-      "stars": 286,
+      "stars": 287,
       "url": "https://github.com/brave-eai/dexjoco"
     },
     "carlosferrazza/humanoid-bench": {
@@ -3493,5 +3493,5 @@
       "url": "https://github.com/zhouzypaul/auto_eval"
     }
   },
-  "updated_at": "2026-11-19 07:25 UTC"
+  "updated_at": "2026-11-19 07:28 UTC"
 }
