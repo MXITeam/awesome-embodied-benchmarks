@@ -1,4 +1,4 @@
-# Awesome Robo Benchmarks [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Embodied Benchmarks [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > A curated, **categorized** list of benchmarks for robot learning and embodied AI — from classic simulation suites (Meta-World, RLBench, Habitat) to the newest VLA, humanoid, world-model-as-evaluator and safety benchmarks of 2025–2026.
 >
