@@ -156,7 +156,7 @@ tables:
     - 2024 / NeurIPS D&B
     - Sim (ManiSkill)
     - Compositional reasoning & skill composition in manipulation
-    title: 'ClevrSkills: Compositional Language and Visual Reasoning in Robotics'
+    arxiv: '2411.09052'
   - cells:
     - '**RoboEval**'
     - '2025'
@@ -211,8 +211,8 @@ tables:
     - 🆕 **InstructMove**
     - '2026'
     - —
-    - Instruction-following manipulation benchmark
-    title: InstructMove
+    - 'Text-indispensable instruction following: category / attribute / spatial grounding & compositional pick-and-place (Isaac Lab)'
+    arxiv: '2608.22990'
   - cells:
     - 🆕 **RoboLab (RoboLab-120)**
     - 2026 / RSS
@@ -225,8 +225,8 @@ tables:
     - 2026 / ICLR
     - Sim (robosuite)
     - 365 household tasks, 2,500 kitchen scenes, 600+ h demos, public leaderboard
-    github: robocasa/robocasa
     arxiv: '2603.04356'
+    github: robocasa/robocasa
   - cells:
     - 🆕🔥 **RoboDojo**
     - 2026 / ECCV
@@ -281,8 +281,14 @@ tables:
     - 2026 / NeurIPS
     - Sim
     - '20 dynamic tasks, 3,500 demos: manipulation under physically realistic dynamics'
-    title: Benchmarking Robotic Manipulation under Physically Realistic Dynamics
-    match: Physically Realistic Dynamics
+    link: '[NeurIPS 2026](https://neurips.cc/virtual/2026/166116)'
+    no_paper: true
+  - cells:
+    - 🆕 **RoboTwin-Phys**
+    - '2026'
+    - Sim
+    - Do WAMs and VLAs understand the physical world? Physics-focused extension of RoboTwin
+    arxiv: '2609.26292'
 - id: t02
   columns:
   - Benchmark
@@ -309,14 +315,14 @@ tables:
     - 2025 (ICLR'26 sub.)
     - Sim
     - Infeasible instructions + typographic visual attacks across object/action/space
-    title: VLA-RISK
     link: '[OpenReview](https://openreview.net/pdf/2b0044c5e9586d1b0dce44c7f3a73dbc43d13da0.pdf)'
+    no_paper: true
   - cells:
     - '**Eva-VLA**'
     - '2025'
     - Sim
     - Worst-case physically-plausible perturbations (objects, textures)
-    title: Eva-VLA
+    arxiv: '2509.18953'
   - cells:
     - '**VLA-Fool**'
     - '2025'
@@ -527,7 +533,7 @@ tables:
     - '2026'
     - Sim (ManiSkill, LEAP Hand)
     - Multi-step, resource-aware grasping
-    title: HANDFUL-Bench
+    arxiv: '2604.25126'
   - cells:
     - 🆕 **DexJoCo**
     - '2026'
@@ -539,7 +545,7 @@ tables:
     - '2026'
     - Real (ShadowHand)
     - 1,470 demos across 14 Texas Hold'em manipulation primitives
-    title: DexHoldem
+    arxiv: '2605.18727'
   - cells:
     - 🆕 **DexJoCo-X**
     - '2026'
@@ -616,8 +622,7 @@ tables:
     - 2024–2026
     - Real
     - In-air cloth unfolding grasp selection, live competition
-    title: ICRA cloth competition
-    match: Cloth Competition
+    arxiv: '2508.16749'
   - cells:
     - Real-to-Sim GS for soft bodies
     - '2025'
@@ -635,22 +640,19 @@ tables:
     - '2025'
     - Sim
     - Mobile manipulation of deformable objects (rods, cloth)
-    title: MoDeSuite
-    match: MoDeSuite
+    arxiv: '2507.21796'
   - cells:
     - 🆕 **RGBench** (Real Garment Benchmark)
     - 2026 / AAAI
     - Sim + Real
     - Grasping, flinging, folding with high-fidelity garment sim
-    title: RGBench Real Garment Benchmark
-    match: Garment
-    link: '[AAAI](https://ojs.aaai.org/index.php/AAAI/article/view/38894)'
+    arxiv: '2511.06434'
   - cells:
     - 🆕 **SoftVTBench**
     - '2026'
     - Sim
     - Visuo-tactile deformable manipulation with *safety* success metric
-    title: SoftVTBench
+    arxiv: '2607.04234'
   - cells:
     - 🆕 **RoboFolDeX**
     - '2026'
@@ -812,9 +814,9 @@ tables:
   - cells:
     - 🆕 **WatchAct**
     - '2026'
-    - —
-    - Tracked in Awesome-Robotics-Manipulation (2026-06)
-    title: WatchAct
+    - Sim + Real
+    - 'Behavior-grounded manipulation: act on instructions that depend on an observed human video; 3,000 instances, 14 tasks (best 16% sim)'
+    arxiv: '2606.26443'
   - cells:
     - 🆕🔥 **RoboColosseum**
     - '2026'
@@ -1029,7 +1031,7 @@ tables:
     - 2025 / RA-L
     - Sim
     - 'Whole-body motion generation for mobile manipulation: 30K rearrangement tasks, 119 scenes'
-    title: 'M3Bench: Benchmarking Whole-body Motion Generation for Mobile Manipulation in 3D Scenes'
+    arxiv: '2410.06678'
   - cells:
     - '**Kitchen-R** (Mind and Motion Aligned)'
     - '2025'
@@ -1117,7 +1119,7 @@ tables:
     - '2026'
     - Sim
     - Human-aligned motion-tracking benchmark (~153 h mocap, 4 motion families)
-    title: 'HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark'
+    arxiv: '2608.13555'
 - id: t11
   columns:
   - Benchmark
@@ -1278,7 +1280,7 @@ tables:
     - 2025–26
     - Sim
     - Trustworthiness of VLN & ObjectNav under corruptions
-    title: NavTrust
+    arxiv: '2603.19229'
   - cells:
     - '**HA-VLN**'
     - '2025'
@@ -1362,8 +1364,7 @@ tables:
     - 2026 / AAAI
     - Sim
     - UAV VLN in continuous indoor environments
-    title: IndoorUAV
-    match: IndoorUAV
+    arxiv: '2512.19024'
 - id: t14
   columns:
   - Benchmark
@@ -1472,7 +1473,7 @@ tables:
     - 2025–26
     - QA
     - 6K+ QA decoupling reasoning from action; correlates with VLA generalization
-    title: ERIQ embodied reasoning robotic manipulation
+    arxiv: '2512.24125'
   - cells:
     - '**PhysBench**'
     - 2025 / ICLR
@@ -1667,7 +1668,7 @@ tables:
     - '2026'
     - Sim
     - Multi-agent embodied planning + low-level manipulation
-    title: MARS challenge multi-agent embodied
+    arxiv: '2601.18733'
   - cells:
     - 🆕 **CoHuB**
     - 2026 / NeurIPS
@@ -1705,8 +1706,7 @@ tables:
     - '2025'
     - Sim
     - Safety-aware embodied task planning (2,027 cases)
-    title: SafePlan-Bench
-    match: SafePlan
+    arxiv: '2504.14650'
   - cells:
     - '**IS-Bench**'
     - 2025 / AAAI'26
@@ -1779,6 +1779,12 @@ tables:
     - '|'
     - ''
     no_paper: true
+  - cells:
+    - 🆕 **LIBERO-Safety**
+    - '2026'
+    - Sim
+    - Physical & semantic safety of VLA models on LIBERO-based tasks
+    arxiv: '2606.23686'
 - id: t18
   columns:
   - Platform
