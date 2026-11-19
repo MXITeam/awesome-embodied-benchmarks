@@ -21,7 +21,7 @@
 - [1. Tabletop & General Manipulation — Simulation (桌面/通用操作·仿真)](#1-tabletop--general-manipulation--simulation-桌面通用操作仿真)
 - [2. VLA Generalization, Robustness & Benchmark Auditing (VLA 泛化/鲁棒性/评测可信度)](#2-vla-generalization-robustness--benchmark-auditing-vla-泛化鲁棒性评测可信度)
 - [3. Long-Horizon, Memory & Compositional Tasks (长程/记忆/组合)](#3-long-horizon-memory--compositional-tasks-长程记忆组合)
-- [4. Bimanual & Dexterous Manipulation (双臂/灵巧手)](#4-bimanual--dexterous-manipulation-双臂灵巧手)
+- [4. Bimanual, Dexterous & Grasping (双臂/灵巧手/抓取)](#4-bimanual-dexterous--grasping-双臂灵巧手抓取)
 - [5. Deformable, Tactile & Contact-Rich Manipulation (柔性物体/触觉/接触密集)](#5-deformable-tactile--contact-rich-manipulation-柔性物体触觉接触密集)
 - [6. Real-World Manipulation Benchmarks & Evaluation Protocols (真实世界评测)](#6-real-world-manipulation-benchmarks--evaluation-protocols-真实世界评测)
 - [7. Real-to-Sim, World-Model Evaluators & World-Model Benchmarks (Real2Sim/世界模型评测)](#7-real-to-sim-world-model-evaluators--world-model-benchmarks-real2sim世界模型评测)
@@ -95,7 +95,7 @@ LIBERO / SIMPLER 等分数接近饱和后，社区开始系统性地扰动、审
 
 ---
 
-## 4. Bimanual & Dexterous Manipulation (双臂/灵巧手)
+## 4. Bimanual, Dexterous & Grasping (双臂/灵巧手/抓取)
 
 <!-- TABLE:t04 -->
 
@@ -208,6 +208,9 @@ Not benchmarks per se, but most benchmarks above are built on them.
 - **Real Robot Challenge** (2020–2022, TriFinger dexterous). [Website](https://real-robot-challenge.com/)
 - **ICRA Cloth Competition** (2024–2026). 
 - **MARS Challenge** (NeurIPS 2025 SpaVLE workshop) — multi-agent embodied planning.
+- **ManiSkill-ViTac Challenge** (2024–2026) — tactile & visuo-tactile manipulation. [arXiv:2411.12503](https://arxiv.org/abs/2411.12503)
+- **Robotic Grasping and Manipulation Competition (RGMC)** (IROS/ICRA, 2016–) — in-hand, picking & assembly tracks.
+- **AIJ Contest — Embodied AI track** (2024) — run on Kitchen-R.
 - **Amazon Picking/Robotics Challenge** (2015–2017) — warehouse pick-and-place.
 
 ---
