@@ -145,7 +145,7 @@ Classic and widely used simulated manipulation suites. 经典的仿真操作基�
 | 🆕 **RoboTwin-Phys** | 2026 | Sim | Do WAMs and VLAs understand the physical world? Physics-focused extension of RoboTwin | [arXiv:2609.26292](https://arxiv.org/abs/2609.26292) | [0](https://www.semanticscholar.org/paper/1361de39aba8db88d612688c00d286cc77c09cca) | — |
 | 🆕 **ManiLadder** | 2026 / ICRA | Sim | ~114 tasks in 4 difficulty levels × 8 categories; rigid/articulated/deformable, grippers to dexterous hands, single/dual/mobile arms | [Project](https://maniladdericra.github.io) | — | — |
 | 🆕 **IMBench** | 2026 / RSS-W | Sim | Intuitive manipulation: 35 tasks integrating physical reasoning with execution (contact-rich, tool use, multi-stage) | [arXiv:2607.15641](https://arxiv.org/abs/2607.15641) | [2](https://www.semanticscholar.org/paper/4774098aa2bc0614fb4675b8a20e771de883f6da) | — |
-| 🆕 **PhysLadder** | 2026 | Sim + Real | 16 household contact-rich tasks in 3 cumulative levels (contact selection, force regulation, contact reconfiguration) | [arXiv:2610.34527](https://arxiv.org/abs/2610.34527) | [0](https://www.semanticscholar.org/paper/4ffaae61aedfbf2367b83f32931d79742c3a4aff) | — |
+| 🆕 **LLM4Robot-Bench** (a.k.a. PhysLadder) | 2026 | Sim + Real | 16 household contact-rich tasks in 3 cumulative levels (contact selection, force regulation, contact reconfiguration) | [arXiv:2610.34527](https://arxiv.org/abs/2610.34527) | [0](https://www.semanticscholar.org/paper/4ffaae61aedfbf2367b83f32931d79742c3a4aff) | — |
 
 ---
 

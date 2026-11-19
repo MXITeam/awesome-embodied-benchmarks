@@ -301,7 +301,7 @@ tables:
     - 'Intuitive manipulation: 35 tasks integrating physical reasoning with execution (contact-rich, tool use, multi-stage)'
     arxiv: '2607.15641'
   - cells:
-    - 🆕 **PhysLadder**
+    - 🆕 **LLM4Robot-Bench** (a.k.a. PhysLadder)
     - '2026'
     - Sim + Real
     - 16 household contact-rich tasks in 3 cumulative levels (contact selection, force regulation, contact reconfiguration)
