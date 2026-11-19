@@ -292,8 +292,7 @@ tables:
     - 2026 / ICRA
     - Sim
     - ~114 tasks in 4 difficulty levels × 8 categories; rigid/articulated/deformable, grippers to dexterous hands, single/dual/mobile arms
-    link: '[Project](https://maniladdericra.github.io)'
-    no_paper: true
+    arxiv: '2611.16374'
   - cells:
     - 🆕 **IMBench**
     - 2026 / RSS-W
@@ -306,6 +305,75 @@ tables:
     - Sim + Real
     - 16 household contact-rich tasks in 3 cumulative levels (contact selection, force regulation, contact reconfiguration)
     arxiv: '2610.34527'
+  - cells:
+    - 🆕 **SO-101 Bench**
+    - '2026'
+    - Sim (Isaac Lab twin)
+    - 'Language-conditioned spatial manipulation for the low-cost SO-101: 138 objects, 916 eval episodes, unseen-instance/class splits'
+    arxiv: '2610.36420'
+    github: 5hadytru/so101_bench
+  - cells:
+    - '**TARGO**'
+    - 2026 / IJCV
+    - Sim (dataset)
+    - Target-driven 6-DoF grasping under graded occlusion from single-view RGB-D; TARGO-Net baseline
+    arxiv: '2407.06168'
+  - cells:
+    - 🆕 **AffordSim**
+    - '2026'
+    - Sim
+    - 'Affordance-aware manipulation: 50 tasks, 5 robot embodiments, 500+ rigid and articulated objects; open-vocabulary 3D affordance drives trajectory generation'
+    arxiv: '2604.11674'
+  - cells:
+    - 🆕 **TAVIS**
+    - '2026'
+    - Sim (Isaac Lab)
+    - 'Active vision for imitation learning on humanoid torsos (GR1T2, Reachy2): TAVIS-Head (pan/tilt search) and TAVIS-Hands (wrist-camera occlusion)'
+    arxiv: '2605.07943'
+    github: spiglerg/tavis
+  - cells:
+    - 🆕 **FlatLab**
+    - 2026 / ICML
+    - Sim
+    - Rigid and deformable flat-object manipulation with standardized tasks and multi-modal data collection; strategy-generator + executor baseline
+    arxiv: '2608.14049'
+  - cells:
+    - 🆕 **RoboReel**
+    - 2026 / CoRL
+    - Sim (+ real subset)
+    - 'Learning from human videos: real human demos + sim robot trajectories on 10 tasks, 4 test suites; sim rankings hold on real robots'
+    arxiv: '2609.08209'
+  - cells:
+    - 🆕 **ActiveArena**
+    - '2026'
+    - Sim
+    - 35 active-perception tasks in 5 categories that need multi-round evidence gathering and memory; ID/OOD splits; 13 VLA configurations
+    arxiv: '2609.24124'
+  - cells:
+    - 🆕 **WasserMan**
+    - '2026'
+    - Sim (underwater)
+    - Visuomotor policy learning on articulated underwater mechanisms; vehicle-arm and bimanual platforms; ACT / diffusion / SmolVLA baselines
+    arxiv: '2610.04536'
+  - cells:
+    - 🆕 **AstroBench**
+    - '2026'
+    - Sim
+    - 'Free-floating capture and space manipulation: 9 task definitions over 2 workcells (sample storage, refueling-mission servicing); π0.5-DROID captures 2 of 200 static targets'
+    arxiv: '2610.31064'
+    github: AstroUpLab/AstroBench
+  - cells:
+    - 🆕 **BURGER**
+    - '2026'
+    - Sim/Real
+    - 'Language-conditioned robot drawing: 282 tasks, 28,200 sim demos; probes VLA language grounding, spatial composition and multimodal actions'
+    arxiv: '2610.40532'
+  - cells:
+    - 🆕 **CRONOS**
+    - '2026'
+    - Sim
+    - Non-episodic RL fine-tuning of VLAs in shared multi-task scenes without scene resets
+    arxiv: '2611.05080'
 - id: t02
   columns:
   - Benchmark
@@ -400,6 +468,118 @@ tables:
     - Sim
     - 'Diagnoses restricted generalization: primitives reliable, instruction grounding brittle'
     arxiv: '2602.24143'
+  - cells:
+    - '**VLA-Arena**'
+    - 2026 / ICML
+    - Sim
+    - 11 suites; difficulty graded along task-structure, language and visual axes to map VLA capability frontiers
+    arxiv: '2512.22539'
+  - cells:
+    - 🆕 **LIBERO-VIFO**
+    - '2026'
+    - Sim (LIBERO)
+    - 'Visual-cue following: 8 cue families; authorized vs unauthorized cues under language conflict'
+    arxiv: '2608.17600'
+  - cells:
+    - 🆕 **VLA-GAUGE**
+    - '2026'
+    - Sim
+    - Paired ID/OOD tasks over 6 capability suites + combinatorial perturbation screening; 12 VLAs
+    arxiv: '2610.16567'
+  - cells:
+    - 🆕 **VLALagBench**
+    - '2026'
+    - Sim
+    - 'Inference-latency sensitivity: 100 ms can halve success on moving targets; sync vs async execution'
+    arxiv: '2611.03103'
+    github: codestrongestx/vla-lag-bench
+  - cells:
+    - 🆕 **MESA**
+    - 2026 / CoRL
+    - Sim
+    - 5 suites isolating spatial, instance, category and subtask-composition generalization; MESA-Gen demo pipeline
+    arxiv: '2611.05567'
+  - cells:
+    - 🆕 **LIBERO-Para**
+    - 2026 / EMNLP
+    - Sim (LIBERO)
+    - 'Paraphrase robustness: varies action wording and object references separately; 22–52 pp drops across 7 VLAs; PRIDE difficulty metric'
+    arxiv: '2603.28301'
+    github: cau-hai-lab/LIBERO-Para
+  - cells:
+    - 🆕 **LIBERO-VPro**
+    - '2026'
+    - Sim (LIBERO)
+    - 'Closed-loop visual robustness: perturbs the visual evidence a policy receives mid-execution instead of assuming clean, timely, consistent views'
+    arxiv: '2609.24350'
+  - cells:
+    - 🆕 **RoboRecover**
+    - '2026'
+    - Sim (RoboTwin / LIBERO)
+    - 'Recovery from execution-induced deviation states: 2,000 scenarios replayed from action prefixes, 800/200 split per platform'
+    arxiv: '2609.28952'
+  - cells:
+    - 🆕 **ConflictVLA-Bench**
+    - '2026'
+    - Sim
+    - 'Invalid task premises: separates behavioral disengagement from continued pursuit followed by execution error'
+    arxiv: '2609.31792'
+    github: EmbodiedAISurvey/ConflictVLA-Bench
+  - cells:
+    - 🆕 **RoboIRG-Bench**
+    - '2026'
+    - Sim (RoboMME)
+    - 'Implicit referential grounding: the target is implied rather than stated in the instruction; 40 variations'
+    arxiv: '2609.34384'
+  - cells:
+    - 🆕 **Does Continual IL Remain Grounded?**
+    - '2026'
+    - Sim (LIBERO-Goal)
+    - Checks whether continual imitation learners still follow original and paraphrased instructions after each stage
+    arxiv: '2610.00542'
+  - cells:
+    - 🆕 **LIBERO-Industry**
+    - '2026'
+    - Sim (LIBERO)
+    - Industrial process constraints turned into controllable task conditions and measurable success criteria
+    arxiv: '2610.16782'
+  - cells:
+    - 🆕 **LIBERO-RIG**
+    - '2026'
+    - Sim (LIBERO)
+    - Hardware / setup robustness over 11 axes (camera mount and optics, calibration, actuation gain, control rate, proprio noise, table height …); 9 VLAs × 500 episodes per condition
+    arxiv: '2610.18843'
+  - cells:
+    - 🆕 **LIBERO-PeRM**
+    - 2026 / NeurIPS
+    - Sim (LIBERO)
+    - 'Personalized manipulation: separates task completion from preference satisfaction (zero-shot, single and multiple preferences)'
+    arxiv: '2610.22372'
+  - cells:
+    - 🆕 **LIBERO-Dynamic**
+    - '2026'
+    - Sim (LIBERO)
+    - All 40 LIBERO tasks with moving targets and non-zero inference latency; 6 policies × 1,800 dynamic conditions
+    arxiv: '2610.24579'
+  - cells:
+    - 🆕 **LIBERO-Pro2.0**
+    - '2026'
+    - Sim (LIBERO)
+    - 22 static perturbations + 20 runtime interventions over 6 dimensions, 1,648 shifted instances, 39,390 training trajectories; 17 policies
+    arxiv: '2610.24587'
+  - cells:
+    - 🆕 **VLA-Retain**
+    - '2026'
+    - Sim (LIBERO-Plus)
+    - 'Cross-dimension side effects of vision tuning: 5 VLAs tuned on camera-view or sensor-noise data vs their base checkpoints'
+    arxiv: '2610.27698'
+  - cells:
+    - 🆕 **When the Simulator Fails, Not the Policy** (SimuGuard)
+    - '2026'
+    - Sim audit
+    - Traces "policy failures" to simulator contact artifacts (placed objects get ejected) and fixes them
+    arxiv: '2610.41857'
+    github: ALEXander22568/simuguard
 - id: t03
   columns:
   - Benchmark
@@ -454,6 +634,12 @@ tables:
     - Long-horizon mobile manipulation requiring scene & episodic memory
     arxiv: '2511.18112'
   - cells:
+    - '**FindingDory**'
+    - '2025'
+    - Sim (Habitat)
+    - 60 long-range tasks that need recall over multi-day image histories; procedurally extendable to longer horizons
+    arxiv: '2506.15635'
+  - cells:
     - 🆕 **RoboMME**
     - 2026 / ICML Oral
     - Sim
@@ -471,6 +657,117 @@ tables:
     - Real
     - Autonomous, resettable long-horizon evaluation
     arxiv: '2609.19413'
+  - cells:
+    - 🆕 **EmbodiedMemory-Bench** (EMem-Bench)
+    - '2026'
+    - Sim
+    - '2,554 interactive episodes in 4 task families: build and update memory, then act on it'
+    arxiv: '2609.28236'
+  - cells:
+    - 🆕 **EMBER-Bench**
+    - '2026'
+    - QA (egocentric video)
+    - 'Cross-event causal memory: 189 household tasks, 699 QA with causal-chain annotations'
+    arxiv: '2610.05013'
+  - cells:
+    - 🆕 **MeMoREval**
+    - '2026'
+    - Sim
+    - Which memory modality should agents keep? 53 tasks in 4 indoor envs; success + memory inference cost
+    arxiv: '2610.12561'
+  - cells:
+    - 🆕 **ManiUnit**
+    - '2026'
+    - Sim (BEHAVIOR-1K)
+    - 'Skill-level diagnosis of long-horizon mobile manipulation: 137,899 segments, 21 skills, 1,260 test instances'
+    arxiv: '2610.12089'
+  - cells:
+    - 🆕 **LABIT**
+    - '2026'
+    - Sim/Real
+    - Long-horizon industrial assembly (DIN-norm parts + CAD); scores per primitive, subtask and subassembly
+    arxiv: '2610.16398'
+  - cells:
+    - 🆕 **LADDER**
+    - '2026'
+    - Sim
+    - 1→10 subgoals in the same scene; 145 tasks over SimplerEnv / RobotArena-∞ / RoboLab long suites
+    arxiv: '2610.18053'
+  - cells:
+    - 🆕 **AstroMemBench**
+    - '2026'
+    - Sim
+    - 'Memory for spacecraft agents: 16 sub-challenges, 2,240 instances (surface ops, on-orbit servicing, deep space)'
+    arxiv: '2611.16590'
+    github: flyingView/AstroMemBench-v1
+  - cells:
+    - 🆕 **ReSpaceBench** (Lost in the Hallway)
+    - '2026'
+    - QA (video)
+    - 'Persistent spatial memory across revisits: 3,244 questions, 590 scenes, 32 models'
+    arxiv: '2611.21485'
+  - cells:
+    - 🆕 **RMBench**
+    - '2026'
+    - Sim
+    - 9 manipulation tasks over graded memory complexity; Mem-0 modular policy for memory-design ablations
+    arxiv: '2603.01229'
+  - cells:
+    - 🆕 **RoboMME-Interference**
+    - '2026'
+    - Sim
+    - 'Cross-session robot memory under interference: recall information from sessions ago among distractions'
+    arxiv: '2606.22338'
+  - cells:
+    - 🆕 **RoboGraph** (task-state horizons)
+    - '2026'
+    - Sim
+    - Task compiler that scales the number of world states an agent must track independently of action-sequence length
+    arxiv: '2608.08036'
+  - cells:
+    - 🆕 **Behavior-Skill**
+    - '2026'
+    - Sim
+    - Long-horizon mobile manipulation recast as executable constituent skills (235K+ skill instances) for skill-level VLA diagnosis
+    arxiv: '2608.30536'
+    github: nubot-nudt/Behavior-Skill
+  - cells:
+    - 🆕 **MEMOBench**
+    - '2026'
+    - Sim
+    - 'Process-level memory: 30 history-dependent tasks; separates forgetting from manipulation failure'
+    arxiv: '2609.07047'
+    github: Collab-Gen/MEMOBench
+  - cells:
+    - 🆕 **MotionForge**
+    - '2026'
+    - Sim
+    - Long-horizon manipulation of dynamic objects under domain shift, with real-time execution protocol and data pipeline
+    arxiv: '2609.25689'
+  - cells:
+    - 🆕 **MemTransfer**
+    - '2026'
+    - Sim (warehouse)
+    - 6 memory representations under one frozen VLM policy; 100 navigation cases × 10 task types; transfer beyond matched experience
+    arxiv: '2609.32313'
+  - cells:
+    - 🆕 **HIDE**
+    - '2026'
+    - Sim
+    - 'Manipulation memory under partial observability: 15 tasks (repetition counting, historical-state recall, progress tracking)'
+    arxiv: '2609.38886'
+  - cells:
+    - 🆕 **MIKASA-Robo-VLA**
+    - '2026'
+    - Sim (ManiSkill3)
+    - 90 language-conditioned memory tasks for VLAs (rebuilds the 32-task MIKASA-Robo)
+    arxiv: '2610.00604'
+  - cells:
+    - 🆕 **RoboCasa-Mem**
+    - '2026'
+    - Sim (RoboCasa)
+    - 9 mobile manipulation tasks that need environment memory (where things are) and process memory (what was done)
+    arxiv: '2611.06475'
 - id: t04
   columns:
   - Benchmark
@@ -605,6 +902,61 @@ tables:
     - Sim
     - 106 bimanual dexterous tasks on 5 capability axes, 8,080 demos
     arxiv: '2610.25459'
+  - cells:
+    - 🆕 **LabDex**
+    - '2026'
+    - Real/Sim
+    - 'Dexterous manipulation in chemistry labs: atomic skills → compositional tasks → long-horizon experiments'
+    arxiv: '2608.18618'
+  - cells:
+    - 🆕 **DexBioLab**
+    - '2026'
+    - Sim (mjlab + 3DGS)
+    - Bio-lab dexterous tool use under dynamic flames, vapor and bubbles; 6 reconstructed real labs
+    arxiv: '2610.13643'
+  - cells:
+    - 🆕 **Evo-DexBench**
+    - '2026'
+    - Sim
+    - 'Few-shot transfer across related dexterous tasks: 30 tasks in 6 families; best average SR 24.4%'
+    arxiv: '2610.21180'
+  - cells:
+    - 🆕 **HandsOn**
+    - '2026'
+    - Sim
+    - 5 arms × 6 hands, ~200 assets; 66 tasks (Core-50 + Transfer-16), 18k human demos
+    arxiv: '2610.26765'
+  - cells:
+    - 🆕 **DexArena**
+    - '2026'
+    - Sim
+    - 10 long-horizon + 30 stage-level bimanual dexterous tasks with stage-wise success
+    arxiv: '2611.02629'
+  - cells:
+    - 🆕 **Industrial Dexterity Benchmark** (IDB)
+    - '2026'
+    - Real (task boards)
+    - Physical boards mimicking datacenter cable management, automotive cable harnesses and gearbox assembly
+    arxiv: '2607.14021'
+  - cells:
+    - 🆕 **Bench2Dex**
+    - '2026'
+    - Sim
+    - Visuo-tactile bimanual manipulation across 12 dexterous hands through one shared simulated tactile interface
+    arxiv: '2609.15726'
+  - cells:
+    - 🆕 **DexBench** (RLWRLD × NVIDIA)
+    - '2026'
+    - Sim
+    - 15 dexterous tasks in 4 industrial scenes (retail, logistics, manufacturing, hospitality) on shared initial states
+    link: '[Website](https://dexbench.ai/)'
+    no_paper: true
+  - cells:
+    - 🆕 **BAVO-Bench**
+    - '2026'
+    - Sim
+    - 'Bimanual active vision under occlusion: controlled visibility conditions test viewpoint recovery during execution'
+    arxiv: '2609.37292'
 - id: t05
   columns:
   - Benchmark
@@ -694,6 +1046,12 @@ tables:
     - Sim
     - 'Industrial DLO: connector insertion, clip routing, channel seating; RL / IL / VLA baselines'
     arxiv: '2606.18097'
+  - cells:
+    - 🆕 **ClothDojo**
+    - '2026'
+    - Sim
+    - 'Bimanual garment flattening and folding: learned trajectory generation over hundreds of garments + closed-loop evaluation'
+    arxiv: '2611.01190'
 - id: t06
   columns:
   - Benchmark
@@ -787,6 +1145,61 @@ tables:
     - Real
     - Tactile-guided dexterous benchmark targeting contact-level human-likeness
     arxiv: '2607.09190'
+  - cells:
+    - 🆕 **OpenViTac**
+    - '2026'
+    - Real/Sim
+    - Paired sim-real visuo-tactile benchmark over 4 tactile capability dimensions (VLA / WAM / VTLA)
+    arxiv: '2610.10384'
+  - cells:
+    - 🆕 **TacMind-Bench**
+    - '2026'
+    - Sim
+    - 128 tactile tasks (Precise / Recognition / Dynamic) + 12 perturbation settings
+    arxiv: '2611.00455'
+  - cells:
+    - '**Tactile MNIST**'
+    - 2026 / NeurIPS
+    - Sim (Gymnasium)
+    - 'Active tactile perception: classification, localization, pose and volume estimation'
+    arxiv: '2506.06361'
+  - cells:
+    - 🆕 **HT-Bench**
+    - '2026'
+    - Real (dataset)
+    - 'Full-hand tactile representations with egocentric vision: 10M RGB + 7.8M tactile frames over 226 tasks'
+    arxiv: '2606.19161'
+  - cells:
+    - 🆕 **Peg-in-Bench**
+    - '2026'
+    - Real (3D-printed kit)
+    - 'Reconfigurable peg-in-hole: modular pegs, tolerance levels and bases for high-precision insertion generalization'
+    arxiv: '2609.00906'
+    github: aistairc/peg-in-bench
+  - cells:
+    - 🆕 **REBOOT**
+    - '2026'
+    - Dataset + benchmark
+    - 'Failure-centric precision assembly: 2,160 demos over 18 tasks with injected failures, expert recoveries and phase-level labels'
+    arxiv: '2609.22591'
+  - cells:
+    - 🆕 **ForceBench**
+    - '2026'
+    - Sim
+    - 'Six-axis wrist-force integration under one protocol: 8 tasks (property inference, resistance, contact-rich assembly), 1,600 demos'
+    arxiv: '2610.19604'
+  - cells:
+    - 🆕 **ContactBench 1.0**
+    - '2026'
+    - Real/Sim
+    - 36 everyday contact-rich reference tasks, 40+ object assets, controlled variations in both real and sim
+    arxiv: '2610.24512'
+  - cells:
+    - 🆕 **KlaskTron-IL**
+    - '2026'
+    - Sim → Real
+    - Contact-rich adversarial imitation learning; validated actuator model lets policies run zero-shot on hardware
+    arxiv: '2611.03091'
 - id: t07
   columns:
   - Benchmark
@@ -894,12 +1307,64 @@ tables:
     - Real
     - Manipulation policies in workspaces shared with active humans
     arxiv: '2611.11123'
+    github: UMass-Embodied-AGI/harp
   - cells:
     - 🆕 **Stochastic Challenges**
     - 2026 / CoRL
     - Real
     - Real-world manipulation benchmarking via stochastic, hidden-test-like challenges
     arxiv: '2611.12804'
+  - cells:
+    - 🆕 **PhAIL** (Physical AI Leaderboard)
+    - '2026'
+    - Real
+    - Franka FR3 leaderboard; time-to-success CDF + Human-Relative Throughput with bootstrap CIs
+    arxiv: '2605.29710'
+    github: Positronic-Robotics/phail-paper
+  - cells:
+    - 🆕 **SO-101 VLA Failure & Recovery**
+    - '2026'
+    - Real
+    - 4 tasks on SO-101; π0.5, SmolVLA, Wall-X and ACT with failure / recovery analysis
+    arxiv: '2606.08881'
+  - cells:
+    - 🆕 **ArmnetBench v0.1**
+    - '2026'
+    - Real
+    - 'Arm farm of low-cost SO-101 cells: 7 policies × 12 tasks, 3,118 three-way-labeled episodes'
+    arxiv: '2607.24481'
+  - cells:
+    - 🆕 **Spa-Bench**
+    - '2026'
+    - Real
+    - 'Spatial grounding of VLAs on SO-101: 4,092 episodes; success drops from ~70% (ID) to 41–52% (OOD layouts)'
+    arxiv: '2610.12696'
+  - cells:
+    - 🆕 **Reality Check** (PAW-GEN-10)
+    - '2026'
+    - Real (FR3)
+    - 10 industrial-style envs (screws, DC jack, cable routing, bimanual handover); separate coding-agent and VLA boards; smoothness, safe-failure and contact-force metrics
+    link: '[Website](https://pokeandwiggle.com/)'
+    no_paper: true
+  - cells:
+    - 🆕 **RoboDojo-RC** (Robocurve)
+    - '2026'
+    - Real
+    - Scores VLAs, LLMs and coding agents on the same real tasks against cost and minutes per attempt (120 attempts per config)
+    link: '[Website](https://robocurve.org/)'
+    no_paper: true
+  - cells:
+    - 🆕 **The Imitator Game**
+    - '2026'
+    - Real/Sim
+    - Intent-level imitation in 4 levels (L0–L3); IG-10K (20K+ paired human-robot episodes, 50+ tasks); Imitator Arena blind A/B; models collapse at L3
+    arxiv: '2608.22301'
+  - cells:
+    - 🆕 **Benchmarking Robots for Everyday Environments**
+    - 2026 / Front. Robot. AI
+    - Real (field)
+    - 'Service robots at TRL 6–7 over 3 years: park cleaning, underpass cleaning, library assistance'
+    arxiv: '2609.26490'
 - id: t08
   columns:
   - Benchmark
@@ -971,6 +1436,12 @@ tables:
     - Scalable robot benchmarking via real-to-sim translation of videos
     arxiv: '2510.23571'
   - cells:
+    - '**PAI-Bench** (Physical AI Bench)'
+    - '2025'
+    - Video gen / understanding
+    - 2,808 real-world cases over video generation, conditional generation and video understanding; physical-plausibility metrics
+    arxiv: '2512.01989'
+  - cells:
     - 🆕 **YUBI-Real2Sim**
     - '2026'
     - Real2Sim
@@ -1030,6 +1501,102 @@ tables:
     - Real2Sim (Isaac Lab)
     - Human-to-robot transfer from human videos; sim predicts real (r = 0.89)
     arxiv: '2609.24778'
+  - cells:
+    - 🆕 **WorldArena 2.0**
+    - '2026'
+    - World model
+    - Extends WorldArena to visuotactile inputs, world-model-as-RL-environment and real-robot platforms
+    arxiv: '2605.17912'
+  - cells:
+    - 🆕 **SimFoundry**
+    - '2026'
+    - Real2Sim
+    - Video → sim-ready digital twins and "digital cousins" for policy training and evaluation
+    arxiv: '2606.28276'
+  - cells:
+    - 🆕 **World Models' Last Exam in Physics**
+    - '2026'
+    - World model (video)
+    - 40 measurement-based tasks across mechanics, optics, fluids, thermal, EM and surface tension
+    arxiv: '2610.08791'
+  - cells:
+    - 🆕 **Roz**
+    - '2026'
+    - World model (latent)
+    - Do latents encode mass, friction, deformation, bounciness? 10 contrastive + 3 continuous tasks
+    arxiv: '2611.00612'
+  - cells:
+    - 🆕 **WorldFoundry**
+    - '2026'
+    - World model
+    - Unified infrastructure and intelligence-oriented evaluation for generative world models
+    arxiv: '2611.10771'
+  - cells:
+    - 🆕 **Genie Sim Benchmark** (fidelity study)
+    - '2026'
+    - Real2Sim
+    - 22 paired real/sim robot-task pairs; sim-real score correlation 0.97 for fine-tuned π0.5
+    arxiv: '2611.15020'
+  - cells:
+    - 🆕 **WorldBench**
+    - '2026'
+    - Video (world model)
+    - 'Concept-isolated physics evaluation: each test targets one physical concept'
+    arxiv: '2601.21282'
+  - cells:
+    - 🆕 **MotionScape**
+    - '2026'
+    - Video gen (UAV)
+    - 228 real UAV clips stratified by motion intensity; Text/Image/Video2World future generation
+    arxiv: '2604.07991'
+  - cells:
+    - 🆕 **WorldMark**
+    - '2026'
+    - Interactive world model
+    - Unified suite for interactive video world models; action following measured by response speed and axis cleanliness, not one trajectory error
+    arxiv: '2604.21686'
+  - cells:
+    - 🆕 **GAUGE**
+    - '2026'
+    - Sim engines + video WMs
+    - Real-measurement-grounded physical fidelity for physics engines and video world models; names the violated principle / parameter
+    arxiv: '2608.05948'
+  - cells:
+    - 🆕 **HandEdit**
+    - '2026'
+    - Image editing
+    - 'Human → robot hand editing in egocentric frames: 200M+ instances, 26 URDFs (hand-only and hand-arm tracks)'
+    arxiv: '2608.12122'
+  - cells:
+    - 🆕 **X2Real**
+    - '2026'
+    - Sim (Isaac Lab-Arena)
+    - Sim calibrated to real hardware (0.84 sim-real correlation); 10 capability dimensions, 44 long-horizon tasks; disjoint train / eval pipelines
+    arxiv: '2609.27449'
+  - cells:
+    - 🆕 **Video2World**
+    - '2026'
+    - Coding agents
+    - Coding agents build interactive worlds from 189 robot / human videos (222 instances); 9 agent systems
+    arxiv: '2610.04432'
+  - cells:
+    - 🆕 **WorldOracle**
+    - '2026'
+    - Action-conditioned WM
+    - 'Action-conditioned world models vs paired real executions: physical state, interaction alignment, key-area fidelity, multi-view coherence'
+    arxiv: '2610.18826'
+  - cells:
+    - 🆕 **WorldMemBench**
+    - '2026'
+    - Video world model
+    - World memory via controlled camera departures and multi-revisit trajectories
+    arxiv: '2610.19063'
+  - cells:
+    - 🆕 **HandWorldBench**
+    - '2026'
+    - World model
+    - Hand-centric world models across human and simulated dexterous hands
+    arxiv: '2611.24731'
 - id: t09
   columns:
   - Benchmark
@@ -1042,7 +1609,7 @@ tables:
     - 2018 / CVPR
     - Sim
     - Household activity programs
-    arxiv: '1806.07012'
+    arxiv: '1806.07011'
     github: xavierpuigf/virtualhome
   - cells:
     - 🔥 **ALFRED**
@@ -1139,6 +1706,12 @@ tables:
     - 'Scientific-lab embodied agents: high-fidelity sim + hierarchical benchmark'
     arxiv: '2505.22634'
   - cells:
+    - '**RoboBenchMart**'
+    - '2025'
+    - Sim
+    - Retail dark-store mobile manipulation with dense grocery clutter at varied heights and depths
+    arxiv: '2511.10276'
+  - cells:
     - 🆕 **EBench**
     - '2026'
     - Sim
@@ -1232,6 +1805,49 @@ tables:
     - Sim + Real
     - Long-horizon humanoid ladder climbing + light-bulb replacement
     arxiv: '2609.38216'
+  - cells:
+    - 🆕 **HumanoidToolBench**
+    - '2026'
+    - Real/Sim (Unitree G1)
+    - 'Tool selection → mobile execution: 18 tasks + ToolBook (3.1k demos)'
+    arxiv: '2610.02089'
+  - cells:
+    - 🆕 **BiGym 2.0**
+    - '2026'
+    - Sim (Unitree G1)
+    - 20 household whole-body tasks, 60 VR demos each; VLA, IL, RL and coding agents
+    arxiv: '2610.07594'
+    github: swirl-uk/BiGym2
+  - cells:
+    - 🆕 **MimicAll benchmark**
+    - '2026'
+    - Sim
+    - Cross-humanoid whole-body tracking over 16 humanoid families (released with MimicAll)
+    arxiv: '2610.33508'
+  - cells:
+    - 🆕 **Anchor 1 benchmark**
+    - '2026'
+    - Real/Sim
+    - Whole-body manipulation precision, stability and reachability tracks (released with the Anchor 1 controller)
+    arxiv: '2611.00193'
+  - cells:
+    - 🆕 **HumanoidArena**
+    - '2026'
+    - Sim
+    - 7 leg-critical HOI/HSI tasks; tests the high-level policy ↔ motion-tracker (GMT) interface under perturbations and tracker swaps
+    arxiv: '2606.17833'
+  - cells:
+    - 🆕 **HumanoidCSL-20K**
+    - '2026'
+    - Motion retargeting
+    - 20,648 Chinese Sign Language sequences, each with source, repaired human, direct and geometry-repaired robot references
+    arxiv: '2609.33354'
+  - cells:
+    - 🆕 **LocoManiLab**
+    - '2026'
+    - Sim/Real
+    - 234 household loco-manipulation tasks, 51.5 h sim teleop; 12 policies on a shared controller; 3 tasks mirrored on real robots
+    arxiv: '2610.30876'
 - id: t11
   columns:
   - Benchmark
@@ -1273,6 +1889,19 @@ tables:
     - Sim (MuJoCo, 3D-scanned)
     - 60+ visual parkour scenes from real campus scans
     arxiv: '2609.16443'
+  - cells:
+    - 🆕 **LynxScenes**
+    - '2026'
+    - Real (dataset)
+    - 'Wheel-legged LYNX M20: ~100K clips, 833.6 h, 3,294.7 km; 20.8M 3D boxes; layered navigation instructions'
+    arxiv: '2610.18093'
+  - cells:
+    - 🆕 **Is It the Curriculum or Just the Easy Start?**
+    - '2026'
+    - Sim (MuJoCo MJX)
+    - 14 UED, domain-randomization and robotics curricula under one protocol on 5 quadrupeds
+    arxiv: '2610.40364'
+    github: Solvro/ml-wojtek-ued
 - id: t12
   columns:
   - Benchmark
@@ -1424,6 +2053,12 @@ tables:
     - Motion planning for socially-aware robot person following
     arxiv: '2509.10796'
   - cells:
+    - '**Arena 5.0**'
+    - 2025 / RSS
+    - Sim (Isaac Gym + ROS 2)
+    - Photorealistic social-navigation development and benchmarking framework
+    arxiv: '2610.11220'
+  - cells:
     - 🆕 **NavVerse**
     - '2026'
     - Sim
@@ -1462,6 +2097,116 @@ tables:
     - 'Search-and-rescue: exploration, rescue, memory-guided return, handoff'
     arxiv: '2606.01848'
     github: wukui-muc/RescueBench
+  - cells:
+    - '**NaviTrace**'
+    - 2026 / ICRA
+    - QA (image)
+    - VLMs draw 2D navigation traces for 4 embodiments; 1,000 scenarios, 3,000+ expert traces
+    arxiv: '2510.26909'
+  - cells:
+    - 🆕 **POINav-Bench**
+    - '2026'
+    - Sim (3DGS)
+    - 'Final-meters POI-goal navigation: 11 real commercial areas, 126k m², 163 POIs'
+    arxiv: '2605.28237'
+  - cells:
+    - 🆕 **I2O2I-Nav**
+    - '2026'
+    - Sim (3DGS + physics)
+    - Indoor → outdoor → indoor missions over 20 real composite scenes (115k m²)
+    arxiv: '2610.18307'
+  - cells:
+    - 🆕 **VLAN**
+    - 2026 / NeurIPS
+    - Dataset + benchmark
+    - 'Embodiment-conditioned accessible navigation: 1,000 scenes, 20K trajectories (legged, wheeled, impaired users)'
+    arxiv: '2611.18346'
+    github: InSAI-Lab/VLAN
+  - cells:
+    - '**OceanGym**'
+    - 2026 / EMNLP
+    - Sim (underwater)
+    - Underwater embodied agents under low visibility and currents; MLLM agents trail human experts
+    arxiv: '2509.26536'
+    github: OceanGPT/OceanGym
+  - cells:
+    - 🆕 **LangMap**
+    - 2026 / NeurIPS
+    - Real scans
+    - 'HieraNav: open-vocabulary goals at scene / room / region / instance level with human-verified annotations'
+    arxiv: '2602.02220'
+  - cells:
+    - 🆕 **SidewalkBench**
+    - '2026'
+    - Sim (Isaac Sim)
+    - Visual navigation on urban sidewalks with pedestrians and long distances
+    arxiv: '2606.16953'
+  - cells:
+    - 🆕 **360CityArena**
+    - 2026 / ECCV
+    - Real (360° video)
+    - Urban exploration in an Akihabara reconstruction from 602 360° clips (85 streets); 175 human-crafted tasks
+    arxiv: '2608.08814'
+  - cells:
+    - 🆕 **HumanoidVLN**
+    - '2026'
+    - Sim (3DGS + physics)
+    - VLN across humanoid embodiments with bipedal constraints and locomotion-induced camera motion
+    arxiv: '2608.12860'
+  - cells:
+    - 🆕 **NavArena**
+    - '2026'
+    - Sim (3DGS)
+    - Turns fixed 3DGS reconstructions into closed-loop goal-navigation benchmarks; 2,000+ scenes
+    arxiv: '2609.04602'
+  - cells:
+    - 🆕 **OVMAN**
+    - '2026'
+    - Sim
+    - 'Motion-aware navigation: 219 two-visit episodes with changed or vacated targets; zero-shot navigator reaches 12.3%'
+    arxiv: '2609.06424'
+  - cells:
+    - 🆕 **EvoNav-Bench**
+    - '2026'
+    - Sim
+    - Lifelong navigation where human activity changes the environment between subtasks
+    arxiv: '2609.08292'
+  - cells:
+    - 🆕 **DPed-VLN**
+    - '2026'
+    - Sim (Habitat 3.0)
+    - 33,093 episodes with ORCA-driven pedestrians; efficiency + social-safety metrics
+    arxiv: '2609.21504'
+  - cells:
+    - 🆕 **VCN-Bench**
+    - '2026'
+    - Sim
+    - Closed-loop navigation that uses a prior video of the scene as spatial memory for MLLMs
+    arxiv: '2609.34687'
+  - cells:
+    - 🆕 **MAVLN**
+    - '2026'
+    - Sim
+    - 'Multi-agent VLN with dependency and resource constraints: 11,724 episodes, 145 scenes, teams of up to 4'
+    arxiv: '2609.35965'
+  - cells:
+    - 🆕 **LiSoNav-Eval**
+    - '2026'
+    - Sim
+    - 'Lifelong small-object navigation: 28 scenes, 45 small-object categories, relocated targets'
+    arxiv: '2610.10125'
+  - cells:
+    - 🆕 **MultINav-Bench**
+    - '2026'
+    - Sim (MolmoSpaces)
+    - 3K ObjectGoal episodes that need door / container interaction; separate success, interaction and cost metrics
+    arxiv: '2610.17089'
+  - cells:
+    - 🆕 **RESONATE**
+    - '2026'
+    - Real
+    - 'Reproducible real social-navigation testbed: unified robot, shared ROS 2 stack, trajectory ground truth'
+    arxiv: '2611.02937'
 - id: t13
   columns:
   - Benchmark
@@ -1515,6 +2260,97 @@ tables:
     - Sim
     - UAV VLN in continuous indoor environments
     arxiv: '2512.19024'
+  - cells:
+    - 🆕 **ActiveFly-Bench**
+    - '2026'
+    - Real/Sim
+    - Aerial EQA + observation-behavior planning + fine-grained language-guided UAV control
+    arxiv: '2607.10180'
+  - cells:
+    - 🆕 **UAV-DualCog**
+    - '2026'
+    - QA
+    - 'Dual cognition: reasoning about the UAV''s own state and external landmarks together'
+    arxiv: '2607.16193'
+  - cells:
+    - 🆕 **AeroGround**
+    - '2026'
+    - QA
+    - Aerial-ground collaborative reasoning for VLMs (rescue, inspection)
+    arxiv: '2608.14721'
+  - cells:
+    - 🆕 **AM-Bench**
+    - '2026'
+    - Sim (+ real validation)
+    - 'Multirotor aerial manipulation: disturbances, coupled floating-base dynamics, policy-control interfaces'
+    arxiv: '2609.00641'
+  - cells:
+    - 🆕 **AGOS-Bench**
+    - '2026'
+    - Sim
+    - 'UAV-UGV cooperative object search: 7.7k episodes over 3 difficulty levels'
+    arxiv: '2609.08402'
+  - cells:
+    - 🆕 **PhysAI-Bench**
+    - '2026'
+    - Decision QA
+    - 10,178 decision instances from autonomous UAV mission traces for LLM agents
+    arxiv: '2609.23695'
+    github: maferrag/physai-bench
+  - cells:
+    - 🆕 **SatNav**
+    - 2026 / NeurIPS
+    - Sim (satellite imagery)
+    - 'Long-horizon UAV VLN: 118K episodes, 59 scenes, 18 cities'
+    arxiv: '2609.31507'
+  - cells:
+    - 🆕 **AerialDojo-200K**
+    - '2026'
+    - Sim
+    - 'Open-world aerial object-goal search: 42 scenes (urban, natural, infrastructure, disaster), unified action space'
+    arxiv: '2609.36066'
+  - cells:
+    - 🆕 **AirGroundVLN**
+    - '2026'
+    - Sim (Unreal)
+    - 'Air-ground collaborative VLN: 10,281 episodes, 955 targets, 19 environments'
+    arxiv: '2610.10421'
+  - cells:
+    - 🆕 **CrossFly**
+    - '2026'
+    - Sim (reconstructed)
+    - 'Aerial navigation → interaction across indoor / outdoor transitions: 15K trajectories, 20+ scenes'
+    arxiv: '2610.18381'
+  - cells:
+    - 🆕 **AirPlayground**
+    - '2026'
+    - Sim (reconstructed)
+    - Dense flight demonstrations and closed-loop aerial navigation across diverse reconstructed scenes
+    arxiv: '2610.29699'
+  - cells:
+    - 🆕 **KinoUAV**
+    - '2026'
+    - Dataset + agent
+    - Kinodynamic UAV VLN with directional free-space distance labels for safe, stable flight
+    arxiv: '2610.30609'
+  - cells:
+    - 🆕 **EmbodiedIntentBench**
+    - '2026'
+    - Sim (UAV)
+    - Intent-driven runtime adaptation for robot missions via structured contracts (coverage, evidence, urgency, resources)
+    arxiv: '2611.10498'
+  - cells:
+    - 🆕 **RSLiveBench-UAV**
+    - '2026'
+    - QA (live)
+    - Continually refreshed aerial spatial questions from recurring real UAV imagery; deterministic scoring
+    arxiv: '2611.14953'
+  - cells:
+    - 🆕 **UAV-Flow++**
+    - '2026'
+    - Real/Sim
+    - 30,692 real expert flights + 10,109 sim trajectories over 8 motion categories; closed-loop UAV-Flow-Sim
+    arxiv: '2611.17163'
 - id: t14
   columns:
   - Benchmark
@@ -1680,6 +2516,12 @@ tables:
     - Difficulty-graded visual reasoning on real robot data
     arxiv: '2508.10287'
   - cells:
+    - '**StaticEmbodiedBench**'
+    - '2025'
+    - QA (static scenes)
+    - 42 scenarios, 8 dimensions; unified static leaderboard for 19 VLMs + 11 VLAs
+    arxiv: '2508.06553'
+  - cells:
     - 🆕 **Embodied3DBench**
     - '2026'
     - QA
@@ -1733,8 +2575,112 @@ tables:
     - 2026 / NeurIPS
     - QA
     - 1,000 expert QA for embodied brains in self-driving chemistry labs
-    link: '[NeurIPS 2026](https://neurips.cc/virtual/2026/poster/139293)'
-    no_paper: true
+    arxiv: '2611.06911'
+  - cells:
+    - 🆕 **ESPIRE**
+    - '2026'
+    - Sim
+    - Embodied spatial reasoning for VLMs as generative localization + execution in robotic tasks
+    arxiv: '2603.13033'
+  - cells:
+    - 🆕 **RoboStressBench**
+    - '2026'
+    - QA (image)
+    - 'VLM robustness to physical visual stress: material, viewpoint, lighting, geometry'
+    arxiv: '2606.00828'
+  - cells:
+    - 🆕 **RoboChrono**
+    - '2026'
+    - QA (video)
+    - 'Streaming task understanding from real robot + human videos: 39 scenarios, 34,713 instances'
+    arxiv: '2609.36605'
+    github: mfan-res/ROBOCHRONO
+  - cells:
+    - 🆕 **TriPhysBench**
+    - '2026'
+    - QA (video)
+    - 'Physical perception + knowledge retrieval + reasoning: 410 questions from 200 videos'
+    arxiv: '2611.01934'
+  - cells:
+    - 🆕 **GeoMind**
+    - '2026'
+    - Sim
+    - 'Spatial reasoning and spatial memory in tabletop manipulation: 54 task variants'
+    arxiv: '2611.12175'
+    github: Notfound-JH/GEOMIND-benchmark
+  - cells:
+    - '**UNOBench**'
+    - 2026 / CVPR
+    - QA (synthetic + real)
+    - 'Obstruction reasoning for grasping: which objects must be cleared, in what order; ECCV 2026 challenge'
+    arxiv: '2511.23186'
+  - cells:
+    - 🆕 **RoboProcessBench** (Robo2Process)
+    - '2026'
+    - QA
+    - 'Process-aware understanding: 12 question families (static monitoring, dynamic reasoning); 57,892 QA pairs'
+    arxiv: '2606.13040'
+  - cells:
+    - 🆕 **NutriBench-Kitchen**
+    - 2026 / ECCV
+    - QA (video)
+    - 1,500 verified QA from 160 cooking videos; tracks nutrition-relevant state over time
+    arxiv: '2609.07135'
+    github: V1ol1n/NutriBench-Kitchen
+  - cells:
+    - 🆕 **ReactHuman**
+    - '2026'
+    - Sim (240 Hz physics)
+    - 'MLLM drives a simulated humanoid facing sudden household hazards: 17 event families, 1,000+ reproducible scenes, adversarial objects (foam anvil, steel apple)'
+    arxiv: '2609.10895'
+  - cells:
+    - 🆕 **GroundBench**
+    - '2026'
+    - QA (counterfactual)
+    - Locates VLM affordance failures with 6 branch-and-merge information conditions
+    arxiv: '2609.13308'
+  - cells:
+    - 🆕 **BRAVE-6D**
+    - '2026'
+    - Sim (3DGS)
+    - Active vision for 6-DoF pose estimation via Gaussian-splat view synthesis
+    arxiv: '2609.17106'
+  - cells:
+    - 🆕 **RoboVAD**
+    - '2026'
+    - Video
+    - Cross-domain anomaly detection in robot-arm manipulation videos with unseen tasks and anomaly types
+    arxiv: '2609.17843'
+  - cells:
+    - 🆕 **PhysVista**
+    - 2026 / NeurIPS
+    - QA
+    - Physical intelligence in VLMs as a perception → reasoning → assessment loop
+    arxiv: '2610.00559'
+  - cells:
+    - 🆕 **LIVIN**
+    - '2026'
+    - Sim (digital twins)
+    - Spatial and embodied intelligence in digital twins of 30 lived-in homes (human-in-the-loop reconstruction)
+    arxiv: '2610.12069'
+  - cells:
+    - 🆕 **RoboValue**
+    - '2026'
+    - Sim/Real
+    - 'Robotic value models: task-state understanding, temporal progress monitoring, failure awareness and more'
+    arxiv: '2610.26663'
+  - cells:
+    - 🆕 **BEHAVIOR-Spatial**
+    - '2026'
+    - Sim (BEHAVIOR-1K)
+    - 3,256 spatial questions over 49 activities, linking QA, point grounding and robot action
+    arxiv: '2610.34051'
+  - cells:
+    - 🆕 **Seeing What Execution Needs**
+    - '2026'
+    - Sim
+    - 'Task-conditioned actionable spatial belief: 1,080 frozen cases (coffee, drawer / cabinet, microwave)'
+    arxiv: '2611.09794'
 - id: t15
   columns:
   - Benchmark
@@ -1782,12 +2728,31 @@ tables:
     - Spatial & temporal constraints in embodied task planning
     arxiv: '2410.14682'
   - cells:
+    - '**EgoPlan-Bench2**'
+    - '2024'
+    - QA (egocentric video)
+    - MLLM planning across 4 domains and 24 real-life scenarios
+    arxiv: '2412.04447'
+  - cells:
     - 🔥 **EmbodiedBench**
     - 2025 / ICML
     - Sim
     - 1,128 tasks in 4 envs; MLLMs strong at high-level, weak at low-level
     arxiv: '2502.09560'
     github: EmbodiedBench/EmbodiedBench
+  - cells:
+    - '**EmbodiedEval**'
+    - '2025'
+    - Sim
+    - '328 interactive tasks in 125 3D scenes: navigation, object interaction, social, attribute and spatial QA'
+    arxiv: '2501.11858'
+    github: thunlp/EmbodiedEval
+  - cells:
+    - '**ManiTaskGen**'
+    - '2025'
+    - Sim
+    - Generates the full spectrum of feasible tasks in any scene for benchmarking VLM agents
+    arxiv: '2505.20726'
   - cells:
     - 🆕 **RobotWorld**
     - '2026'
@@ -1812,6 +2777,162 @@ tables:
     - Sim
     - Long household traces for memory QA & embodied planning
     arxiv: '2606.18847'
+  - cells:
+    - 🆕 **RLE-Bench**
+    - '2026'
+    - Sim
+    - 'Coding agents as robot-learning engineers: control, policy learning, perception, mechanical design'
+    arxiv: '2609.34210'
+  - cells:
+    - 🆕 **RoboQuest**
+    - '2026'
+    - Sim
+    - 'Goal-directed exploration: search, inspect and test before committing; 10 mobile-manipulation tasks'
+    arxiv: '2610.10388'
+  - cells:
+    - 🆕 **EmbodiedSkillBench**
+    - '2026'
+    - Sim
+    - 250 embodied skills; agents choose native control vs skill reuse (Agent-Directed Reuse)
+    arxiv: '2610.16238'
+    github: HanZhi306/EmbodiedSkill-Bench
+  - cells:
+    - 🆕 **SCOPER-bench**
+    - '2026'
+    - Sim (BEHAVIOR, ProcTHOR)
+    - 'Embodied System 2: 870 tasks with injected execution failures + ~3,500 situated questions'
+    arxiv: '2610.17657'
+  - cells:
+    - 🆕 **MAGMA-Bench**
+    - '2026'
+    - Sim
+    - Long-horizon multi-robot agents under interruptions, execution failures and mission updates
+    arxiv: '2610.13534'
+  - cells:
+    - 🆕 **Embodied Playground**
+    - '2026'
+    - Sim
+    - '410 environments: manipulation, sequential puzzles and multi-stage household activities for FM agents'
+    arxiv: '2610.27039'
+  - cells:
+    - 🆕 **RobotAgentBench**
+    - '2026'
+    - Sim (real-to-sim)
+    - 50 household layouts; 90 atomic / 18 short / 8 long tasks + 4 open-ended scenarios
+    arxiv: '2610.34649'
+  - cells:
+    - 🆕 **EmbodiedLab**
+    - '2026'
+    - Sim
+    - 'Act to know: 35 lab experiments run with a robot arm; best frontier agent 41.4%'
+    arxiv: '2610.35385'
+    github: HexaFuture/EmbodiedLab
+  - cells:
+    - 🆕 **VagueBench**
+    - '2026'
+    - Sim (AI2-THOR)
+    - 'Ambient Context Illusion: agents fail when non-essential context is omitted'
+    arxiv: '2611.03765'
+  - cells:
+    - 🆕 **E2W-Bench** (Embodied RAG++)
+    - '2026'
+    - Scene graph + manuals
+    - Robot–object assignment grounded in dynamic scene graphs and real product manuals
+    arxiv: '2611.07517'
+  - cells:
+    - 🆕 **RoboARCade**
+    - '2026'
+    - Sim (MuJoCo)
+    - 'Agentic robot control: long-horizon tasks on 3 embodiments testing in-context adaptation and memory'
+    arxiv: '2611.08209'
+  - cells:
+    - 🆕 **Embodied First Exam**
+    - '2026'
+    - Sim
+    - 'Coding agents control 47 robots: 1,156 tasks in 35 suites; best agent 34% on core tasks'
+    arxiv: '2611.12177'
+    github: mll-lab-nu/embodied-first-exam
+  - cells:
+    - 🆕 **CaP-X** (CaP-Bench)
+    - '2026'
+    - Sim
+    - 'Code-as-Policy agents for manipulation: 12 LLM/VLMs across levels of abstraction, interaction and perceptual grounding'
+    arxiv: '2603.22435'
+  - cells:
+    - 🆕 **VABAR**
+    - '2026'
+    - Sim (Newton)
+    - 'Variational automation for agentic robotics: 6 task classes (tool sorting, gear meshing, syringe packing, cable routing …), difficulty tiers, 33-skill library'
+    arxiv: '2611.06881'
+  - cells:
+    - 🆕 **Causal-Plan-Bench**
+    - '2026'
+    - QA
+    - Physically grounded next-state planning over 4 causal dimensions; best model scores 43.04
+    arxiv: '2606.01810'
+    github: THUSI-Lab/Causal-Reasoner
+  - cells:
+    - 🆕 **NormAct**
+    - '2026'
+    - Sim (TongSim)
+    - 550 scenarios where the same goal allows norm-compliant or norm-violating actions; tests unspoken social norms
+    arxiv: '2606.27826'
+  - cells:
+    - 🆕 **TALK-Dem**
+    - '2026'
+    - Text
+    - 'Robot task planning under dementia-associated speech: 4,800 instructions, 5 patterns × 3 intensities'
+    arxiv: '2609.38371'
+  - cells:
+    - 🆕 **From Vision to Harvest**
+    - '2026'
+    - QA (real orchards)
+    - Zero-shot multi-arm apple / citrus harvesting plans by VLMs vs a classic perception-planning pipeline
+    arxiv: '2609.13606'
+  - cells:
+    - 🆕 **SciHorizon-eLab**
+    - '2026'
+    - Sim (lab)
+    - Agentic compiler that turns scientific protocols into executable, verifiable embodied lab tasks
+    arxiv: '2609.30971'
+    github: SciHorizon-elab/SciHorizon-elab
+  - cells:
+    - 🆕 **Words to World**
+    - '2026'
+    - Real
+    - LLMs control a harness wired to real arms, cameras and sensors in closed loop
+    arxiv: '2610.15228'
+  - cells:
+    - 🆕 **Persian VLA instruction-to-plan**
+    - '2026'
+    - QA (real images)
+    - 258 instances over 230 household / office images, including ambiguous and infeasible instructions
+    arxiv: '2610.15666'
+  - cells:
+    - 🆕 **RoboBugBench**
+    - '2026'
+    - Sim (ROS 2)
+    - 33 real defects in a ROS 2 navigation stack; patches graded by driving the robot in physics sim
+    arxiv: '2610.16369'
+  - cells:
+    - 🆕 **Plan-Bench**
+    - '2026'
+    - QA
+    - VLM reasoning and multi-step planning for embodied tasks, independent of execution
+    arxiv: '2610.18836'
+    github: MinneFeng/Plan-Bench
+  - cells:
+    - 🆕 **Labference**
+    - '2026'
+    - Sim (lab)
+    - How observed physical outcomes steer later choices in robotic lab workflows
+    arxiv: '2610.35252'
+  - cells:
+    - 🆕 **HomeLoop**
+    - '2026'
+    - Sim (Isaac Sim)
+    - Robot + IoT + wearables with simulated residents, faulty sensors and evolving hazards; 20 tasks in 5 families
+    arxiv: '2611.08914'
 - id: t16
   columns:
   - Benchmark
@@ -1871,6 +2992,91 @@ tables:
     - Sim
     - Interaction-centric human-robot collaboration
     arxiv: '2607.13056'
+  - cells:
+    - 🆕 **JitterVLA**
+    - '2026'
+    - Replay + Real (UR3)
+    - 'Motion quality near people: replays VLA command traces through alternative controllers'
+    arxiv: '2610.13628'
+  - cells:
+    - 🆕 **RoboTeam**
+    - '2026'
+    - Sim
+    - Agents control 4–16 arms in real time from images; 36 long cooperative jobs
+    arxiv: '2611.22138'
+  - cells:
+    - 🆕 **Lingjing**
+    - '2026'
+    - Sim (city)
+    - Heterogeneous multi-agent embodied tasks in open-ended cities; attribution-ready replays
+    arxiv: '2608.08045'
+  - cells:
+    - 🆕 **AffectSim**
+    - '2026'
+    - Sim (3D)
+    - 'Active affective perception: replayable 3D behavior episodes with controllable observation'
+    arxiv: '2608.25664'
+  - cells:
+    - 🆕 **CoCoBench**
+    - '2026'
+    - Sim
+    - 'Fine-grained coordination failures: duplicated work, ordering violations, resource contention, missed handoffs'
+    arxiv: '2608.28266'
+  - cells:
+    - 🆕 **Physics-Consistent Contact-Rich HRI** (assistive bathing)
+    - '2026'
+    - Sim (physics)
+    - Physically responsive simulated human, interaction-quality scoring beyond task success, leak-free scorer
+    arxiv: '2609.02402'
+  - cells:
+    - 🆕 **Decentralized MRTA under Degraded Communication**
+    - '2026'
+    - Sim
+    - 6 decentralized allocators (CBAA, ACBBA, PI …) on travel cost, comm robustness, reliability and scale
+    arxiv: '2609.13711'
+  - cells:
+    - 🆕 **InterSocialBench**
+    - '2026'
+    - Text (human + LLM)
+    - 210 domestic scenarios × 18 behaviors; 100 participants vs 23,520 LLM responses
+    arxiv: '2609.15455'
+  - cells:
+    - 🆕 **AssemblyGrid v1**
+    - '2026'
+    - Sim (task-level)
+    - Multi-robot production with temporary coalitions, local information and geometry-dependent feasibility
+    arxiv: '2609.16075'
+    github: Fouad-Bahrpeyma/AssemblyGrid_v1
+  - cells:
+    - 🆕 **RobotEQ-Video**
+    - '2026'
+    - Video QA
+    - 'Social proactive intelligence: 2K+ videos, 100K+ annotations, 4-level world-state taxonomy'
+    arxiv: '2609.21371'
+  - cells:
+    - 🆕 **HelpMeOut**
+    - 2026 / CoRL
+    - Streaming episodes
+    - 'Error-aware monitoring of human household activity: 20,000 paired episodes, 9 neuropsychological error categories'
+    arxiv: '2610.17694'
+  - cells:
+    - 🆕 **SocialCoAct-Bench**
+    - '2026'
+    - QA (egocentric video)
+    - 423 verified MCQs from multi-party egocentric recordings for humanoid social co-action
+    arxiv: '2610.24559'
+  - cells:
+    - 🆕 **DuoCook**
+    - '2026'
+    - Sim (Unreal)
+    - 'Two-player kitchen coordination: 20 maps in 5 categories (equipment contention, terrain, handoffs); 5 VLMs'
+    arxiv: '2610.31511'
+  - cells:
+    - 🆕 **Talk to Act**
+    - '2026'
+    - Text (dialogue)
+    - Synthetic multi-turn HRI dialogues annotated with intents, object references and task plans
+    arxiv: '2611.17549'
 - id: t17
   columns:
   - Benchmark
@@ -1909,6 +3115,19 @@ tables:
     - Sim
     - Embodied agent safety on hazardous instructions
     arxiv: '2506.14697'
+  - cells:
+    - '**HomeSafeBench**'
+    - '2025'
+    - Sim (VirtualHome)
+    - 'Free-exploration home safety inspection: 1,000 tasks, 5 hazard categories'
+    arxiv: '2509.23690'
+    github: BITHLP/HomeSafeBench
+  - cells:
+    - '**ResponsibleRobotBench**'
+    - '2025'
+    - Sim
+    - 23 manipulation configs with separate goals and safety conditions; terminal safety and safe success diverge
+    arxiv: '2512.04308'
   - cells:
     - 🆕 **EmbodiedGovBench**
     - '2026'
@@ -1976,6 +3195,97 @@ tables:
     - Safety-critical reasoning & planning in scientific laboratories
     arxiv: '2603.11987'
   - cells:
+    - 🆕 **RoboGate**
+    - '2026'
+    - Sim (Isaac Sim)
+    - Boundary-focused sampling to find failure regions before deployment; 8-entry VLA leaderboard
+    arxiv: '2603.22126'
+    github: liveplex-cpu/robogate
+  - cells:
+    - 🆕 **SafeManip**
+    - '2026'
+    - Sim
+    - Temporal safety checked on rollouts via LTLf properties over 8 categories
+    arxiv: '2605.12386'
+  - cells:
+    - 🆕 **SafeStage**
+    - '2026'
+    - Sim
+    - '97 risk scenarios: initial-state, execution-time and final-state hazards'
+    arxiv: '2609.21223'
+  - cells:
+    - 🆕 **RoboRisk** (LEASH)
+    - '2026'
+    - Real/Sim
+    - 'Agentic-robotics safety: 92 sim + 13 real tasks (refusal, plan repair, hazards, injection, memory)'
+    arxiv: '2611.14115'
+  - cells:
+    - 🆕 **OopsieVerse**
+    - 2026 / RSS
+    - Sim (OmniGibson / RoboCasa)
+    - 'Damage-aware household manipulation: DamageSim turns contact, heat and liquid into mechanical / thermal / fluid damage; task success vs safe execution'
+    arxiv: '2606.31993'
+  - cells:
+    - 🆕 **ManiPhysicsBench**
+    - '2026'
+    - Sim (LIBERO / SimplerEnv)
+    - 'Object preservation: solver-based deformation / fracture thresholds vs recorded grasp forces; task success vs safe success'
+    arxiv: '2610.02802'
+  - cells:
+    - 🆕 **EgoSafetyBench**
+    - '2026'
+    - Video
+    - 'VLMs as runtime safety guards: 1,200 robot-view scenarios at 0.5 s granularity; catch real hazards without over-intervening'
+    arxiv: '2607.00218'
+  - cells:
+    - 🆕 **MulRobBench**
+    - '2026'
+    - Offline (UAV)
+    - Security-policy-compliant UAV VLA decisions coupling physical evidence, protocol constraints and action risk
+    arxiv: '2607.23870'
+  - cells:
+    - 🆕 **GuardianBench**
+    - '2026'
+    - QA
+    - 3,024 same-scene safe / unsafe instruction pairs grounded in safety standards
+    arxiv: '2608.21928'
+  - cells:
+    - 🆕 **How Long Until Your Robot Ignores You?**
+    - '2026'
+    - Sim (MCP)
+    - LLM orchestrators in human-humanoid collaboration; safety invariants from ISO 10218-2:2025
+    arxiv: '2609.07288'
+  - cells:
+    - 🆕 **Benchmarking Jailbreak Guardrails for Embodied Agents**
+    - '2026'
+    - Sim
+    - 6 guardrails under template and automated jailbreaks; bypass rate, hazard success rate
+    arxiv: '2610.06122'
+  - cells:
+    - 🆕 **HygieneRoboBench**
+    - '2026'
+    - Planning
+    - '624 instances, 134 task families: contamination via grippers and shared objects, treatment costs, user priorities'
+    arxiv: '2610.08642'
+  - cells:
+    - 🆕 **VLN-Safe**
+    - '2026'
+    - Sim (R2R-CE)
+    - 'Collisions in VLN: 38.5–56.8% of successful episodes touch obstacles; blocking regime cuts SR by 11.7–36.1 pp'
+    arxiv: '2610.14682'
+  - cells:
+    - 🆕 **CAPSafe**
+    - '2026'
+    - Text
+    - Action-level and plan-level safety reasoning for hazardous household tasks; 9 LLMs
+    arxiv: '2610.28381'
+  - cells:
+    - 🆕 **OSMA-Bench**
+    - '2026'
+    - Sim
+    - 'Obstacle-conditioned safe motion: matched scenarios differing only in obstacle type; Semantic Sensitivity Index'
+    arxiv: '2610.34674'
+  - cells:
     - See also §2 (VLA-RISK, Eva-VLA, VLA-Fool) and §5 (SoftVTBench safety metric)
     - '|'
     - '|'
@@ -2039,6 +3349,47 @@ tables:
     - One harness + leaderboard over 18 sim benchmarks (LIBERO, SimplerEnv, CALVIN, RoboTwin …)
     arxiv: '2603.13966'
     github: allenai/vla-evaluation-harness
+  - cells:
+    - '**Embodied Arena** (Shanghai AI Lab)'
+    - 'Unified platform + leaderboard: 3-level taxonomy, 7 capabilities, 25 dimensions'
+    arxiv: '2509.15273'
+  - cells:
+    - '**MolmoSpaces** / MolmoSpaces-Bench'
+    - 230k indoor scenes, 130k assets, 42M grasps; simulator-agnostic; 8-task bench with sim-real R = 0.96
+    arxiv: '2602.11337'
+  - cells:
+    - '**FlagEval-Robo** (BAAI)'
+    - Embodied leaderboard with a sim track and a real-robot track (ATOM-Bench); data-contamination checks
+    link: '[Website](https://huggingface.co/spaces/BAAI/FlagEval-Robo)'
+    no_paper: true
+  - cells:
+    - '**EmbodiedIndex**'
+    - Puts public leaderboard results side by side; finds 85% of robot policies are scored on only one benchmark
+    link: '[Website](https://embodiedindex.ai/)'
+    no_paper: true
+  - cells:
+    - '**VLA Leaderboard**'
+    - Community aggregator of VLA results across public sim and real benchmarks
+    link: '[Website](https://vlaleaderboard.com/)'
+    no_paper: true
+  - cells:
+    - '**Open LMM Spatial Leaderboard** (OpenCompass)'
+    - Spatial-reasoning leaderboard for multimodal LLMs
+    link: '[Website](https://huggingface.co/spaces/opencompass/openlmm_spatial_leaderboard)'
+    no_paper: true
+  - cells:
+    - '**IR-SIM**'
+    - Lightweight declarative (YAML) Python simulator for navigation learning and benchmarking
+    arxiv: '2606.08729'
+    github: hanruihua/ir-sim
+  - cells:
+    - '**DeepInsight II**'
+    - 'One trace from benchmark to robot: reproduces 2 navigation + 4 manipulation benchmarks; MotionBench carries whole-body controllers from sim to real'
+    arxiv: '2608.16556'
+  - cells:
+    - '**Co-Design Gym**'
+    - 20 environment families, 85+ presets for joint embodiment-policy optimization (manipulation, locomotion, soft bodies …)
+    arxiv: '2610.02366'
 - id: t19
   columns:
   - Dataset
@@ -2090,6 +3441,19 @@ tables:
     - 'VLA Models for UAVs and Bimanual Manipulation: A Review'
     - '2026'
     arxiv: '2607.06706'
+  - cells:
+    - 'When the World Is the Test Suite: Agentic Intelligence for the Physical World'
+    - '2026'
+    arxiv: '2611.22291'
+    github: PhysicalWorldAgent/Awesome-PhysicalWorldAgent
+  - cells:
+    - How Should World Models Be Evaluated for Embodied Decision-Making? (position)
+    - '2026'
+    arxiv: '2606.15032'
+  - cells:
+    - 'Benchmarking Dexterity of Multifingered Robot Hands: A Review and Perspective'
+    - '2026'
+    arxiv: '2609.05585'
 - id: t21
   columns:
   - If you are building…
