@@ -24,7 +24,7 @@
 - [4. Bimanual & Dexterous Manipulation (双臂/灵巧手)](#4-bimanual--dexterous-manipulation-双臂灵巧手)
 - [5. Deformable, Tactile & Contact-Rich Manipulation (柔性物体/触觉/接触密集)](#5-deformable-tactile--contact-rich-manipulation-柔性物体触觉接触密集)
 - [6. Real-World Manipulation Benchmarks & Evaluation Protocols (真实世界评测)](#6-real-world-manipulation-benchmarks--evaluation-protocols-真实世界评测)
-- [7. Real-to-Sim & World-Model-Based Policy Evaluation (Real2Sim/世界模型评测)](#7-real-to-sim--world-model-based-policy-evaluation-real2sim世界模型评测)
+- [7. Real-to-Sim, World-Model Evaluators & World-Model Benchmarks (Real2Sim/世界模型评测)](#7-real-to-sim-world-model-evaluators--world-model-benchmarks-real2sim世界模型评测)
 - [8. Mobile Manipulation & Household Activities (移动操作/家庭任务)](#8-mobile-manipulation--household-activities-移动操作家庭任务)
 - [9. Humanoid & Whole-Body Loco-Manipulation (人形/全身控制)](#9-humanoid--whole-body-loco-manipulation-人形全身控制)
 - [10. Legged Locomotion & Continuous Control (足式运动/连续控制)](#10-legged-locomotion--continuous-control-足式运动连续控制)
@@ -119,9 +119,9 @@ LIBERO / SIMPLER 等分数接近饱和后，社区开始系统性地扰动、审
 
 ---
 
-## 7. Real-to-Sim & World-Model-Based Policy Evaluation (Real2Sim/世界模型评测)
+## 7. Real-to-Sim, World-Model Evaluators & World-Model Benchmarks (Real2Sim/世界模型评测)
 
-真实评测昂贵，2024 起出现两条替代路线：(a) 与真实场景对齐的仿真 (SIMPLER, Gaussian splat)；(b) 用视频世界模型直接"推演"策略。核心指标是与真实成功率的 Pearson 相关性和排序一致性 (MMRV)。
+真实评测昂贵，2024 起出现两条替代路线：(a) 与真实场景对齐的仿真 (SIMPLER, Gaussian splat)；(b) 用视频世界模型直接"推演"策略。核心指标是与真实成功率的 Pearson 相关性和排序一致性 (MMRV)。本节也收录评测世界模型本身的基准 (EWMBench, WorldArena, World-in-World 等)。
 
 <!-- TABLE:t08 -->
 
@@ -199,6 +199,9 @@ Not benchmarks per se, but most benchmarks above are built on them.
 
 ## 18. Competitions & Challenges (竞赛)
 
+- **AgiBot World Challenge** (ICRA 2026) — sim track on GenieSim 3.0 + real-robot finals (incl. supermarket mobile manipulation). [Report](https://www.therobotreport.com/agibot-holds-world-challenge-2026-see-how-ai-models-perform-real-tasks/)
+- **RoboChallenge** (2025–) — always-on online real-robot evaluation (Table30). [Website](https://robochallenge.ai/)
+- **RoboDojo Leaderboard** (2026–) — sim + remote real-robot leaderboard. [Website](https://robodojo-benchmark.com/)
 - **BEHAVIOR Challenge** (NeurIPS 2025) — 50 long-horizon household tasks in OmniGibson. [Website](https://behavior.stanford.edu/challenge/)
 - **Habitat Navigation / Rearrangement Challenges** (CVPR 2019–2023). [Website](https://aihabitat.org/challenge/)
 - **ManiSkill Challenge** (2021–2022). [Website](https://www.maniskill.ai/)
@@ -221,7 +224,7 @@ Related awesome lists: [Awesome-Robotics-Manipulation](https://github.com/BaiShu
 
 1. **Saturation → perturbation.** LIBERO/SIMPLER/CALVIN numbers are near ceiling for strong VLAs. 2025–26 work (LIBERO-PRO/Plus/MAX, STRONG-VLA, RoboSPA) shows that small camera, init-state or wording changes can collapse success — *report perturbed suites, not just the original*.
 2. **Benchmarks themselves are being audited.** Shortcut solvability, few-trial noise and demo-source leakage ([2609.37771](https://arxiv.org/abs/2609.37771)) mean you should report confidence intervals and number of trials.
-3. **Real-world evaluation is scaling** via distribution (RoboArena), automation (AutoEval, graph-based reset harnesses) and low-cost replication (VLA-REPLICA).
+3. **Real-world evaluation is scaling** via distribution (RoboArena, RoboColosseum — 124 sites), always-on online fleets (RoboChallenge), unified sim+real suites (RoboDojo), automation (AutoEval) and low-cost replication (VLA-REPLICA). RoboColosseum finds policy rankings barely transfer across embodiments — evaluate on *your* robot.
 4. **Cheaper proxies for real robots:** Real2Sim (SIMPLER → PolaRiS → 3DGS verification) and world-model evaluators (WorldGym, dWorldEval, WMBench, RoboWorld). The key metric is rank correlation with real success.
 5. **Beyond success rate:** memory (RoboMME), compositionality (ATOM-Bench), safety (SafeVLA-Bench, SoftVTBench), and behavior quality (RoboEval).
 6. **The "brain" is evaluated separately from the "body":** ERQA, RoboBench, Embodied3DBench, ERQA-Plus test VLM reasoning offline; ERIQ reports this correlates with downstream VLA generalization.

@@ -24,7 +24,7 @@
 - [4. Bimanual & Dexterous Manipulation (双臂/灵巧手)](#4-bimanual--dexterous-manipulation-双臂灵巧手)
 - [5. Deformable, Tactile & Contact-Rich Manipulation (柔性物体/触觉/接触密集)](#5-deformable-tactile--contact-rich-manipulation-柔性物体触觉接触密集)
 - [6. Real-World Manipulation Benchmarks & Evaluation Protocols (真实世界评测)](#6-real-world-manipulation-benchmarks--evaluation-protocols-真实世界评测)
-- [7. Real-to-Sim & World-Model-Based Policy Evaluation (Real2Sim/世界模型评测)](#7-real-to-sim--world-model-based-policy-evaluation-real2sim世界模型评测)
+- [7. Real-to-Sim, World-Model Evaluators & World-Model Benchmarks (Real2Sim/世界模型评测)](#7-real-to-sim-world-model-evaluators--world-model-benchmarks-real2sim世界模型评测)
 - [8. Mobile Manipulation & Household Activities (移动操作/家庭任务)](#8-mobile-manipulation--household-activities-移动操作家庭任务)
 - [9. Humanoid & Whole-Body Loco-Manipulation (人形/全身控制)](#9-humanoid--whole-body-loco-manipulation-人形全身控制)
 - [10. Legged Locomotion & Continuous Control (足式运动/连续控制)](#10-legged-locomotion--continuous-control-足式运动连续控制)
@@ -104,19 +104,30 @@ Classic and widely used simulated manipulation suites. 经典的仿真操作基�
 | 🔥 **RLBench** | 2019 / RA-L | Sim (CoppeliaSim) | 100 hand-designed tasks with demos; standard for keyframe/3D policies (PerAct, RVT) | [arXiv:1909.12271](https://arxiv.org/abs/1909.12271) | [1,226](https://www.semanticscholar.org/paper/a2fdfda785b3a2a0178d174daa515377c531f222) | [![stars](https://img.shields.io/github/stars/stepjam/RLBench?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/stepjam/RLBench) |
 | **robosuite** | 2020 | Sim (MuJoCo) | Modular framework + standardized tasks; basis of RoboMimic, LIBERO, RoboCasa | [arXiv:2009.12293](https://arxiv.org/abs/2009.12293) | [853](https://www.semanticscholar.org/paper/cf34efc663284da131e747407ac3f389f898e471) | [![stars](https://img.shields.io/github/stars/ARISE-Initiative/robosuite?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/ARISE-Initiative/robosuite) |
 | **Ravens / Transporter tasks** | 2020 / CoRL | Sim (PyBullet) | Rearrangement tasks (stacking, kitting, rope, etc.) | [arXiv:2010.14406](https://arxiv.org/abs/2010.14406) | [634](https://www.semanticscholar.org/paper/eb6b9bc4ff3e4e2cf1724324d79ce7de43131478) | [![stars](https://img.shields.io/github/stars/google-research/ravens?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/google-research/ravens) |
+| **D4RL — Franka Kitchen** | 2020 | Sim (MuJoCo) | Offline-RL suite; Franka Kitchen multi-stage kitchen tasks widely used for imitation | [arXiv:2004.07219](https://arxiv.org/abs/2004.07219) | — | [![stars](https://img.shields.io/github/stars/Farama-Foundation/D4RL?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/Farama-Foundation/D4RL) |
 | 🔥 **CALVIN** | 2021 / RA-L | Sim (PyBullet) | Language-conditioned long-horizon chains (5 tasks in a row), ABC→D split | [arXiv:2112.03227](https://arxiv.org/abs/2112.03227) | [935](https://www.semanticscholar.org/paper/4be02694125b71876552900a53c85c47a2a83614) | [![stars](https://img.shields.io/github/stars/mees/calvin?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/mees/calvin) |
 | **ManiSkill / ManiSkill2 / ManiSkill3** | 2021–2024 | Sim (SAPIEN) | Generalizable manipulation; v3 is GPU-parallel with rendering at scale | [v1](https://arxiv.org/abs/2107.14483) · [v2](https://arxiv.org/abs/2302.04659) · [v3](https://arxiv.org/abs/2410.00425) | [288](https://www.semanticscholar.org/paper/9db27b7b03b4843178fe83b09813acab323b3c4e) | [![stars](https://img.shields.io/github/stars/mani-skill/ManiSkill?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/mani-skill/ManiSkill) |
+| **RoboMimic** | 2021 / CoRL | Sim (robosuite) + Real | Benchmark & study of offline learning from human demos (Lift/Can/Square/Transport/ToolHang) | [arXiv:2108.03298](https://arxiv.org/abs/2108.03298) | — | [![stars](https://img.shields.io/github/stars/ARISE-Initiative/robomimic?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/ARISE-Initiative/robomimic) |
 | **VIMA-Bench** | 2022 / ICML'23 | Sim | Multimodal (text+image) prompts; 4-level generalization protocol | [arXiv:2210.03094](https://arxiv.org/abs/2210.03094) | [656](https://www.semanticscholar.org/paper/25425e299101b13ec2872417a14f961f4f8aa18e) | [![stars](https://img.shields.io/github/stars/vimalabs/VIMABench?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/vimalabs/VIMABench) |
+| **VLMbench** | 2022 / NeurIPS D&B | Sim (RLBench) | Compositional language-guided manipulation with constraints | [arXiv:2206.08522](https://arxiv.org/abs/2206.08522) | — | — |
 | **ARNOLD** | 2023 / ICCV | Sim (Isaac) | Language-grounded continuous-state tasks (e.g., "fill cup 50%") | [arXiv:2304.04321](https://arxiv.org/abs/2304.04321) | [98](https://www.semanticscholar.org/paper/7a2ec15a7a3e3f54be083aa559ec6f6453e3c9ac) | [![stars](https://img.shields.io/github/stars/arnold-benchmark/arnold?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/arnold-benchmark/arnold) |
 | 🔥 **LIBERO** | 2023 / NeurIPS D&B | Sim (robosuite) | 130 tasks; Spatial / Object / Goal / Long suites; lifelong learning; the most-reported VLA benchmark | [arXiv:2306.03310](https://arxiv.org/abs/2306.03310) | [2,311](https://www.semanticscholar.org/paper/98cfd7b1b29453c4e82536f5afdc6ddc58bbb1b3) | [![stars](https://img.shields.io/github/stars/Lifelong-Robot-Learning/LIBERO?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/Lifelong-Robot-Learning/LIBERO) |
+| **RoboHive** | 2023 / NeurIPS D&B | Sim + Real | Unified framework for dexterous, multi-task & visual robot learning | [arXiv:2310.06828](https://arxiv.org/abs/2310.06828) | — | [![stars](https://img.shields.io/github/stars/vikashplus/robohive?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/vikashplus/robohive) |
 | **The Colosseum** | 2024 / RSS | Sim (RLBench) | 20 tasks × 14 perturbation axes for generalization | [arXiv:2402.08191](https://arxiv.org/abs/2402.08191) | [220](https://www.semanticscholar.org/paper/8a839c963de28f4bd5b52af982702cde1a00e82e) | [![stars](https://img.shields.io/github/stars/robot-colosseum/robot-colosseum?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/robot-colosseum/robot-colosseum) |
 | 🔥 **RoboCasa** | 2024 / RSS | Sim (robosuite) | Large-scale kitchen scenes, 100 tasks, generative assets | [arXiv:2406.02523](https://arxiv.org/abs/2406.02523) | [677](https://www.semanticscholar.org/paper/f773ceb43ffc7f9cd685250c4919924ec0bc85c7) | [![stars](https://img.shields.io/github/stars/robocasa/robocasa?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/robocasa/robocasa) |
 | **GemBench** | 2024 | Sim (RLBench) | 4 levels of generalization: placement, rigid objects, articulated, long-horizon | [arXiv:2410.01345](https://arxiv.org/abs/2410.01345) | [71](https://www.semanticscholar.org/paper/aa28e62a1bb93154a3623e8cdfa049d7b5882f1c) | [![stars](https://img.shields.io/github/stars/vlc-robot/robot-3dlotus?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/vlc-robot/robot-3dlotus) |
 | **VLABench** | 2024 / ICCV'25 | Sim | 100 task categories, 2000+ objects; language-conditioned manipulation with commonsense/reasoning | [arXiv:2412.18194](https://arxiv.org/abs/2412.18194) | [281](https://www.semanticscholar.org/paper/93657d550dd636b5bc284d9803b20646aafc37bf) | [![stars](https://img.shields.io/github/stars/OpenMOSS/VLABench?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/OpenMOSS/VLABench) |
+| **ClevrSkills** | 2024 / NeurIPS D&B | Sim (ManiSkill) | Compositional reasoning & skill composition in manipulation | [arXiv search](https://arxiv.org/search/?query=ClevrSkills%3A+Compositional+Language+and+Visual+Reasoning+in+Robotics&searchtype=all) | — | — |
 | **RoboEval** | 2025 | Sim | Structured, scalable evaluation with behavioral & outcome metrics beyond success rate | [arXiv:2507.00435](https://arxiv.org/abs/2507.00435) | [49](https://www.semanticscholar.org/paper/fe25c6ceaabf4d9a6f87372841c7cf10f00acb3d) | — |
+| 🆕 **GenieSim 3.0** | 2025–26 | Sim | AgiBot's simulation benchmark; used for AgiBot World Challenge reasoning-to-action track | [arXiv search](https://arxiv.org/search/?query=Genie+Sim&searchtype=all) | — | — |
 | 🆕 **RoboSPA** | 2026 | Sim | Can VLAs go beyond simple scenes and short-horizon tasks? Cluttered, longer tasks | [arXiv:2609.05324](https://arxiv.org/abs/2609.05324) | [2](https://www.semanticscholar.org/paper/f4721d34472c34355951debe81907b3e672eaf0c) | [![stars](https://img.shields.io/github/stars/fanzhenxuan/RoboSPA?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/fanzhenxuan/RoboSPA) |
 | 🆕 **ManipArena** | 2026 | Sim/Real | Arena-style manipulation evaluation (tracked in Awesome-Robotics-Manipulation) | [arXiv search](https://arxiv.org/search/?query=ManipArena&searchtype=all) | — | — |
 | 🆕 **InstructMove** | 2026 | — | Instruction-following manipulation benchmark | [arXiv search](https://arxiv.org/search/?query=InstructMove&searchtype=all) | — | — |
+| 🆕 **RoboLab (RoboLab-120)** | 2026 / RSS | Sim (Isaac Lab) | 120 tasks along visual / procedural / relational axes; DROID-trained π0.5 only ~30% | [arXiv:2604.09860](https://arxiv.org/abs/2604.09860) | — | [![stars](https://img.shields.io/github/stars/NVlabs/RoboLab?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/NVlabs/RoboLab) |
+| 🆕 **RoboCasa365** | 2026 / ICLR | Sim (robosuite) | 365 household tasks, 2,500 kitchen scenes, 600+ h demos, public leaderboard | [arXiv search](https://arxiv.org/search/?query=RoboCasa365&searchtype=all) | — | [![stars](https://img.shields.io/github/stars/robocasa/robocasa?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/robocasa/robocasa) |
+| 🆕🔥 **RoboDojo** | 2026 / ECCV | Sim (Isaac Sim) + Real (remote) | 42 sim + 18 real tasks; Generalization / Precision / Long-Horizon / Memory / Open; 30 policies on a live leaderboard; best policy 8.8% sim success vs 76% teleop | [arXiv:2607.04434](https://arxiv.org/abs/2607.04434) | — | [![stars](https://img.shields.io/github/stars/RoboDojo-Benchmark/RoboDojo?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/RoboDojo-Benchmark/RoboDojo) |
+| 🆕 **XPolicyLab** | 2026 | Framework | Unified standard & open ecosystem for policy evaluation/deployment (powers RoboDojo) | [arXiv:2608.09892](https://arxiv.org/abs/2608.09892) | — | — |
+| 🆕 **RoboColiseum** | 2026 | Sim | Multidimensional benchmark (instruction following, spatial reasoning, general manipulation) incl. LLM-driven robot control | [arXiv:2610.27865](https://arxiv.org/abs/2610.27865) | — | — |
 
 ---
 
@@ -212,27 +223,38 @@ LIBERO / SIMPLER 等分数接近饱和后，社区开始系统性地扰动、审
 | **FMB** | 2024 | Real | See §5.2 | [arXiv:2401.08553](https://arxiv.org/abs/2401.08553) | [144](https://www.semanticscholar.org/paper/a83f2f4fed4f77be802618bae6c4cbb879bbe349) | — |
 | 🔥 **AutoEval** | 2025 / CoRL | Real (autonomous) | 24/7 evaluation with learned success detection & auto-reset on WidowX/Bridge | [arXiv:2503.24278](https://arxiv.org/abs/2503.24278) | [79](https://www.semanticscholar.org/paper/aa324482b5acc4ea66ef642d1c60039b2d5c2822) | [![stars](https://img.shields.io/github/stars/zhouzypaul/auto_eval?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/zhouzypaul/auto_eval) |
 | 🔥 **RoboArena** | 2025 / CoRL | Real (distributed) | Crowd-sourced, double-blind pairwise comparisons on DROID across 7 institutions | [arXiv:2506.18123](https://arxiv.org/abs/2506.18123) | [118](https://www.semanticscholar.org/paper/c03aab7c575d7c2218e4da7a12e13bfb03aa160a) | [![stars](https://img.shields.io/github/stars/robo-arena/roboarena?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/robo-arena/roboarena) |
+| 🔥 **RoboChallenge (Table30)** | 2025 | Real (online, 10 robots) | Large-scale online real-robot eval; 30 tabletop tasks on UR5/Franka/ALOHA/ARX-5; remote action-queue API | [arXiv:2510.17950](https://arxiv.org/abs/2510.17950) | — | — |
+| **Robot Policy Evaluation for Sim-to-Real Transfer** | 2025 | Sim + Real | Benchmarking perspective on sim-to-real policy evaluation | [arXiv:2508.11117](https://arxiv.org/abs/2508.11117) | — | — |
 | 🆕 **VLA-REPLICA** | 2026 | Real | Low-cost reproducible real-world benchmark with ID/OOD protocols | [arXiv:2605.20774](https://arxiv.org/abs/2605.20774) | [5](https://www.semanticscholar.org/paper/d774514e1860f924785ca378d54c2e012d568927) | — |
 | 🆕 **ATOM-Bench** | 2026 | Real | Atomic skills & compositional generalization | [arXiv:2606.16826](https://arxiv.org/abs/2606.16826) | [3](https://www.semanticscholar.org/paper/f13f6ee020ab87b398d16c59dfc356c6ba9a2bb9) | — |
 | 🆕 **WatchAct** | 2026 | — | Tracked in Awesome-Robotics-Manipulation (2026-06) | [arXiv search](https://arxiv.org/search/?query=WatchAct&searchtype=all) | — | — |
+| 🆕🔥 **RoboColosseum** | 2026 | Real (distributed, in-the-wild) | 124 sites, 4 embodiments, 5,699 pairwise comparisons; rankings don't transfer across robots (Kendall W = 0.24) | [arXiv:2611.02497](https://arxiv.org/abs/2611.02497) | — | — |
+| 🆕 **Embodied Agent Arena** | 2026 | Real/Sim | Are frontier VLM agents ready to be robot generalists? | [arXiv:2610.00854](https://arxiv.org/abs/2610.00854) | — | — |
 
 ---
 
-## 7. Real-to-Sim & World-Model-Based Policy Evaluation (Real2Sim/世界模型评测)
+## 7. Real-to-Sim, World-Model Evaluators & World-Model Benchmarks (Real2Sim/世界模型评测)
 
-真实评测昂贵，2024 起出现两条替代路线：(a) 与真实场景对齐的仿真 (SIMPLER, Gaussian splat)；(b) 用视频世界模型直接"推演"策略。核心指标是与真实成功率的 Pearson 相关性和排序一致性 (MMRV)。
+真实评测昂贵，2024 起出现两条替代路线：(a) 与真实场景对齐的仿真 (SIMPLER, Gaussian splat)；(b) 用视频世界模型直接"推演"策略。核心指标是与真实成功率的 Pearson 相关性和排序一致性 (MMRV)。本节也收录评测世界模型本身的基准 (EWMBench, WorldArena, World-in-World 等)。
 
 | Benchmark | Year | Type | Highlights | Paper | Citations | GitHub ⭐ |
 |---|---|---|---|---|---|---|
 | 🔥 **SIMPLER** | 2024 / CoRL | Real2Sim | Visual-matching / variant-aggregation sims for Google Robot & WidowX; MMRV metric | [arXiv:2405.05941](https://arxiv.org/abs/2405.05941) | [688](https://www.semanticscholar.org/paper/202cc3fcea588cee37ffabcb0b5e145567109a66) | [![stars](https://img.shields.io/github/stars/simpler-env/SimplerEnv?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/simpler-env/SimplerEnv) |
 | **PolaRiS** | 2025 | Real2Sim | Scalable real-to-sim reconstruction for generalist policy eval (DROID) | [arXiv:2512.16881](https://arxiv.org/abs/2512.16881) | [58](https://www.semanticscholar.org/paper/ab6d4ed806c35228dee0d81e774dda8f998fc94a) | — |
-| 🆕 **YUBI-Real2Sim** | 2026 | Real2Sim | 3DGS scene verification to decide which scenes give reliable policy comparisons | [arXiv:2610.17521](https://arxiv.org/abs/2610.17521) | [0](https://www.semanticscholar.org/paper/39808419052dc1b3fa5d902873b0d7a476ac932c) | — |
 | **WorldEval** | 2025 | World model | Video model + latent policy actions as a real-world evaluator | [arXiv search](https://arxiv.org/search/?query=WorldEval%3A+World+Model+as+Real-World+Robot+Policies+Evaluator&searchtype=all) | — | — |
 | **WorldGym** | 2025 / ICLR'26 | World model | Action-conditioned video model + VLM reward; preserves policy rankings | [arXiv:2506.00613](https://arxiv.org/abs/2506.00613) | [87](https://www.semanticscholar.org/paper/8dac59d54f3d268c3467c29fd8ac32d1770404a0) | — |
 | **Ctrl-World** | 2025 | World model | Controllable world model for policy evaluation/improvement | [arXiv search](https://arxiv.org/search/?query=Ctrl-World%3A+A+Controllable+Generative+World+Model+for+Robot+Manipulation&searchtype=all) | — | — |
+| **EWMBench** | 2025 / BMVC | World model (video) | Scene, motion & semantic quality of embodied world models (AgiBot-World data) | [arXiv:2505.09694](https://arxiv.org/abs/2505.09694) | — | [![stars](https://img.shields.io/github/stars/AgibotTech/EWMBench?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/AgibotTech/EWMBench) |
+| **WorldScore** | 2025 | World model (video) | Unified evaluation benchmark for world generation | [arXiv search](https://arxiv.org/search/?query=WorldScore%3A+A+Unified+Evaluation+Benchmark+for+World+Generation&searchtype=all) | — | — |
+| **World-in-World** | 2025 / ICLR'26 Oral | World model (closed-loop) | Benchmarks world models by closed-loop task success; controllability > visual quality | [arXiv:2510.18135](https://arxiv.org/abs/2510.18135) | — | [![stars](https://img.shields.io/github/stars/World-In-World/world-in-world?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/World-In-World/world-in-world) |
+| **Reliable & Scalable Policy Eval with Imperfect Simulators** | 2025 | Sim | Statistical framework for policy evaluation with imperfect sims | [arXiv:2510.04354](https://arxiv.org/abs/2510.04354) | — | — |
+| **RobotArena ∞** | 2025 | Real2Sim | Scalable robot benchmarking via real-to-sim translation of videos | [arXiv:2510.23571](https://arxiv.org/abs/2510.23571) | — | — |
+| 🆕 **YUBI-Real2Sim** | 2026 | Real2Sim | 3DGS scene verification to decide which scenes give reliable policy comparisons | [arXiv:2610.17521](https://arxiv.org/abs/2610.17521) | [0](https://www.semanticscholar.org/paper/39808419052dc1b3fa5d902873b0d7a476ac932c) | — |
 | 🆕 **dWorldEval** | 2026 | World model | Discrete diffusion world model predicting frames + progress | [arXiv:2604.22152](https://arxiv.org/abs/2604.22152) | [14](https://www.semanticscholar.org/paper/084a185a391c67d9eca9e8b7a36eef885ddac011) | — |
 | 🆕 **WMBench** (GigaWorld-1) | 2026 | World model | Benchmarks 7 video world models as evaluators; long-horizon action-faithfulness matters most | [arXiv:2607.02642](https://arxiv.org/abs/2607.02642) | [17](https://www.semanticscholar.org/paper/ff84a80adb726c69a7e40e6b9c6da708f7cc0e2b) | [![stars](https://img.shields.io/github/stars/open-gigaai/giga-world-1?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/open-gigaai/giga-world-1) |
 | 🆕 **RoboWorld** | 2026 | World model / Real2Sim | DROID-trained world model; reported high correlation with RoboArena | [arXiv:2607.01060](https://arxiv.org/abs/2607.01060) | [7](https://www.semanticscholar.org/paper/7c6b3f80cb6ae608c48c03e4d8327dde592f4278) | — |
+| 🆕 **WorldArena** | 2026 | World model | Perception quality (16 metrics) + functional utility (data synthesis, policy eval, planning); leaderboard | [arXiv:2602.08971](https://arxiv.org/abs/2602.08971) | — | — |
+| 🆕 **RoboTrustBench** | 2026 | World model (video) | Trustworthiness of video world models for manipulation | [arXiv:2606.01600](https://arxiv.org/abs/2606.01600) | — | — |
 
 ---
 
@@ -258,10 +280,12 @@ LIBERO / SIMPLER 等分数接近饱和后，社区开始系统性地扰动、审
 | Benchmark | Year | Type | Highlights | Paper | Citations | GitHub ⭐ |
 |---|---|---|---|---|---|---|
 | 🔥 **HumanoidBench** | 2024 / RSS | Sim (MuJoCo) | 27 whole-body locomotion + manipulation tasks on Unitree H1 with hands | [arXiv:2403.10506](https://arxiv.org/abs/2403.10506) | [188](https://www.semanticscholar.org/paper/75850000ac9e056ce604c1bcd7631a3ae73d0458) | [![stars](https://img.shields.io/github/stars/carlosferrazza/humanoid-bench?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/carlosferrazza/humanoid-bench) |
+| **RoboCasa (humanoid tracks)** / **BEHAVIOR (R1)** | 2024–25 | Sim | Household suites that support humanoid/wheeled-humanoid embodiments | see §1, §8 | — | — |
+| **GRUtopia — GRBench** | 2024 | Sim (Isaac) | Humanoid Object Loco-Nav, Social Loco-Nav, Loco-Manipulation | [arXiv:2407.10943](https://arxiv.org/abs/2407.10943) | [87](https://www.semanticscholar.org/paper/b75f344d962b3b25b64c0c96a86244c4c3c6e490) | [![stars](https://img.shields.io/github/stars/InternRobotics/InternUtopia?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/InternRobotics/InternUtopia) |
 | **LHM-Humanoid** | 2025 | Sim (Isaac Gym) | 350 long-horizon whole-body loco-manipulation scenes in clutter | [arXiv:2508.16943](https://arxiv.org/abs/2508.16943) | [0](https://www.semanticscholar.org/paper/3b9027dfc9fbddee4723e3c08e4f315be0612318) | — |
 | 🆕 **SIMPLE** | 2026 | Sim (MuJoCo + IsaacSim render) | 60 whole-body tasks, 50 scenes, 1k+ assets; strong sim-real correlation | [arXiv:2606.08278](https://arxiv.org/abs/2606.08278) | [20](https://www.semanticscholar.org/paper/b7ebfd5d3e1185408ae956de2e186d2a34942a6f) | — |
 | 🆕 **CoHuB** | 2026 / NeurIPS | Sim | Collaborative multi-humanoid loco-manipulation with dexterous hands | [arXiv:2609.34782](https://arxiv.org/abs/2609.34782) | [0](https://www.semanticscholar.org/paper/27d5eb96e05c1f45788aa6f9d4febe2e10bb8e8d) | — |
-| **RoboCasa (humanoid tracks)** / **BEHAVIOR (R1)** | 2024–25 | Sim | Household suites that support humanoid/wheeled-humanoid embodiments | see §1, §8 | — | — |
+| 🆕 **OmniBench** (OmniClone) | 2026 | Sim + Real | Diagnostic benchmark for humanoid whole-body teleoperation: 6 skills × 18 difficulty/dynamics categories | [arXiv:2603.14327](https://arxiv.org/abs/2603.14327) | — | — |
 
 ---
 
@@ -283,10 +307,13 @@ LIBERO / SIMPLER 等分数接近饱和后，社区开始系统性地扰动、审
 |---|---|---|---|---|---|---|
 | 🔥 **Room-to-Room (R2R)** | 2018 / CVPR | Sim (Matterport3D) | Vision-and-language navigation on discrete graphs | [arXiv:1711.07280](https://arxiv.org/abs/1711.07280) | [2,130](https://www.semanticscholar.org/paper/c37c23b12e00168833eccff8025a830ce27c5abc) | [![stars](https://img.shields.io/github/stars/peteanderson80/Matterport3DSimulator?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/peteanderson80/Matterport3DSimulator) |
 | 🔥 **Habitat** (PointNav/ObjectNav) | 2019 / ICCV | Sim | Fast embodied simulator + navigation challenges | [arXiv:1904.01201](https://arxiv.org/abs/1904.01201) | [2,308](https://www.semanticscholar.org/paper/b4a35e548de27b6924e5f2ee41d37238a5c4a1d5) | [![stars](https://img.shields.io/github/stars/facebookresearch/habitat-lab?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/facebookresearch/habitat-lab) |
+| **Touchdown** | 2019 / CVPR | Real imagery (Street View) | Outdoor VLN + spatial description resolution | [arXiv:1811.12354](https://arxiv.org/abs/1811.12354) | — | — |
+| **CVDN** | 2019 / CoRL | Sim (Matterport3D) | Cooperative vision-and-dialog navigation | [arXiv:1907.04957](https://arxiv.org/abs/1907.04957) | — | — |
 | **REVERIE** | 2020 / CVPR | Sim | Remote object grounding via navigation | [arXiv:1904.10151](https://arxiv.org/abs/1904.10151) | [584](https://www.semanticscholar.org/paper/1bdd8f6d3900e6e7fe492ea21fcdd87f3d8c857f) | [![stars](https://img.shields.io/github/stars/YuankaiQi/REVERIE?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/YuankaiQi/REVERIE) |
 | **VLN-CE** | 2020 / ECCV | Sim (Habitat) | VLN in continuous environments | [arXiv:2004.02857](https://arxiv.org/abs/2004.02857) | [770](https://www.semanticscholar.org/paper/c2496cead9423897cd37be77ddd6cf2f5d03f1c8) | [![stars](https://img.shields.io/github/stars/jacobkrantz/VLN-CE?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/jacobkrantz/VLN-CE) |
 | **RxR** | 2020 / EMNLP | Sim | Multilingual, fine-grained VLN | [arXiv:2010.07954](https://arxiv.org/abs/2010.07954) | [691](https://www.semanticscholar.org/paper/5a94aaa3ad624608e46a75de49452a03de568a07) | [![stars](https://img.shields.io/github/stars/google-research-datasets/RxR?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/google-research-datasets/RxR) |
 | **ObjectNav Revisited** | 2020 | Sim | Standardized ObjectNav evaluation | [arXiv:2006.13171](https://arxiv.org/abs/2006.13171) | [428](https://www.semanticscholar.org/paper/19c8c5a32cb0d77cd22ee1201e31306f0cd6100a) | — |
+| **RoboTHOR** | 2020 / CVPR | Sim + Real | Sim-to-real ObjectNav with physical twin apartments | [arXiv:2004.06799](https://arxiv.org/abs/2004.06799) | — | [![stars](https://img.shields.io/github/stars/allenai/robothor-challenge?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/allenai/robothor-challenge) |
 | **HM3D / HM3D-Sem** | 2021 / NeurIPS D&B | Sim | 1,000 real scanned buildings for nav | [arXiv:2109.08238](https://arxiv.org/abs/2109.08238) | [908](https://www.semanticscholar.org/paper/f46bce5b7dd78736133c1af1824ddb83c0ec2e55) | [![stars](https://img.shields.io/github/stars/facebookresearch/habitat-matterport3d-dataset?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/facebookresearch/habitat-matterport3d-dataset) |
 | **SocNavBench** | 2021 | Sim | Social navigation with real pedestrian data | [arXiv:2103.00047](https://arxiv.org/abs/2103.00047) | [111](https://www.semanticscholar.org/paper/282ffde21153473ea2b2cfe5723e86e9dcd09836) | [![stars](https://img.shields.io/github/stars/CMU-TBD/SocNavBench?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/CMU-TBD/SocNavBench) |
 | **Habitat 3.0** (social nav / rearrange) | 2023 | Sim | Humanoid avatars + human-in-the-loop | [arXiv:2310.13724](https://arxiv.org/abs/2310.13724) | [359](https://www.semanticscholar.org/paper/ad4beeecbdfc7dd238eb55e2b19113f62096d95b) | [![stars](https://img.shields.io/github/stars/facebookresearch/habitat-lab?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/facebookresearch/habitat-lab) |
@@ -295,6 +322,8 @@ LIBERO / SIMPLER 等分数接近饱和后，社区开始系统性地扰动、审
 | **VLNVerse** | 2025 | Sim (Isaac Sim) | Physics-bound agents, 263 environments, unified nav tasks | [arXiv:2512.19021](https://arxiv.org/abs/2512.19021) | [34](https://www.semanticscholar.org/paper/334fe9c27dc046fbc161562579b172b781754545) | — |
 | **NavTrust** | 2025–26 | Sim | Trustworthiness of VLN & ObjectNav under corruptions | [arXiv search](https://arxiv.org/search/?query=NavTrust&searchtype=all) | — | — |
 | 🆕 **NavVerse** | 2026 | Sim | Indoor-to-outdoor continuous navigation, 200 scenes, 10k episodes | [arXiv:2607.19695](https://arxiv.org/abs/2607.19695) | [4](https://www.semanticscholar.org/paper/89d912aef276d155a0bc0bd337fe5cc6a21a8da7) | — |
+| 🆕 **OmniNavBench** | 2026 / RSS | Sim | PointNav + VLN + ObjectNav + human following + social nav in one episode; wheeled / quadruped / humanoid | [arXiv:2605.09441](https://arxiv.org/abs/2605.09441) | — | — |
+| 🆕 **GN-Bench** (GN0) | 2026 | Sim (3DGS) | 3DGS platform with dynamic avatars: instruction following, human following, goal nav | [arXiv:2606.03682](https://arxiv.org/abs/2606.03682) | — | — |
 
 ---
 
@@ -303,10 +332,11 @@ LIBERO / SIMPLER 等分数接近饱和后，社区开始系统性地扰动、审
 | Benchmark | Year | Type | Highlights | Paper | Citations | GitHub ⭐ |
 |---|---|---|---|---|---|---|
 | **AerialVLN** | 2023 / ICCV | Sim (AirSim/UE) | City-scale aerial VLN | [arXiv:2308.06735](https://arxiv.org/abs/2308.06735) | [233](https://www.semanticscholar.org/paper/25d8e3c541f996e366d8fa48cba248ca330e8a78) | [![stars](https://img.shields.io/github/stars/AirVLN/AirVLN?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/AirVLN/AirVLN) |
+| **TravelUAV / OpenUAV** | 2024–25 | Sim | Realistic UAV VLN with continuous trajectories | [arXiv:2410.07087](https://arxiv.org/abs/2410.07087) | [159](https://www.semanticscholar.org/paper/ba414d17cb05f1b6fee6aae02fd20d99c2b5dff6) | [![stars](https://img.shields.io/github/stars/prince687028/TravelUAV?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/prince687028/TravelUAV) |
 | **OpenFly** | 2025 | Sim | 100k trajectories, 18 scenes, multi-engine toolchain | [arXiv:2502.18041](https://arxiv.org/abs/2502.18041) | [76](https://www.semanticscholar.org/paper/4578312cad81f12bfb5e4ec93ce05782ff8caab8) | [![stars](https://img.shields.io/github/stars/SHAILAB-IPEC/OpenFly-Platform?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/SHAILAB-IPEC/OpenFly-Platform) |
 | **UAV-ON** | 2025 | Sim | 11k open-world object-goal navigation tasks for UAVs | [arXiv:2508.00288](https://arxiv.org/abs/2508.00288) | [58](https://www.semanticscholar.org/paper/478aa3417dc58bf5c5bf2d57b700a0904048908b) | [![stars](https://img.shields.io/github/stars/iLearn-Lab/ACMMM25-UAV_ON?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/iLearn-Lab/ACMMM25-UAV_ON) |
-| **TravelUAV / OpenUAV** | 2024–25 | Sim | Realistic UAV VLN with continuous trajectories | [arXiv:2410.07087](https://arxiv.org/abs/2410.07087) | [159](https://www.semanticscholar.org/paper/ba414d17cb05f1b6fee6aae02fd20d99c2b5dff6) | [![stars](https://img.shields.io/github/stars/prince687028/TravelUAV?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/prince687028/TravelUAV) |
 | **Embodied4C** (drone track) | 2025 | Sim | Cross-embodiment (car / drone / arm) closed-loop reasoning | [arXiv:2512.18028](https://arxiv.org/abs/2512.18028) | [3](https://www.semanticscholar.org/paper/7fd7ec886aeb87c2f3031351023cefe3df9b34c5) | — |
+| 🆕 **AIR-VLA** | 2026 | Sim (Isaac Sim) | VLA benchmark for aerial manipulation | [arXiv:2601.21602](https://arxiv.org/abs/2601.21602) | — | — |
 
 ---
 
@@ -318,17 +348,24 @@ LIBERO / SIMPLER 等分数接近饱和后，社区开始系统性地扰动、审
 
 | Benchmark | Year | Type | Highlights | Paper | Citations | GitHub ⭐ |
 |---|---|---|---|---|---|---|
+| **RoboVQA** | 2023 / ICRA'24 | QA (video) | Long-horizon robot video QA across embodiments | [arXiv:2311.00899](https://arxiv.org/abs/2311.00899) | — | — |
+| **EgoPlan-Bench** | 2023 | QA (video) | Egocentric embodied planning for MLLMs | [arXiv:2312.06722](https://arxiv.org/abs/2312.06722) | — | [![stars](https://img.shields.io/github/stars/ChenYi99/EgoPlan?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/ChenYi99/EgoPlan) |
 | **OpenEQA** | 2024 / CVPR | QA | Open-vocabulary embodied question answering (episodic memory & active) | [Website](https://open-eqa.github.io/) | — | [![stars](https://img.shields.io/github/stars/facebookresearch/open-eqa?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/facebookresearch/open-eqa) |
 | **VSI-Bench** ("Thinking in Space") | 2024 / CVPR'25 | QA (video) | Visual-spatial intelligence from egocentric video | [arXiv:2412.14171](https://arxiv.org/abs/2412.14171) | [938](https://www.semanticscholar.org/paper/376461a2c049f6fa51a4303853fdc672e4d07a0d) | [![stars](https://img.shields.io/github/stars/vision-x-nyu/thinking-in-space?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/vision-x-nyu/thinking-in-space) |
 | **RoboPoint / Where2Place** | 2024 / CoRL | QA (pointing) | Spatial affordance prediction via points | [arXiv:2406.10721](https://arxiv.org/abs/2406.10721) | [362](https://www.semanticscholar.org/paper/715a93dbd51aaf7278e22c921af184a8eaffbd2e) | [![stars](https://img.shields.io/github/stars/wentaoyuan/RoboPoint?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/wentaoyuan/RoboPoint) |
+| **EmbSpatial-Bench** | 2024 / ACL | QA | Embodied spatial understanding from egocentric views | [arXiv:2406.05756](https://arxiv.org/abs/2406.05756) | — | — |
+| **RoboSpatial** | 2024 / CVPR'25 | QA | Spatial understanding for robotics (2D/3D, ego / object / world frames) | [arXiv:2411.16537](https://arxiv.org/abs/2411.16537) | — | — |
 | 🔥 **ERQA** (Gemini Robotics) | 2025 | QA | 400 MCQs: spatial, trajectory, action, state, multi-view reasoning | [arXiv:2503.20020](https://arxiv.org/abs/2503.20020) | [2](https://www.semanticscholar.org/paper/8382ce3c671d5451490bf618b37e3a663c2edade) | — |
 | **RefSpatial-Bench** (RoboRefer) | 2025 / NeurIPS | QA (pointing) | Multi-step spatial referring | [arXiv:2506.04308](https://arxiv.org/abs/2506.04308) | [186](https://www.semanticscholar.org/paper/7311bbaa4624d393e9c6f26e1878f475315a5b28) | [![stars](https://img.shields.io/github/stars/Zhoues/RoboRefer?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/Zhoues/RoboRefer) |
 | **Point-It-Out** | 2025 | QA (pointing) | Multi-stage visual grounding for embodied reasoning | [arXiv:2509.25794](https://arxiv.org/abs/2509.25794) | [11](https://www.semanticscholar.org/paper/773624e23970f5c3821c109bd7716805875d5f33) | — |
 | **RoboBench** | 2025 | QA | MLLM as embodied brain: instruction, perception, planning, affordance, failure analysis (14 capabilities) | [arXiv:2510.17801](https://arxiv.org/abs/2510.17801) | [33](https://www.semanticscholar.org/paper/d7726078436e4f0d0eb41e2f74cb7dcedaf7dbca) | [![stars](https://img.shields.io/github/stars/yulin-luo/RoboBench?style=flat&label=%E2%AD%90&color=f5c518)](https://github.com/yulin-luo/RoboBench) |
 | **Embodied4C** | 2025 | QA + closed-loop | ~1.1K reasoning questions + 58 goal-directed tasks across 3 embodiments | [arXiv:2512.18028](https://arxiv.org/abs/2512.18028) | [3](https://www.semanticscholar.org/paper/7fd7ec886aeb87c2f3031351023cefe3df9b34c5) | — |
 | **ERIQ** | 2025–26 | QA | 6K+ QA decoupling reasoning from action; correlates with VLA generalization | [arXiv search](https://arxiv.org/search/?query=ERIQ+embodied+reasoning+robotic+manipulation&searchtype=all) | — | — |
+| **PhysBench** | 2025 / ICLR | QA (image+video) | Physical-world understanding of VLMs (properties, relations, dynamics) | [arXiv:2501.16411](https://arxiv.org/abs/2501.16411) | — | — |
+| **Seeing Across Views** | 2025 | QA | Multi-view spatial reasoning of VLMs in robotic scenes | [arXiv:2510.19400](https://arxiv.org/abs/2510.19400) | — | — |
 | 🆕 **Embodied3DBench** | 2026 | QA | Low-level 3D spatial intelligence, 21k+ QA + 1.3M training QA | [arXiv:2605.29074](https://arxiv.org/abs/2605.29074) | [6](https://www.semanticscholar.org/paper/43fb444f4d05a5014f22d8e1039c451142d22e18) | — |
 | 🆕 **ERQA-Plus** | 2026 | QA | 1,766 diagnostic QA over 711 robot-centric images | [arXiv:2606.17639](https://arxiv.org/abs/2606.17639) | [2](https://www.semanticscholar.org/paper/2ff44298f01f508d69c2bfba1657d3d43110fee9) | — |
+| 🆕 **ESI-Bench** | 2026 | Sim + QA | Embodied spatial intelligence that closes the perception-action loop | [arXiv:2605.18746](https://arxiv.org/abs/2605.18746) | — | — |
 
 ### 13.2 Task planning & agentic evaluation
 
@@ -404,6 +441,9 @@ Not benchmarks per se, but most benchmarks above are built on them.
 
 ## 18. Competitions & Challenges (竞赛)
 
+- **AgiBot World Challenge** (ICRA 2026) — sim track on GenieSim 3.0 + real-robot finals (incl. supermarket mobile manipulation). [Report](https://www.therobotreport.com/agibot-holds-world-challenge-2026-see-how-ai-models-perform-real-tasks/)
+- **RoboChallenge** (2025–) — always-on online real-robot evaluation (Table30). [Website](https://robochallenge.ai/)
+- **RoboDojo Leaderboard** (2026–) — sim + remote real-robot leaderboard. [Website](https://robodojo-benchmark.com/)
 - **BEHAVIOR Challenge** (NeurIPS 2025) — 50 long-horizon household tasks in OmniGibson. [Website](https://behavior.stanford.edu/challenge/)
 - **Habitat Navigation / Rearrangement Challenges** (CVPR 2019–2023). [Website](https://aihabitat.org/challenge/)
 - **ManiSkill Challenge** (2021–2022). [Website](https://www.maniskill.ai/)
@@ -432,7 +472,7 @@ Related awesome lists: [Awesome-Robotics-Manipulation](https://github.com/BaiShu
 
 1. **Saturation → perturbation.** LIBERO/SIMPLER/CALVIN numbers are near ceiling for strong VLAs. 2025–26 work (LIBERO-PRO/Plus/MAX, STRONG-VLA, RoboSPA) shows that small camera, init-state or wording changes can collapse success — *report perturbed suites, not just the original*.
 2. **Benchmarks themselves are being audited.** Shortcut solvability, few-trial noise and demo-source leakage ([2609.37771](https://arxiv.org/abs/2609.37771)) mean you should report confidence intervals and number of trials.
-3. **Real-world evaluation is scaling** via distribution (RoboArena), automation (AutoEval, graph-based reset harnesses) and low-cost replication (VLA-REPLICA).
+3. **Real-world evaluation is scaling** via distribution (RoboArena, RoboColosseum — 124 sites), always-on online fleets (RoboChallenge), unified sim+real suites (RoboDojo), automation (AutoEval) and low-cost replication (VLA-REPLICA). RoboColosseum finds policy rankings barely transfer across embodiments — evaluate on *your* robot.
 4. **Cheaper proxies for real robots:** Real2Sim (SIMPLER → PolaRiS → 3DGS verification) and world-model evaluators (WorldGym, dWorldEval, WMBench, RoboWorld). The key metric is rank correlation with real success.
 5. **Beyond success rate:** memory (RoboMME), compositionality (ATOM-Bench), safety (SafeVLA-Bench, SoftVTBench), and behavior quality (RoboEval).
 6. **The "brain" is evaluated separately from the "body":** ERQA, RoboBench, Embodied3DBench, ERQA-Plus test VLM reasoning offline; ERIQ reports this correlates with downstream VLA generalization.
@@ -442,12 +482,12 @@ Related awesome lists: [Awesome-Robotics-Manipulation](https://github.com/BaiShu
 
 | If you are building… | Start with | Then stress-test with |
 |---|---|---|
-| A generalist VLA policy | LIBERO, SIMPLER, RoboCasa, RoboTwin 2.0 | LIBERO-Plus/PRO, RoboArena or AutoEval, PolaRiS |
+| A generalist VLA policy | LIBERO, SIMPLER, RoboCasa365, RoboTwin 2.0, RoboLab | RoboDojo, LIBERO-Plus/PRO, RoboChallenge / RoboArena / RoboColosseum, PolaRiS |
 | A bimanual / dexterous policy | RoboTwin 2.0, Bi-DexHands, DexJoCo | Real: POMDAR, DexToolBench |
 | A long-horizon / household agent | CALVIN, BEHAVIOR-1K, HomeRobot OVMM | RoboMME (memory), EBench |
 | A humanoid controller | HumanoidBench | SIMPLE, LHM-Humanoid |
-| A navigation agent | Habitat ObjectNav, R2R / VLN-CE | GOAT-Bench, VLNVerse, NavVerse |
-| An embodied VLM "brain" | ERQA, VSI-Bench, RoboBench | Embodied3DBench, RefSpatial-Bench, EmbodiedBench |
+| A navigation agent | Habitat ObjectNav, R2R / VLN-CE | GOAT-Bench, OmniNavBench, VLNVerse, NavVerse |
+| An embodied VLM "brain" | ERQA, VSI-Bench, RoboBench, PhysBench | Embodied3DBench, RefSpatial-Bench, ESI-Bench, EmbodiedBench |
 | A safety layer | SafeAgentBench, SafeVLA-Bench | RoboJailBench, VLA-RISK |
 
 ---

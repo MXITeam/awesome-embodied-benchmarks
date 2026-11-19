@@ -35,6 +35,13 @@ tables:
     arxiv: '2010.14406'
     github: google-research/ravens
   - cells:
+    - '**D4RL — Franka Kitchen**'
+    - '2020'
+    - Sim (MuJoCo)
+    - Offline-RL suite; Franka Kitchen multi-stage kitchen tasks widely used for imitation
+    arxiv: '2004.07219'
+    github: Farama-Foundation/D4RL
+  - cells:
     - 🔥 **CALVIN**
     - 2021 / RA-L
     - Sim (PyBullet)
@@ -50,12 +57,25 @@ tables:
     link: '[v1](https://arxiv.org/abs/2107.14483) · [v2](https://arxiv.org/abs/2302.04659) · [v3](https://arxiv.org/abs/2410.00425)'
     github: haosulab/ManiSkill
   - cells:
+    - '**RoboMimic**'
+    - 2021 / CoRL
+    - Sim (robosuite) + Real
+    - Benchmark & study of offline learning from human demos (Lift/Can/Square/Transport/ToolHang)
+    arxiv: '2108.03298'
+    github: ARISE-Initiative/robomimic
+  - cells:
     - '**VIMA-Bench**'
     - 2022 / ICML'23
     - Sim
     - Multimodal (text+image) prompts; 4-level generalization protocol
     arxiv: '2210.03094'
     github: vimalabs/VimaBench
+  - cells:
+    - '**VLMbench**'
+    - 2022 / NeurIPS D&B
+    - Sim (RLBench)
+    - Compositional language-guided manipulation with constraints
+    arxiv: '2206.08522'
   - cells:
     - '**ARNOLD**'
     - 2023 / ICCV
@@ -70,6 +90,13 @@ tables:
     - 130 tasks; Spatial / Object / Goal / Long suites; lifelong learning; the most-reported VLA benchmark
     arxiv: '2306.03310'
     github: Lifelong-Robot-Learning/LIBERO
+  - cells:
+    - '**RoboHive**'
+    - 2023 / NeurIPS D&B
+    - Sim + Real
+    - Unified framework for dexterous, multi-task & visual robot learning
+    arxiv: '2310.06828'
+    github: vikashplus/robohive
   - cells:
     - '**The Colosseum**'
     - 2024 / RSS
@@ -99,11 +126,24 @@ tables:
     arxiv: '2412.18194'
     github: OpenMOSS/VLABench
   - cells:
+    - '**ClevrSkills**'
+    - 2024 / NeurIPS D&B
+    - Sim (ManiSkill)
+    - Compositional reasoning & skill composition in manipulation
+    title: 'ClevrSkills: Compositional Language and Visual Reasoning in Robotics'
+  - cells:
     - '**RoboEval**'
     - '2025'
     - Sim
     - Structured, scalable evaluation with behavioral & outcome metrics beyond success rate
     arxiv: '2507.00435'
+  - cells:
+    - 🆕 **GenieSim 3.0**
+    - 2025–26
+    - Sim
+    - AgiBot's simulation benchmark; used for AgiBot World Challenge reasoning-to-action track
+    title: Genie Sim
+    match: Genie Sim
   - cells:
     - 🆕 **RoboSPA**
     - '2026'
@@ -122,6 +162,40 @@ tables:
     - —
     - Instruction-following manipulation benchmark
     title: InstructMove
+  - cells:
+    - 🆕 **RoboLab (RoboLab-120)**
+    - 2026 / RSS
+    - Sim (Isaac Lab)
+    - 120 tasks along visual / procedural / relational axes; DROID-trained π0.5 only ~30%
+    arxiv: '2604.09860'
+    github: NVlabs/RoboLab
+  - cells:
+    - 🆕 **RoboCasa365**
+    - 2026 / ICLR
+    - Sim (robosuite)
+    - 365 household tasks, 2,500 kitchen scenes, 600+ h demos, public leaderboard
+    title: RoboCasa365
+    match: RoboCasa365
+    github: robocasa/robocasa
+  - cells:
+    - 🆕🔥 **RoboDojo**
+    - 2026 / ECCV
+    - Sim (Isaac Sim) + Real (remote)
+    - 42 sim + 18 real tasks; Generalization / Precision / Long-Horizon / Memory / Open; 30 policies on a live leaderboard; best policy 8.8% sim success vs 76% teleop
+    arxiv: '2607.04434'
+    github: RoboDojo-Benchmark/RoboDojo
+  - cells:
+    - 🆕 **XPolicyLab**
+    - '2026'
+    - Framework
+    - Unified standard & open ecosystem for policy evaluation/deployment (powers RoboDojo)
+    arxiv: '2608.09892'
+  - cells:
+    - 🆕 **RoboColiseum**
+    - '2026'
+    - Sim
+    - Multidimensional benchmark (instruction following, spatial reasoning, general manipulation) incl. LLM-driven robot control
+    arxiv: '2610.27865'
 - id: t02
   columns:
   - Benchmark
@@ -496,6 +570,18 @@ tables:
     arxiv: '2506.18123'
     github: robo-arena/roboarena
   - cells:
+    - 🔥 **RoboChallenge (Table30)**
+    - '2025'
+    - Real (online, 10 robots)
+    - Large-scale online real-robot eval; 30 tabletop tasks on UR5/Franka/ALOHA/ARX-5; remote action-queue API
+    arxiv: '2510.17950'
+  - cells:
+    - '**Robot Policy Evaluation for Sim-to-Real Transfer**'
+    - '2025'
+    - Sim + Real
+    - Benchmarking perspective on sim-to-real policy evaluation
+    arxiv: '2508.11117'
+  - cells:
     - 🆕 **VLA-REPLICA**
     - '2026'
     - Real
@@ -513,6 +599,18 @@ tables:
     - —
     - Tracked in Awesome-Robotics-Manipulation (2026-06)
     title: WatchAct
+  - cells:
+    - 🆕🔥 **RoboColosseum**
+    - '2026'
+    - Real (distributed, in-the-wild)
+    - 124 sites, 4 embodiments, 5,699 pairwise comparisons; rankings don't transfer across robots (Kendall W = 0.24)
+    arxiv: '2611.02497'
+  - cells:
+    - 🆕 **Embodied Agent Arena**
+    - '2026'
+    - Real/Sim
+    - Are frontier VLM agents ready to be robot generalists?
+    arxiv: '2610.00854'
 - id: t08
   columns:
   - Benchmark
@@ -534,12 +632,6 @@ tables:
     - Scalable real-to-sim reconstruction for generalist policy eval (DROID)
     arxiv: '2512.16881'
   - cells:
-    - 🆕 **YUBI-Real2Sim**
-    - '2026'
-    - Real2Sim
-    - 3DGS scene verification to decide which scenes give reliable policy comparisons
-    arxiv: '2610.17521'
-  - cells:
     - '**WorldEval**'
     - '2025'
     - World model
@@ -557,6 +649,44 @@ tables:
     - World model
     - Controllable world model for policy evaluation/improvement
     title: 'Ctrl-World: A Controllable Generative World Model for Robot Manipulation'
+  - cells:
+    - '**EWMBench**'
+    - 2025 / BMVC
+    - World model (video)
+    - Scene, motion & semantic quality of embodied world models (AgiBot-World data)
+    arxiv: '2505.09694'
+    github: AgibotTech/EWMBench
+  - cells:
+    - '**WorldScore**'
+    - '2025'
+    - World model (video)
+    - Unified evaluation benchmark for world generation
+    title: 'WorldScore: A Unified Evaluation Benchmark for World Generation'
+  - cells:
+    - '**World-in-World**'
+    - 2025 / ICLR'26 Oral
+    - World model (closed-loop)
+    - Benchmarks world models by closed-loop task success; controllability > visual quality
+    arxiv: '2510.18135'
+    github: World-In-World/world-in-world
+  - cells:
+    - '**Reliable & Scalable Policy Eval with Imperfect Simulators**'
+    - '2025'
+    - Sim
+    - Statistical framework for policy evaluation with imperfect sims
+    arxiv: '2510.04354'
+  - cells:
+    - '**RobotArena ∞**'
+    - '2025'
+    - Real2Sim
+    - Scalable robot benchmarking via real-to-sim translation of videos
+    arxiv: '2510.23571'
+  - cells:
+    - 🆕 **YUBI-Real2Sim**
+    - '2026'
+    - Real2Sim
+    - 3DGS scene verification to decide which scenes give reliable policy comparisons
+    arxiv: '2610.17521'
   - cells:
     - 🆕 **dWorldEval**
     - '2026'
@@ -576,6 +706,18 @@ tables:
     - World model / Real2Sim
     - DROID-trained world model; reported high correlation with RoboArena
     arxiv: '2607.01060'
+  - cells:
+    - 🆕 **WorldArena**
+    - '2026'
+    - World model
+    - Perception quality (16 metrics) + functional utility (data synthesis, policy eval, planning); leaderboard
+    arxiv: '2602.08971'
+  - cells:
+    - 🆕 **RoboTrustBench**
+    - '2026'
+    - World model (video)
+    - Trustworthiness of video world models for manipulation
+    arxiv: '2606.01600'
 - id: t09
   columns:
   - Benchmark
@@ -667,6 +809,20 @@ tables:
     arxiv: '2403.10506'
     github: carlosferrazza/humanoid-bench
   - cells:
+    - '**RoboCasa (humanoid tracks)** / **BEHAVIOR (R1)**'
+    - 2024–25
+    - Sim
+    - Household suites that support humanoid/wheeled-humanoid embodiments
+    link: see §1, §8
+    no_paper: true
+  - cells:
+    - '**GRUtopia — GRBench**'
+    - '2024'
+    - Sim (Isaac)
+    - Humanoid Object Loco-Nav, Social Loco-Nav, Loco-Manipulation
+    arxiv: '2407.10943'
+    github: OpenRobotLab/GRUtopia
+  - cells:
     - '**LHM-Humanoid**'
     - '2025'
     - Sim (Isaac Gym)
@@ -685,12 +841,11 @@ tables:
     - Collaborative multi-humanoid loco-manipulation with dexterous hands
     arxiv: '2609.34782'
   - cells:
-    - '**RoboCasa (humanoid tracks)** / **BEHAVIOR (R1)**'
-    - 2024–25
-    - Sim
-    - Household suites that support humanoid/wheeled-humanoid embodiments
-    link: see §1, §8
-    no_paper: true
+    - 🆕 **OmniBench** (OmniClone)
+    - '2026'
+    - Sim + Real
+    - 'Diagnostic benchmark for humanoid whole-body teleoperation: 6 skills × 18 difficulty/dynamics categories'
+    arxiv: '2603.14327'
 - id: t11
   columns:
   - Benchmark
@@ -754,6 +909,18 @@ tables:
     arxiv: '1904.01201'
     github: facebookresearch/habitat-lab
   - cells:
+    - '**Touchdown**'
+    - 2019 / CVPR
+    - Real imagery (Street View)
+    - Outdoor VLN + spatial description resolution
+    arxiv: '1811.12354'
+  - cells:
+    - '**CVDN**'
+    - 2019 / CoRL
+    - Sim (Matterport3D)
+    - Cooperative vision-and-dialog navigation
+    arxiv: '1907.04957'
+  - cells:
     - '**REVERIE**'
     - 2020 / CVPR
     - Sim
@@ -780,6 +947,13 @@ tables:
     - Sim
     - Standardized ObjectNav evaluation
     arxiv: '2006.13171'
+  - cells:
+    - '**RoboTHOR**'
+    - 2020 / CVPR
+    - Sim + Real
+    - Sim-to-real ObjectNav with physical twin apartments
+    arxiv: '2004.06799'
+    github: allenai/robothor-challenge
   - cells:
     - '**HM3D / HM3D-Sem**'
     - 2021 / NeurIPS D&B
@@ -832,6 +1006,18 @@ tables:
     - Sim
     - Indoor-to-outdoor continuous navigation, 200 scenes, 10k episodes
     arxiv: '2607.19695'
+  - cells:
+    - 🆕 **OmniNavBench**
+    - 2026 / RSS
+    - Sim
+    - PointNav + VLN + ObjectNav + human following + social nav in one episode; wheeled / quadruped / humanoid
+    arxiv: '2605.09441'
+  - cells:
+    - 🆕 **GN-Bench** (GN0)
+    - '2026'
+    - Sim (3DGS)
+    - '3DGS platform with dynamic avatars: instruction following, human following, goal nav'
+    arxiv: '2606.03682'
 - id: t13
   columns:
   - Benchmark
@@ -847,6 +1033,14 @@ tables:
     arxiv: '2308.06735'
     github: AirVLN/AirVLN
   - cells:
+    - '**TravelUAV / OpenUAV**'
+    - 2024–25
+    - Sim
+    - Realistic UAV VLN with continuous trajectories
+    title: 'Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology'
+    match: UAV Vision-Language Navigation
+    github: prince687028/TravelUAV
+  - cells:
     - '**OpenFly**'
     - '2025'
     - Sim
@@ -861,19 +1055,17 @@ tables:
     arxiv: '2508.00288'
     github: Kyaren/UAV_ON
   - cells:
-    - '**TravelUAV / OpenUAV**'
-    - 2024–25
-    - Sim
-    - Realistic UAV VLN with continuous trajectories
-    title: 'Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology'
-    match: UAV Vision-Language Navigation
-    github: prince687028/TravelUAV
-  - cells:
     - '**Embodied4C** (drone track)'
     - '2025'
     - Sim
     - Cross-embodiment (car / drone / arm) closed-loop reasoning
     arxiv: '2512.18028'
+  - cells:
+    - 🆕 **AIR-VLA**
+    - '2026'
+    - Sim (Isaac Sim)
+    - VLA benchmark for aerial manipulation
+    arxiv: '2601.21602'
 - id: t14
   columns:
   - Benchmark
@@ -881,6 +1073,19 @@ tables:
   - Type
   - Highlights
   entries:
+  - cells:
+    - '**RoboVQA**'
+    - 2023 / ICRA'24
+    - QA (video)
+    - Long-horizon robot video QA across embodiments
+    arxiv: '2311.00899'
+  - cells:
+    - '**EgoPlan-Bench**'
+    - '2023'
+    - QA (video)
+    - Egocentric embodied planning for MLLMs
+    arxiv: '2312.06722'
+    github: ChenYi99/EgoPlan
   - cells:
     - '**OpenEQA**'
     - 2024 / CVPR
@@ -903,6 +1108,18 @@ tables:
     - Spatial affordance prediction via points
     arxiv: '2406.10721'
     github: wentaoyuan/RoboPoint
+  - cells:
+    - '**EmbSpatial-Bench**'
+    - 2024 / ACL
+    - QA
+    - Embodied spatial understanding from egocentric views
+    arxiv: '2406.05756'
+  - cells:
+    - '**RoboSpatial**'
+    - 2024 / CVPR'25
+    - QA
+    - Spatial understanding for robotics (2D/3D, ego / object / world frames)
+    arxiv: '2411.16537'
   - cells:
     - 🔥 **ERQA** (Gemini Robotics)
     - '2025'
@@ -941,6 +1158,18 @@ tables:
     - 6K+ QA decoupling reasoning from action; correlates with VLA generalization
     title: ERIQ embodied reasoning robotic manipulation
   - cells:
+    - '**PhysBench**'
+    - 2025 / ICLR
+    - QA (image+video)
+    - Physical-world understanding of VLMs (properties, relations, dynamics)
+    arxiv: '2501.16411'
+  - cells:
+    - '**Seeing Across Views**'
+    - '2025'
+    - QA
+    - Multi-view spatial reasoning of VLMs in robotic scenes
+    arxiv: '2510.19400'
+  - cells:
     - 🆕 **Embodied3DBench**
     - '2026'
     - QA
@@ -952,6 +1181,12 @@ tables:
     - QA
     - 1,766 diagnostic QA over 711 robot-centric images
     arxiv: '2606.17639'
+  - cells:
+    - 🆕 **ESI-Bench**
+    - '2026'
+    - Sim + QA
+    - Embodied spatial intelligence that closes the perception-action loop
+    arxiv: '2605.18746'
 - id: t15
   columns:
   - Benchmark
@@ -1225,8 +1460,8 @@ tables:
   entries:
   - cells:
     - A generalist VLA policy
-    - LIBERO, SIMPLER, RoboCasa, RoboTwin 2.0
-    - LIBERO-Plus/PRO, RoboArena or AutoEval, PolaRiS
+    - LIBERO, SIMPLER, RoboCasa365, RoboTwin 2.0, RoboLab
+    - RoboDojo, LIBERO-Plus/PRO, RoboChallenge / RoboArena / RoboColosseum, PolaRiS
   - cells:
     - A bimanual / dexterous policy
     - RoboTwin 2.0, Bi-DexHands, DexJoCo
@@ -1242,11 +1477,11 @@ tables:
   - cells:
     - A navigation agent
     - Habitat ObjectNav, R2R / VLN-CE
-    - GOAT-Bench, VLNVerse, NavVerse
+    - GOAT-Bench, OmniNavBench, VLNVerse, NavVerse
   - cells:
     - An embodied VLM "brain"
-    - ERQA, VSI-Bench, RoboBench
-    - Embodied3DBench, RefSpatial-Bench, EmbodiedBench
+    - ERQA, VSI-Bench, RoboBench, PhysBench
+    - Embodied3DBench, RefSpatial-Bench, ESI-Bench, EmbodiedBench
   - cells:
     - A safety layer
     - SafeAgentBench, SafeVLA-Bench
