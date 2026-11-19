@@ -142,7 +142,7 @@ tables:
     - '2024'
     - Sim (RLBench)
     - '4 levels of generalization: placement, rigid objects, articulated, long-horizon'
-    title: 'Towards Generalizable Vision-Language Robotic Manipulation: A Benchmark and LLM-guided 3D Policy'
+    arxiv: '2410.01345'
     github: vlc-robot/robot-3dlotus
   - cells:
     - '**VLABench**'
@@ -168,15 +168,13 @@ tables:
     - 2025–26
     - Sim
     - AgiBot's simulation benchmark; used for AgiBot World Challenge reasoning-to-action track
-    title: Genie Sim
-    match: Genie Sim
+    arxiv: '2601.02078'
   - cells:
     - '**Meta-World+**'
     - '2025'
     - Sim (MuJoCo)
     - Improved, standardized re-release of Meta-World
-    title: 'Meta-World+: An Improved, Standardized, RL Benchmark'
-    match: Meta-World+
+    arxiv: '2505.11289'
   - cells:
     - '**AnyBody**'
     - '2025'
@@ -328,7 +326,7 @@ tables:
     - '2025'
     - Sim
     - Multimodal adversarial evaluation (ambiguity, negation, noise) on LIBERO
-    title: 'When Alignment Fails: Multimodal Adversarial Attacks on Vision-Language-Action Models'
+    arxiv: '2511.16203'
   - cells:
     - '**AGNOSTOS**'
     - '2025'
@@ -409,21 +407,20 @@ tables:
     - '2023'
     - Sim
     - Long-horizon reasoning tabletop tasks (counting, color, size)
-    title: 'LoHoRavens: A Long-Horizon Language-Conditioned Benchmark for Robotic Tabletop Manipulation'
+    arxiv: '2310.12020'
   - cells:
     - '**MIKASA / MIKASA-Robo**'
     - '2025'
     - Sim (ManiSkill3)
     - Memory-intensive manipulation tasks for RL/VLA
-    title: 'Memory, Benchmark & Robots: A Benchmark for Solving Complex Tasks with Reinforcement Learning'
-    match: Memory, Benchmark & Robots
+    arxiv: '2502.10550'
     github: CognitiveAISystems/MIKASA-Robo
   - cells:
     - '**RoboCerebra**'
     - '2025'
     - Sim
     - Long-horizon manipulation with high-level (System-2) planning evaluation
-    title: 'RoboCerebra: A Large-scale Benchmark for Long-horizon Robotic Manipulation Evaluation'
+    arxiv: '2506.06677'
   - cells:
     - 🆕 **RoboMME**
     - 2026 / ICML Oral
@@ -474,6 +471,7 @@ tables:
     - Real data + analytic eval
     - 97K RGB-D images, 1B grasp poses; de-facto cluttered grasping benchmark
     title: 'GraspNet-1Billion: A Large-Scale Benchmark for General Object Grasping'
+    link: '[CVPR 2020](https://openaccess.thecvf.com/content_CVPR_2020/html/Fang_GraspNet-1Billion_A_Large-Scale_Benchmark_for_General_Object_Grasping_CVPR_2020_paper.html)'
     github: graspnet/graspnetAPI
   - cells:
     - '**ACRONYM**'
@@ -508,7 +506,7 @@ tables:
     - 2024 / CoRL
     - Sim + Real
     - 'Dexterous grasping in clutter: 1,319 objects, 8,270 scenes, 427M grasps'
-    title: 'DexGraspNet 2.0: Learning Generative Dexterous Grasping in Large-scale Synthetic Cluttered Scenes'
+    arxiv: '2410.23004'
   - cells:
     - 🔥 **RoboTwin 2.0**
     - 2025 / ICML'26
@@ -696,7 +694,7 @@ tables:
     - 2024 / RSS
     - Sim + Real
     - 100 simulation-ready, 3D-printable assemblies
-    title: 'AutoMate: Specialist and Generalist Assembly Policies over Diverse Geometries'
+    arxiv: '2407.08028'
   - cells:
     - '**ManiSkill-ViTac Challenge**'
     - 2024–26
@@ -727,7 +725,7 @@ tables:
     - '2026'
     - Real
     - Compares tactile sensor modalities (visual/acoustic/magnetic/resistive)
-    title: 'TacO: Benchmarking Tactile Sensors for Object Manipulation'
+    arxiv: '2605.21976'
   - cells:
     - 🆕 **SimpleTouch**
     - '2026'
@@ -854,7 +852,7 @@ tables:
     - '2025'
     - World model
     - Video model + latent policy actions as a real-world evaluator
-    title: 'WorldEval: World Model as Real-World Robot Policies Evaluator'
+    arxiv: '2505.19017'
   - cells:
     - '**WorldGym**'
     - 2025 / ICLR'26
@@ -866,7 +864,7 @@ tables:
     - '2025'
     - World model
     - Controllable world model for policy evaluation/improvement
-    title: 'Ctrl-World: A Controllable Generative World Model for Robot Manipulation'
+    arxiv: '2510.10125'
   - cells:
     - '**EWMBench**'
     - 2025 / BMVC
@@ -879,7 +877,7 @@ tables:
     - '2025'
     - World model (video)
     - Unified evaluation benchmark for world generation
-    title: 'WorldScore: A Unified Evaluation Benchmark for World Generation'
+    arxiv: '2504.00983'
   - cells:
     - '**World-in-World**'
     - 2025 / ICLR'26 Oral
@@ -916,8 +914,7 @@ tables:
     - '2026'
     - World model
     - Benchmarks 7 video world models as evaluators; long-horizon action-faithfulness matters most
-    title: GigaWorld-1
-    match: GigaWorld
+    arxiv: '2607.02642'
   - cells:
     - 🆕 **RoboWorld**
     - '2026'
@@ -1016,7 +1013,7 @@ tables:
     - 2024 / ICLR'25
     - Sim (GPU)
     - Fast low-level home rearrangement
-    title: 'ManiSkill-HAB: A Benchmark for Low-Level Manipulation in Home Rearrangement Tasks'
+    arxiv: '2412.13211'
     github: arth-shukla/mshab
   - cells:
     - '**BEHAVIOR Challenge 2025**'
@@ -1330,8 +1327,7 @@ tables:
     - 2024–25
     - Sim
     - Realistic UAV VLN with continuous trajectories
-    title: 'Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology'
-    match: UAV Vision-Language Navigation
+    arxiv: '2410.07087'
     github: prince687028/TravelUAV
   - cells:
     - '**OpenFly**'
@@ -1403,7 +1399,7 @@ tables:
     - QA
     - Open-vocabulary embodied question answering (episodic memory & active)
     title: 'OpenEQA: Embodied Question Answering in the Era of Foundation Models'
-    link: '[Website](https://open-eqa.github.io/)'
+    link: '[CVPR 2024](https://openaccess.thecvf.com/content/CVPR2024/html/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.html)'
     github: facebookresearch/open-eqa
   - cells:
     - '**VSI-Bench** ("Thinking in Space")'
@@ -1437,6 +1433,7 @@ tables:
     - Sim
     - Open-instruction 6-DoF object rearrangement
     title: 'Open6DOR: Benchmarking Open-instruction 6-DoF Object Rearrangement and A VLM-based Approach'
+    link: '[IROS 2024](https://pku-epic.github.io/Open6DOR)'
   - cells:
     - 🔥 **ERQA** (Gemini Robotics)
     - '2025'
@@ -1491,7 +1488,7 @@ tables:
     - 2025 / CVPR
     - QA
     - Planning, affordance & trajectory annotations for robotic brains
-    title: 'RoboBrain: A Unified Brain Model for Robotic Manipulation from Abstract to Concrete'
+    arxiv: '2502.21257'
   - cells:
     - '**ManipBench**'
     - 2025 / CoRL
@@ -1509,7 +1506,7 @@ tables:
     - '2025'
     - QA
     - VQA generated from real robot trajectories
-    title: 'Robo2VLM: Visual Question Answering from Large-Scale In-the-Wild Robot Manipulation Datasets'
+    arxiv: '2505.15517'
   - cells:
     - '**PAC Bench**'
     - '2025'
@@ -1571,7 +1568,7 @@ tables:
     - 2024 / ICLR
     - Sim
     - LLM task planners in AI2-THOR / VirtualHome
-    title: 'LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents'
+    arxiv: '2402.08178'
     github: lbaa2022/LLMTaskPlanning
   - cells:
     - '**Embodied Agent Interface**'
@@ -1662,7 +1659,8 @@ tables:
     - Sim
     - Multi-user, multi-robot, multi-goal, multi-device HRI
     title: A multi-user multi-robot multi-goal multi-device human-robot interaction manipulation benchmark
-    link: '[Frontiers](https://www.frontiersin.org/articles/10.3389/frobt.2025.1528754)'
+    link: '[Frontiers 2025](https://www.frontiersin.org/articles/10.3389/frobt.2025.1528754)'
+    github: arayabrain/m4bench
   - cells:
     - 🆕 **MARS Challenge**
     - '2026'
@@ -1699,7 +1697,7 @@ tables:
     - '2024'
     - Sim
     - Safe task planning for embodied LLM agents (hazardous tasks)
-    title: 'SafeAgentBench: A Benchmark for Safe Task Planning of Embodied LLM Agents'
+    arxiv: '2412.13178'
     github: shengyin1224/SafeAgentBench
   - cells:
     - '**SafePlan-Bench**'
@@ -1754,7 +1752,7 @@ tables:
     - '2026'
     - Sim
     - Safety-oriented VLA evaluation (tracked in Awesome-Robotics-Manipulation)
-    title: ForesightSafety-VLA
+    arxiv: '2606.27079'
   - cells:
     - 🆕 **ManiGuard**
     - '2026'
@@ -1825,7 +1823,7 @@ tables:
   - cells:
     - RoboVerse
     - Unified platform/dataset/benchmark across simulators
-    title: 'RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning'
+    arxiv: '2504.18904'
     github: RoboVerseOrg/RoboVerse
   - cells:
     - GRUtopia / InternUtopia
