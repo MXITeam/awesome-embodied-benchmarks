@@ -287,6 +287,25 @@ tables:
     - Sim
     - Do WAMs and VLAs understand the physical world? Physics-focused extension of RoboTwin
     arxiv: '2609.26292'
+  - cells:
+    - 🆕 **ManiLadder**
+    - 2026 / ICRA
+    - Sim
+    - ~114 tasks in 4 difficulty levels × 8 categories; rigid/articulated/deformable, grippers to dexterous hands, single/dual/mobile arms
+    link: '[Project](https://maniladdericra.github.io)'
+    no_paper: true
+  - cells:
+    - 🆕 **IMBench**
+    - 2026 / RSS-W
+    - Sim
+    - 'Intuitive manipulation: 35 tasks integrating physical reasoning with execution (contact-rich, tool use, multi-stage)'
+    arxiv: '2607.15641'
+  - cells:
+    - 🆕 **PhysLadder**
+    - '2026'
+    - Sim + Real
+    - 16 household contact-rich tasks in 3 cumulative levels (contact selection, force regulation, contact reconfiguration)
+    arxiv: '2610.34527'
 - id: t02
   columns:
   - Benchmark
@@ -409,6 +428,13 @@ tables:
     - Long-horizon reasoning tabletop tasks (counting, color, size)
     arxiv: '2310.12020'
   - cells:
+    - '**BEHAVIOR-1K**'
+    - '2024'
+    - Sim
+    - 1,000 household activities; minutes-long mobile-manipulation episodes (see §8)
+    arxiv: '2403.09227'
+    github: StanfordVL/BEHAVIOR-1K
+  - cells:
     - '**MIKASA / MIKASA-Robo**'
     - '2025'
     - Sim (ManiSkill3)
@@ -421,6 +447,12 @@ tables:
     - Sim
     - Long-horizon manipulation with high-level (System-2) planning evaluation
     arxiv: '2506.06677'
+  - cells:
+    - '**MoMani** (EchoVLA)'
+    - '2025'
+    - Sim
+    - Long-horizon mobile manipulation requiring scene & episodic memory
+    arxiv: '2511.18112'
   - cells:
     - 🆕 **RoboMME**
     - 2026 / ICML Oral
@@ -439,13 +471,6 @@ tables:
     - Real
     - Autonomous, resettable long-horizon evaluation
     arxiv: '2609.19413'
-  - cells:
-    - '**BEHAVIOR-1K**'
-    - '2024'
-    - Sim
-    - 1,000 household activities; minutes-long mobile-manipulation episodes (see §8)
-    arxiv: '2403.09227'
-    github: StanfordVL/BEHAVIOR-1K
 - id: t04
   columns:
   - Benchmark
@@ -657,6 +682,18 @@ tables:
     - Real
     - Physical-world long-horizon deformable manipulation (folding)
     arxiv: '2609.10243'
+  - cells:
+    - 🆕 **DLO-Lab**
+    - '2026'
+    - Sim (differentiable)
+    - Deformable linear object manipulation with differentiable physics
+    arxiv: '2606.04206'
+  - cells:
+    - 🆕 **WireCraft**
+    - 2026 / CoRL
+    - Sim
+    - 'Industrial DLO: connector insertion, clip routing, channel seating; RL / IL / VLA baselines'
+    arxiv: '2606.18097'
 - id: t06
   columns:
   - Benchmark
@@ -732,6 +769,24 @@ tables:
     - Sim
     - Can VLAs master contact-rich manipulation without tactile pretraining?
     arxiv: '2610.02784'
+  - cells:
+    - 🆕 **Tabero**
+    - 2026 / ICML
+    - Sim
+    - Vision-tactile-language gentle manipulation with process-aware force metrics
+    arxiv: '2605.27886'
+  - cells:
+    - 🆕 **T-Rex**
+    - '2026'
+    - Real
+    - 12 contact-rich tactile-reactive dexterous tasks
+    arxiv: '2606.17055'
+  - cells:
+    - 🆕 **TactiDex**
+    - '2026'
+    - Real
+    - Tactile-guided dexterous benchmark targeting contact-level human-likeness
+    arxiv: '2607.09190'
 - id: t07
   columns:
   - Benchmark
@@ -827,6 +882,24 @@ tables:
     - Real/Sim
     - Are frontier VLM agents ready to be robot generalists?
     arxiv: '2610.00854'
+  - cells:
+    - 🆕 **ManipulationNet**
+    - '2026'
+    - Real (distributed)
+    - 'Global infrastructure with standardized hardware kits: Physical Skills track + Embodied Reasoning track'
+    arxiv: '2603.04363'
+  - cells:
+    - 🆕 **HARP-Bench**
+    - 2026 / CoRL
+    - Real
+    - Manipulation policies in workspaces shared with active humans
+    arxiv: '2611.11123'
+  - cells:
+    - 🆕 **Stochastic Challenges**
+    - 2026 / CoRL
+    - Real
+    - Real-world manipulation benchmarking via stochastic, hidden-test-like challenges
+    arxiv: '2611.12804'
 - id: t08
   columns:
   - Benchmark
@@ -933,6 +1006,30 @@ tables:
     - World model (video)
     - Trustworthiness of video world models for manipulation
     arxiv: '2606.01600'
+  - cells:
+    - 🆕 **RoboWM-Bench**
+    - '2026'
+    - World model
+    - Converts generated videos into executable actions and validates them on robots
+    arxiv: '2604.19092'
+  - cells:
+    - 🆕 **What-If World**
+    - '2026'
+    - World model
+    - 'Causal benchmark: 319 prompt pairs on nuScenes & DROID frames; best <52%'
+    arxiv: '2605.27589'
+  - cells:
+    - 🆕 **H2R-Bench**
+    - '2026'
+    - World model (video)
+    - Human-to-robot manipulation video generation in world models
+    arxiv: '2608.13049'
+  - cells:
+    - 🆕 **H2RBench**
+    - 2026 / CoRL
+    - Real2Sim (Isaac Lab)
+    - Human-to-robot transfer from human videos; sim predicts real (r = 0.89)
+    arxiv: '2609.24778'
 - id: t09
   columns:
   - Benchmark
@@ -1036,6 +1133,12 @@ tables:
     - Joint evaluation of task planning & low-level control; 500+ instructions
     arxiv: '2508.15663'
   - cells:
+    - '**LabUtopia**'
+    - 2025 / NeurIPS D&B
+    - Sim
+    - 'Scientific-lab embodied agents: high-fidelity sim + hierarchical benchmark'
+    arxiv: '2505.22634'
+  - cells:
     - 🆕 **EBench**
     - '2026'
     - Sim
@@ -1047,6 +1150,12 @@ tables:
     - Sim (Isaac Sim)
     - 2 mobile platforms, 630 objects, 5 skills, ~300K trajectories
     arxiv: '2602.05233'
+  - cells:
+    - 🆕 **RMMBench**
+    - '2026'
+    - Sim
+    - Comprehensive benchmark for robotic mobile manipulation
+    arxiv: '2610.05414'
 - id: t10
   columns:
   - Benchmark
@@ -1117,6 +1226,12 @@ tables:
     - Sim
     - Human-aligned motion-tracking benchmark (~153 h mocap, 4 motion families)
     arxiv: '2608.13555'
+  - cells:
+    - 🆕 **Fiatlux**
+    - '2026'
+    - Sim + Real
+    - Long-horizon humanoid ladder climbing + light-bulb replacement
+    arxiv: '2609.38216'
 - id: t11
   columns:
   - Benchmark
@@ -1261,6 +1376,12 @@ tables:
     arxiv: '2404.06609'
     github: Ram81/goat-bench
   - cells:
+    - '**VLN-CE-Isaac** (NaVILA)'
+    - 2024 / RSS'25
+    - Sim (Isaac Sim)
+    - VLN-CE for legged robots with physics
+    arxiv: '2412.04453'
+  - cells:
     - '**VL-LN** (Interactive Instance ObjectNav)'
     - '2025'
     - Sim
@@ -1291,6 +1412,18 @@ tables:
     - Urban embodied navigation driven by implicit human needs
     arxiv: '2512.16755'
   - cells:
+    - '**VLN-PE**'
+    - 2025 / ICCV
+    - Sim (Isaac Sim)
+    - Physically realistic VLN for humanoid, quadruped & wheeled robots
+    arxiv: '2507.13019'
+  - cells:
+    - '**Follow-Bench**'
+    - '2025'
+    - Sim
+    - Motion planning for socially-aware robot person following
+    arxiv: '2509.10796'
+  - cells:
     - 🆕 **NavVerse**
     - '2026'
     - Sim
@@ -1308,6 +1441,27 @@ tables:
     - Sim (3DGS)
     - '3DGS platform with dynamic avatars: instruction following, human following, goal nav'
     arxiv: '2606.03682'
+  - cells:
+    - 🆕 **CoT-VLNBench**
+    - 2026 / AAAI
+    - Real (Go2)
+    - Chain-of-thought reasoning for quadruped VLN
+    title: 'CoT-VLNBench: A Benchmark for Visual Chain-of-Thought Reasoning in Vision-Language-Navigation Robots'
+    link: '[AAAI 2026](https://ojs.aaai.org/index.php/AAAI/article/view/40980)'
+  - cells:
+    - 🆕 **Follow-Bench 2.0**
+    - 2026 / NeurIPS
+    - Sim (Unreal)
+    - End-to-end 3D socially-aware person following (perception + planning)
+    link: '[NeurIPS 2026](https://neurips.cc/virtual/2026/poster/139022)'
+    no_paper: true
+  - cells:
+    - 🆕 **RescueBench**
+    - '2026'
+    - Sim
+    - 'Search-and-rescue: exploration, rescue, memory-guided return, handoff'
+    arxiv: '2606.01848'
+    github: wukui-muc/RescueBench
 - id: t13
   columns:
   - Benchmark
@@ -1520,6 +1674,12 @@ tables:
     - Embodied cognition as world modeling from egocentric interaction (8,972 QA)
     arxiv: '2511.20937'
   - cells:
+    - '**JRDB-Reasoning**'
+    - '2025'
+    - QA
+    - Difficulty-graded visual reasoning on real robot data
+    arxiv: '2508.10287'
+  - cells:
     - 🆕 **Embodied3DBench**
     - '2026'
     - QA
@@ -1549,6 +1709,32 @@ tables:
     - QA (video)
     - 130+ real manipulation tasks for progress estimation & success detection
     arxiv: '2602.19313'
+  - cells:
+    - 🆕 **EPIC-Bench**
+    - '2026'
+    - QA (grounding)
+    - 6,661 instances / 23 tasks of fine-grained embodied visual grounding (targets, paths, affordances)
+    arxiv: '2605.17070'
+  - cells:
+    - 🆕 **JRDB-AVR**
+    - 2026 / NeurIPS
+    - QA (active)
+    - 'Active visual reasoning: agent requests bounded observations; scored on answer + evidence'
+    arxiv: '2609.35032'
+    github: ControlNet/JRDB-AVR
+  - cells:
+    - 🆕 **Grounded in Time**
+    - '2026'
+    - QA (video)
+    - Temporal grounding in robotic manipulation videos
+    arxiv: '2610.04255'
+  - cells:
+    - 🆕 **BEAKER**
+    - 2026 / NeurIPS
+    - QA
+    - 1,000 expert QA for embodied brains in self-driving chemistry labs
+    link: '[NeurIPS 2026](https://neurips.cc/virtual/2026/poster/139293)'
+    no_paper: true
 - id: t15
   columns:
   - Benchmark
@@ -1679,6 +1865,12 @@ tables:
     - Sim (AI2-THOR)
     - 42 multi-robot household tasks over 8 layouts
     arxiv: '2601.11063'
+  - cells:
+    - 🆕 **HRIBench**
+    - '2026'
+    - Sim
+    - Interaction-centric human-robot collaboration
+    arxiv: '2607.13056'
 - id: t17
   columns:
   - Benchmark
@@ -1772,17 +1964,23 @@ tables:
     - Agent safety in real-time embodied environments
     arxiv: '2610.09294'
   - cells:
-    - See also §2 (VLA-RISK, Eva-VLA, VLA-Fool) and §5 (SoftVTBench safety metric)
-    - '|'
-    - '|'
-    - ''
-    no_paper: true
-  - cells:
     - 🆕 **LIBERO-Safety**
     - '2026'
     - Sim
     - Physical & semantic safety of VLA models on LIBERO-based tasks
     arxiv: '2606.23686'
+  - cells:
+    - 🆕 **LABSHIELD**
+    - '2026'
+    - QA + planning
+    - Safety-critical reasoning & planning in scientific laboratories
+    arxiv: '2603.11987'
+  - cells:
+    - See also §2 (VLA-RISK, Eva-VLA, VLA-Fool) and §5 (SoftVTBench safety metric)
+    - '|'
+    - '|'
+    - ''
+    no_paper: true
 - id: t18
   columns:
   - Platform

@@ -199,6 +199,8 @@ Not benchmarks per se, but most benchmarks above are built on them.
 
 ## 18. Competitions & Challenges (竞赛)
 
+- **LeHome Challenge** (ICRA 2026) — household garment manipulation: Isaac Sim round (62 teams) + real-robot final. [Website](https://lehome-challenge.github.io/)
+- **RSS 2026 Post-Training for Robotics Challenge** — standardized real-robot bimanual benchmark. [Website](https://posttraining-for-robotics.github.io/)
 - **AgiBot World Challenge** (ICRA 2026) — sim track on GenieSim 3.0 + real-robot finals (incl. supermarket mobile manipulation). [Report](https://www.therobotreport.com/agibot-holds-world-challenge-2026-see-how-ai-models-perform-real-tasks/)
 - **RoboChallenge** (2025–) — always-on online real-robot evaluation (Table30). [Website](https://robochallenge.ai/)
 - **RoboDojo Leaderboard** (2026–) — sim + remote real-robot leaderboard. [Website](https://robodojo-benchmark.com/)
