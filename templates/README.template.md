@@ -204,7 +204,11 @@ Not benchmarks per se, but most benchmarks above are built on them.
 - **AgiBot World Challenge** (ICRA 2026) — sim track on GenieSim 3.0 + real-robot finals (incl. supermarket mobile manipulation). [Report](https://www.therobotreport.com/agibot-holds-world-challenge-2026-see-how-ai-models-perform-real-tasks/)
 - **RoboChallenge** (2025–) — always-on online real-robot evaluation (Table30). [Website](https://robochallenge.ai/)
 - **RoboDojo Leaderboard** (2026–) — sim + remote real-robot leaderboard. [Website](https://robodojo-benchmark.com/)
-- **BEHAVIOR Challenge** (NeurIPS 2025) — 50 long-horizon household tasks in OmniGibson. [Website](https://behavior.stanford.edu/challenge/)
+- **BEHAVIOR Challenge** (NeurIPS 2025, CoRL 2026) — 50 long-horizon household tasks in OmniGibson (2025); 100 full-length BEHAVIOR-1K tasks (2026). [Website](https://behavior.stanford.edu/challenge/)
+- **Physical AI Competition** (Nebius × Positronic, 2026) — simulation qualifier; the top 10 teams are evaluated on a real DROID-style Franka (PhAIL). [Website](https://competition.phail.ai/)
+- **UNOBench Challenge** (ECCV 2026 workshop) — obstruction-aware grasp reasoning; Set-of-Marks and natural-language tracks. [Website](https://unobenchchallenge.fbk.eu/)
+- **Video to Data Challenge** (NVIDIA, 2026) — turn human video into simulated robot demonstrations. [Website](https://nvidia-isaac.github.io/video_to_data/v2d_challenge/)
+- **PhyRC Challenge** (2026–27) — physical robot caregiving (robot-assisted dressing); simulation phase, then real-robot evaluation. [Website](https://emprise.cs.cornell.edu/phyrc/challenge-2027/)
 - **Habitat Navigation / Rearrangement Challenges** (CVPR 2019–2023). [Website](https://aihabitat.org/challenge/)
 - **ManiSkill Challenge** (2021–2022). [Website](https://www.maniskill.ai/)
 - **Real Robot Challenge** (2020–2022, TriFinger dexterous). [Website](https://real-robot-challenge.com/)
@@ -231,9 +235,10 @@ Related awesome lists: [Awesome-Robotics-Manipulation](https://github.com/BaiShu
 2. **Benchmarks themselves are being audited.** Shortcut solvability, few-trial noise and demo-source leakage ([2609.37771](https://arxiv.org/abs/2609.37771)) mean you should report confidence intervals and number of trials.
 3. **Real-world evaluation is scaling** via distribution (RoboArena, RoboColosseum — 124 sites), always-on online fleets (RoboChallenge), unified sim+real suites (RoboDojo), automation (AutoEval) and low-cost replication (VLA-REPLICA). RoboColosseum finds policy rankings barely transfer across embodiments — evaluate on *your* robot.
 4. **Cheaper proxies for real robots:** Real2Sim (SIMPLER → PolaRiS → 3DGS verification) and world-model evaluators (WorldGym, dWorldEval, WMBench, RoboWorld). The key metric is rank correlation with real success.
-5. **Beyond success rate:** memory (RoboMME), compositionality (ATOM-Bench), safety (SafeVLA-Bench, SoftVTBench), and behavior quality (RoboEval).
+5. **Beyond success rate:** memory (RoboMME), compositionality (ATOM-Bench), safety (SafeVLA-Bench, SoftVTBench), damage to objects and surroundings (OopsieVerse, ManiPhysicsBench), and behavior quality (RoboEval).
 6. **The "brain" is evaluated separately from the "body":** ERQA, RoboBench, Embodied3DBench, ERQA-Plus test VLM reasoning offline; ERIQ reports this correlates with downstream VLA generalization.
 7. **New embodiments get their own suites:** humanoids (SIMPLE, CoHuB, LHM-Humanoid), dexterous hands (DexJoCo, POMDAR), UAVs (OpenFly, UAV-ON), tactile (UniVTAC, RobOmni).
+8. **Aggregators and coding agents.** Meta-leaderboards (FlagEval-Robo, EmbodiedIndex, VLA Leaderboard) expose thin coverage: EmbodiedIndex finds 85% of robot policies are scored on only one benchmark. Real-robot boards (Reality Check, RoboDojo-RC) and suites such as VABAR and CaP-X now rank coding agents next to VLAs.
 
 ## How to Pick a Benchmark (选型建议)
 
