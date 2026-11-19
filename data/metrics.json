@@ -32,11 +32,13 @@
     "arXiv:2604.25788": "Princeton-Robot-Planning-and-Learning/kindergarden",
     "arXiv:2605.16257": "brave-eai/dexjoco",
     "arXiv:2605.18746": "ESI-Bench/ESI-Bench",
+    "arXiv:2605.27886": "NathanWu7/Tabero",
     "arXiv:2606.17639": "LUNAProject22/erqa-plus",
     "arXiv:2606.18239": "InternRobotics/EBench",
     "arXiv:2607.01938": "vLAR-group/PhysMani",
     "arXiv:2607.02642": "open-gigaai/giga-world-1",
     "arXiv:2608.09892": "XPolicyLab/XPolicyLab",
+    "arXiv:2608.13049": "Rongdingyi/H2R-Bench",
     "arXiv:2608.13555": "GalaxyGeneralRobotics/HumanTracker",
     "arXiv:2608.22990": "HorizonRobotics/RoboOrchardSim",
     "arXiv:2609.05324": "fanzhenxuan/RoboSPA",
@@ -45,6 +47,7 @@
     "arXiv:2610.10409": "robotworldai/robotworld",
     "arXiv:2610.25459": "robbyant-research/BiDex-100",
     "arXiv:2611.02497": "RoboColosseum/robocolosseum-client",
+    "arXiv:2611.11123": "UMass-Embodied-AGI/harp",
     "title:Genie Sim": "AgibotTech/genie_sim",
     "title:GigaWorld-1": "open-gigaai/giga-world-1",
     "title:Meta-World+: An Improved, Standardized, RL Benchmark": "Farama-Foundation/Metaworld",
@@ -820,6 +823,14 @@
       "title": "RoboSpatial: Teaching Spatial Understanding to 2D and 3D Vision-Language Models for Robotics",
       "url": "https://www.semanticscholar.org/paper/ba8f1e36ca5f16a61d679f1ddf7b2cb3e298b354"
     },
+    "arXiv:2412.04453": {
+      "arxiv": "2412.04453",
+      "checked": "2026-11-19",
+      "citations": 385,
+      "source": "semanticscholar",
+      "title": "NaVILA: Legged Robot Vision-Language-Action Model for Navigation",
+      "url": "https://www.semanticscholar.org/paper/881370b510c86a86b20daae26074db050e7c017b"
+    },
     "arXiv:2412.13178": {
       "arxiv": "2412.13178",
       "checked": "2026-11-19",
@@ -1020,6 +1031,14 @@
       "title": "WorldEval: World Model as Real-World Robot Policies Evaluator",
       "url": "https://www.semanticscholar.org/paper/0ac6e9af7417a3a33f2c6cee90fcf26284eff654"
     },
+    "arXiv:2505.22634": {
+      "arxiv": "2505.22634",
+      "checked": "2026-11-19",
+      "citations": 26,
+      "source": "semanticscholar",
+      "title": "LabUtopia: High-Fidelity Simulation and Hierarchical Benchmark for Scientific Embodied Agents",
+      "url": "https://www.semanticscholar.org/paper/ea525c4b59d833ee8b45d8c3b98d304790b8f3ab"
+    },
     "arXiv:2506.00613": {
       "arxiv": "2506.00613",
       "checked": "2026-11-19",
@@ -1108,6 +1127,14 @@
       "title": "Robo Eval: Where Robotic Manipulation Meets Structured and Scalable Evaluation",
       "url": "https://www.semanticscholar.org/paper/fe25c6ceaabf4d9a6f87372841c7cf10f00acb3d"
     },
+    "arXiv:2507.13019": {
+      "arxiv": "2507.13019",
+      "checked": "2026-11-19",
+      "citations": 57,
+      "source": "semanticscholar",
+      "title": "Rethinking the Embodied Gap in Vision-and-Language Navigation: A Holistic Study of Physical and Visual Disparities",
+      "url": "https://www.semanticscholar.org/paper/1a2626699188016f640face96f0c90383e7f8d32"
+    },
     "arXiv:2507.21796": {
       "arxiv": "2507.21796",
       "checked": "2026-11-19",
@@ -1123,6 +1150,14 @@
       "source": "semanticscholar",
       "title": "UAV-ON: A Benchmark for Open-World Object Goal Navigation with Aerial Agents",
       "url": "https://www.semanticscholar.org/paper/478aa3417dc58bf5c5bf2d57b700a0904048908b"
+    },
+    "arXiv:2508.10287": {
+      "arxiv": "2508.10287",
+      "checked": "2026-11-19",
+      "citations": 3,
+      "source": "semanticscholar",
+      "title": "JRDB-Reasoning: A Difficulty-Graded Benchmark for Visual Reasoning in Robotics",
+      "url": "https://www.semanticscholar.org/paper/128db2a586596da50a0532bbd2c9cd6da80223df"
     },
     "arXiv:2508.11117": {
       "arxiv": "2508.11117",
@@ -1155,6 +1190,14 @@
       "source": "semanticscholar",
       "title": "LHM-Humanoid: Long-Horizon Human Motion Control for Continuous Object Transport in Cluttered Scenes",
       "url": "https://www.semanticscholar.org/paper/3b9027dfc9fbddee4723e3c08e4f315be0612318"
+    },
+    "arXiv:2509.10796": {
+      "arxiv": "2509.10796",
+      "checked": "2026-11-19",
+      "citations": 4,
+      "source": "semanticscholar",
+      "title": "Follow-Bench: A Unified Motion Planning Benchmark for Socially-Aware Robot Person Following",
+      "url": "https://www.semanticscholar.org/paper/5169bddbcb4e0490604710c7ffa45f2da3279925"
     },
     "arXiv:2509.18953": {
       "arxiv": "2509.18953",
@@ -1283,6 +1326,14 @@
       "source": "semanticscholar",
       "title": "Switch-JustDance: Benchmarking Whole-Body Motion Tracking Controllers Using a Commercial Console Game",
       "url": "https://www.semanticscholar.org/paper/2e120f1a39caf2f6c85f09b757c7b45b804e373d"
+    },
+    "arXiv:2511.18112": {
+      "arxiv": "2511.18112",
+      "checked": "2026-11-19",
+      "citations": 26,
+      "source": "semanticscholar",
+      "title": "EchoVLA: Robotic Vision-Language-Action Model with Synergistic Declarative Memory for Mobile Manipulation",
+      "url": "https://www.semanticscholar.org/paper/fa47a27a6d4ddcb58edf326be011435d4b068dd0"
     },
     "arXiv:2511.20937": {
       "arxiv": "2511.20937",
@@ -1484,6 +1535,14 @@
       "title": "RoboCasa365: A Large-Scale Simulation Framework for Training and Benchmarking Generalist Robots",
       "url": "https://www.semanticscholar.org/paper/3462a6063dbf86ffd82c567b21879fb7080363ab"
     },
+    "arXiv:2603.04363": {
+      "arxiv": "2603.04363",
+      "checked": "2026-11-19",
+      "citations": 22,
+      "source": "semanticscholar",
+      "title": "ManipulationNet: An Infrastructure for Benchmarking Real-World Robot Manipulation with Physical Skill Challenges and Embodied Multimodal Reasoning",
+      "url": "https://www.semanticscholar.org/paper/986fa25abcd2d55e2e6a02261efe19e845556343"
+    },
     "arXiv:2603.04639": {
       "arxiv": "2603.04639",
       "checked": "2026-11-19",
@@ -1499,6 +1558,14 @@
       "source": "semanticscholar",
       "title": "Moving Through Clutter: Scaling Data Collection and Benchmarking for 3D Scene-Aware Humanoid Locomotion via Virtual Reality",
       "url": "https://www.semanticscholar.org/paper/0422c5b5382609d6b7b402b1eb0facb74a23e72c"
+    },
+    "arXiv:2603.11987": {
+      "arxiv": "2603.11987",
+      "checked": "2026-11-19",
+      "citations": 8,
+      "source": "semanticscholar",
+      "title": "LABSHIELD: A Multimodal Benchmark for Safety-Critical Reasoning and Planning in Scientific Laboratories",
+      "url": "https://www.semanticscholar.org/paper/ce0efa7d8de426d5774e79f497dda7a7723d79c3"
     },
     "arXiv:2603.13966": {
       "arxiv": "2603.13966",
@@ -1588,6 +1655,14 @@
       "title": "EmbodiedGovBench: A Benchmark for Governance, Recovery, and Upgrade Safety in Embodied Agent Systems",
       "url": "https://www.semanticscholar.org/paper/3afb8112e94949ed3b34f5f830f01870d9f53643"
     },
+    "arXiv:2604.19092": {
+      "arxiv": "2604.19092",
+      "checked": "2026-11-19",
+      "citations": 26,
+      "source": "semanticscholar",
+      "title": "RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation",
+      "url": "https://www.semanticscholar.org/paper/95762a29b72e77e438be3e0dcec57a241be5601f"
+    },
     "arXiv:2604.22152": {
       "arxiv": "2604.22152",
       "checked": "2026-11-19",
@@ -1652,6 +1727,14 @@
       "title": "DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo",
       "url": "https://www.semanticscholar.org/paper/ebd04a9f482ddf084f578850f73ef4f7a9abc77a"
     },
+    "arXiv:2605.17070": {
+      "arxiv": "2605.17070",
+      "checked": "2026-11-19",
+      "citations": 1,
+      "source": "semanticscholar",
+      "title": "EPIC-Bench: A Perception-Centric Benchmark for Fine-Grained Embodied Visual Grounding in Vision-Language Models",
+      "url": "https://www.semanticscholar.org/paper/4740721920bf883dc1a56c7037e72a105d4cb552"
+    },
     "arXiv:2605.18727": {
       "arxiv": "2605.18727",
       "checked": "2026-11-19",
@@ -1692,6 +1775,14 @@
       "title": "TacO: Benchmarking Tactile Sensors for Object Manipulation",
       "url": "https://www.semanticscholar.org/paper/f84dfd941c93f8a9fcc32ccace0028c5f5204490"
     },
+    "arXiv:2605.27589": {
+      "arxiv": "2605.27589",
+      "checked": "2026-11-19",
+      "citations": 14,
+      "source": "semanticscholar",
+      "title": "What-If World: A Causal Benchmark for General World Models in Embodied Scenarios",
+      "url": "https://www.semanticscholar.org/paper/0312fcab31193f7ab5470982d6633c47ce4b6baf"
+    },
     "arXiv:2605.27759": {
       "arxiv": "2605.27759",
       "checked": "2026-11-19",
@@ -1699,6 +1790,14 @@
       "source": "semanticscholar",
       "title": "Colosseum V2: Benchmarking Generalization for Vision-Language-Action Models",
       "url": "https://www.semanticscholar.org/paper/ff60e668c280b09db7875904a8f2e768261f899c"
+    },
+    "arXiv:2605.27886": {
+      "arxiv": "2605.27886",
+      "checked": "2026-11-19",
+      "citations": 4,
+      "source": "semanticscholar",
+      "title": "Tabero: Learning Gentle Manipulation with Closed-Loop Force Feedback from Vision, Touch, and Language",
+      "url": "https://www.semanticscholar.org/paper/7be9ad06a20f57e456d8b80d03445f1ae6f4f78c"
     },
     "arXiv:2605.29074": {
       "arxiv": "2605.29074",
@@ -1724,6 +1823,14 @@
       "title": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation",
       "url": "https://www.semanticscholar.org/paper/1aeb73dd57d813d9e8bd81f3631232e344a59d86"
     },
+    "arXiv:2606.01848": {
+      "arxiv": "2606.01848",
+      "checked": "2026-11-19",
+      "citations": 0,
+      "source": "semanticscholar",
+      "title": "RescueBench: Can Embodied Agents Save Lives in the Wild ?",
+      "url": "https://www.semanticscholar.org/paper/f40ece87dca772c3067f81f159ccefc079e6df51"
+    },
     "arXiv:2606.03682": {
       "arxiv": "2606.03682",
       "checked": "2026-11-19",
@@ -1731,6 +1838,14 @@
       "source": "semanticscholar",
       "title": "GN0: Toward a Unified Paradigm for Generation, Evaluation, and Policy Learning in Visual-Language Navigation",
       "url": "https://www.semanticscholar.org/paper/797b5845ba4d5ea8c72d406186cd07b693a77258"
+    },
+    "arXiv:2606.04206": {
+      "arxiv": "2606.04206",
+      "checked": "2026-11-19",
+      "citations": 5,
+      "source": "semanticscholar",
+      "title": "DLO-Lab: Benchmarking Deformable Linear Object Manipulations with Differentiable Physics",
+      "url": "https://www.semanticscholar.org/paper/c004af97e0ea6fc323f94a48ac35721974dcafc1"
     },
     "arXiv:2606.08278": {
       "arxiv": "2606.08278",
@@ -1764,6 +1879,14 @@
       "title": "ATOM-Bench: A Real-World Benchmark for Atomic Skills and Compositional Generalization in Manipulation Policies",
       "url": "https://www.semanticscholar.org/paper/f13f6ee020ab87b398d16c59dfc356c6ba9a2bb9"
     },
+    "arXiv:2606.17055": {
+      "arxiv": "2606.17055",
+      "checked": "2026-11-19",
+      "citations": 40,
+      "source": "semanticscholar",
+      "title": "T-Rex: Tactile-Reactive Dexterous Manipulation",
+      "url": "https://www.semanticscholar.org/paper/cbdde509cef580ac93bb741ff0b8da89888d0174"
+    },
     "arXiv:2606.17639": {
       "arxiv": "2606.17639",
       "checked": "2026-11-19",
@@ -1771,6 +1894,14 @@
       "source": "semanticscholar",
       "title": "ERQA-Plus: A Diagnostic Benchmark for Reasoning in Embodied AI",
       "url": "https://www.semanticscholar.org/paper/2ff44298f01f508d69c2bfba1657d3d43110fee9"
+    },
+    "arXiv:2606.18097": {
+      "arxiv": "2606.18097",
+      "checked": "2026-11-19",
+      "citations": 5,
+      "source": "semanticscholar",
+      "title": "WireCraft: A Simulation Benchmark for Industrial DLO Manipulation",
+      "url": "https://www.semanticscholar.org/paper/43626a48c90480c1b1b69556453edb9bf1deb6a1"
     },
     "arXiv:2606.18239": {
       "arxiv": "2606.18239",
@@ -1868,6 +1999,30 @@
       "title": "DexVerse: A Modular Benchmark for Multi-Task, Multi-Embodiment Dexterous Manipulation",
       "url": "https://www.semanticscholar.org/paper/5f63e5d4daea0fe42cf0f94e0a43e34b609784fa"
     },
+    "arXiv:2607.09190": {
+      "arxiv": "2607.09190",
+      "checked": "2026-11-19",
+      "citations": 8,
+      "source": "semanticscholar",
+      "title": "TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation",
+      "url": "https://www.semanticscholar.org/paper/e571cd51fb7695f40b9dcddb4b1a69a043fb6ac7"
+    },
+    "arXiv:2607.13056": {
+      "arxiv": "2607.13056",
+      "checked": "2026-11-19",
+      "citations": 4,
+      "source": "semanticscholar",
+      "title": "HRIBench: Benchmarking Interaction-Centric Human-Robot Collaboration",
+      "url": "https://www.semanticscholar.org/paper/e0ba040ada08df245bb282f8f6202097c13f49e8"
+    },
+    "arXiv:2607.15641": {
+      "arxiv": "2607.15641",
+      "checked": "2026-11-19",
+      "citations": 2,
+      "source": "semanticscholar",
+      "title": "IMBench: A Benchmark for Intuitive Robotic Manipulation",
+      "url": "https://www.semanticscholar.org/paper/4774098aa2bc0614fb4675b8a20e771de883f6da"
+    },
     "arXiv:2607.19695": {
       "arxiv": "2607.19695",
       "checked": "2026-11-19",
@@ -1883,6 +2038,14 @@
       "source": "semanticscholar",
       "title": "XPolicyLab: A Unified Standard and Open Ecosystem for Robot Policy Evaluation and Deployment",
       "url": "https://www.semanticscholar.org/paper/80275329cd78a372ad6f4a78109128ae68a7d028"
+    },
+    "arXiv:2608.13049": {
+      "arxiv": "2608.13049",
+      "checked": "2026-11-19",
+      "citations": 1,
+      "source": "semanticscholar",
+      "title": "H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models",
+      "url": "https://www.semanticscholar.org/paper/331d91a935898dc8f57dfe6059bb3012e818ca4d"
     },
     "arXiv:2608.13555": {
       "arxiv": "2608.13555",
@@ -1948,6 +2111,14 @@
       "title": "From Rollout to Reset: A Graph-Based Harness for Autonomous Long-Horizon Manipulation Evaluation",
       "url": "https://www.semanticscholar.org/paper/045f879bd7792be3734e310a964cd9e43b3cfd43"
     },
+    "arXiv:2609.24778": {
+      "arxiv": "2609.24778",
+      "checked": "2026-11-19",
+      "citations": 1,
+      "source": "semanticscholar",
+      "title": "H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer",
+      "url": "https://www.semanticscholar.org/paper/2b12419f8dcfbb52314a5c9505e8e6077a9824c6"
+    },
     "arXiv:2609.25562": {
       "arxiv": "2609.25562",
       "checked": "2026-11-19",
@@ -1980,6 +2151,14 @@
       "title": "CoHuB: A Simulation Benchmark for Multi-Humanoid Collaboration",
       "url": "https://www.semanticscholar.org/paper/27d5eb96e05c1f45788aa6f9d4febe2e10bb8e8d"
     },
+    "arXiv:2609.35032": {
+      "arxiv": "2609.35032",
+      "checked": "2026-11-19",
+      "citations": 0,
+      "source": "semanticscholar",
+      "title": "JRDB-AVR: An Active Visual Reasoning Benchmark for Embodied Agents in Real-World Environments",
+      "url": "https://www.semanticscholar.org/paper/7cb47ca1583b59f20d100507a0ff4590d02ab79c"
+    },
     "arXiv:2609.36518": {
       "arxiv": "2609.36518",
       "checked": "2026-11-19",
@@ -1995,6 +2174,14 @@
       "source": "semanticscholar",
       "title": "Faster and Better? Benchmark Bugs and Design Limitations Distort the Evaluation of Vision-Language-Action Acceleration",
       "url": "https://www.semanticscholar.org/paper/7a7cbacab82fbdc2b798c3a9e2f86f37f3d31e4c"
+    },
+    "arXiv:2609.38216": {
+      "arxiv": "2609.38216",
+      "checked": "2026-11-19",
+      "citations": 0,
+      "source": "semanticscholar",
+      "title": "Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement",
+      "url": "https://www.semanticscholar.org/paper/c294040539967f72ea9aaefa0a72ffae756f32e7"
     },
     "arXiv:2610.00854": {
       "arxiv": "2610.00854",
@@ -2027,6 +2214,22 @@
       "source": "semanticscholar",
       "title": "DexJoCo-X: Benchmarking Action Representations for Multi-Hand Dexterous Manipulation",
       "url": "https://www.semanticscholar.org/paper/64aa6d84a715e4cf564fc411699f196045fce7a5"
+    },
+    "arXiv:2610.04255": {
+      "arxiv": "2610.04255",
+      "checked": "2026-11-19",
+      "citations": 0,
+      "source": "semanticscholar",
+      "title": "Grounded in Time: A Multi-Source Dataset and Benchmark for Temporal Grounding in Robotic Manipulation",
+      "url": "https://www.semanticscholar.org/paper/8ba5bf3caa2abacb5f6230eb6cabe34cfb60218d"
+    },
+    "arXiv:2610.05414": {
+      "arxiv": "2610.05414",
+      "checked": "2026-11-19",
+      "citations": 0,
+      "source": "semanticscholar",
+      "title": "RMMBench: A Comprehensive Benchmark for Robotic Mobile Manipulation",
+      "url": "https://www.semanticscholar.org/paper/6d13ef248c32c37ff28d0b9cf165a56328329e44"
     },
     "arXiv:2610.09294": {
       "arxiv": "2610.09294",
@@ -2068,6 +2271,14 @@
       "title": "Frontier LLMs Enter the World of Robotics: A Cross-Model Evaluation on RoboColiseum",
       "url": "https://www.semanticscholar.org/paper/1fd8bc769981856e8186d097687bcb7560102ffc"
     },
+    "arXiv:2610.34527": {
+      "arxiv": "2610.34527",
+      "checked": "2026-11-19",
+      "citations": 0,
+      "source": "semanticscholar",
+      "title": "LLM4Robot-Bench: How Far Can GPT-6 Astra Go in Robotic Manipulation? A Hierarchical, Paired Sim-Real Benchmark",
+      "url": "https://www.semanticscholar.org/paper/4ffaae61aedfbf2367b83f32931d79742c3a4aff"
+    },
     "arXiv:2611.02497": {
       "arxiv": "2611.02497",
       "checked": "2026-11-19",
@@ -2075,6 +2286,22 @@
       "source": "semanticscholar",
       "title": "RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild",
       "url": "https://www.semanticscholar.org/paper/0ba9df3a8a78062b5deb535c35444c4da3469df4"
+    },
+    "arXiv:2611.11123": {
+      "arxiv": "2611.11123",
+      "checked": "2026-11-19",
+      "citations": 1,
+      "source": "semanticscholar",
+      "title": "HARP-Bench: Benchmarking Robot Manipulation Around Active Humans",
+      "url": "https://www.semanticscholar.org/paper/3d886f095e203dfa7bb1c5fa350647516f1e8724"
+    },
+    "arXiv:2611.12804": {
+      "arxiv": "2611.12804",
+      "checked": "2026-11-19",
+      "citations": 0,
+      "source": "semanticscholar",
+      "title": "Benchmarking Real-World Robotic Manipulation through Stochastic Challenges",
+      "url": "https://www.semanticscholar.org/paper/3e4a32f090f4866b0b5ec180a9afcc011c259475"
     },
     "title:A multi-user multi-robot multi-goal multi-device human-robot interaction manipulation benchmark": {
       "arxiv": null,
@@ -2091,6 +2318,14 @@
       "source": "semanticscholar",
       "title": "AutoMate: Specialist and Generalist Assembly Policies over Diverse Geometries",
       "url": "https://www.semanticscholar.org/paper/a36d59de1e8f55791c4667229b675034e7647e9b"
+    },
+    "title:CoT-VLNBench: A Benchmark for Visual Chain-of-Thought Reasoning in Vision-Language-Navigation Robots": {
+      "arxiv": null,
+      "checked": "2026-11-19",
+      "citations": 5,
+      "source": "semanticscholar",
+      "title": "CoT-VLNBench: A Benchmark for Visual Chain-of-Thought Reasoning in Vision-Language-Navigation Robots",
+      "url": "https://www.semanticscholar.org/paper/89053cc1854e45b9a3088f57494484022a35aa38"
     },
     "title:Ctrl-World: A Controllable Generative World Model for Robot Manipulation": {
       "arxiv": "2510.10125",
@@ -2378,6 +2613,13 @@
       "stars": 85,
       "url": "https://github.com/ColinKohler/BulletArm"
     },
+    "ControlNet/JRDB-AVR": {
+      "archived": false,
+      "checked": "2026-11-19",
+      "full_name": "ControlNet/JRDB-AVR",
+      "stars": 0,
+      "url": "https://github.com/ControlNet/JRDB-AVR"
+    },
     "ESI-Bench/ESI-Bench": {
       "archived": false,
       "checked": "2026-11-19",
@@ -2536,6 +2778,13 @@
       "stars": 126,
       "url": "https://github.com/NVlabs/handover-sim"
     },
+    "NathanWu7/Tabero": {
+      "archived": false,
+      "checked": "2026-11-19",
+      "full_name": "NathanWu7/Tabero",
+      "stars": 64,
+      "url": "https://github.com/NathanWu7/Tabero"
+    },
     "OpenMOSS/VLABench": {
       "archived": false,
       "checked": "2026-11-19",
@@ -2613,6 +2862,13 @@
       "stars": 1883,
       "url": "https://github.com/RoboVerseOrg/RoboVerse"
     },
+    "Rongdingyi/H2R-Bench": {
+      "archived": false,
+      "checked": "2026-11-19",
+      "full_name": "Rongdingyi/H2R-Bench",
+      "stars": 4,
+      "url": "https://github.com/Rongdingyi/H2R-Bench"
+    },
     "Rookie143/BadRobot": {
       "archived": false,
       "checked": "2026-11-19",
@@ -2647,6 +2903,13 @@
       "full_name": "TOPReward/TOPReward",
       "stars": 120,
       "url": "https://github.com/TOPReward/TOPReward"
+    },
+    "UMass-Embodied-AGI/harp": {
+      "archived": false,
+      "checked": "2026-11-19",
+      "full_name": "UMass-Embodied-AGI/harp",
+      "stars": 8,
+      "url": "https://github.com/UMass-Embodied-AGI/harp"
     },
     "USC-GVL/PhysBench": {
       "archived": false,
@@ -3187,6 +3450,13 @@
       "stars": 233,
       "url": "https://github.com/wentaoyuan/RoboPoint"
     },
+    "wukui-muc/RescueBench": {
+      "archived": false,
+      "checked": "2026-11-19",
+      "full_name": "UnrealZoo/RescueBench",
+      "stars": 8,
+      "url": "https://github.com/UnrealZoo/RescueBench"
+    },
     "wuxiyang1996/SABER": {
       "archived": false,
       "checked": "2026-11-19",
@@ -3223,5 +3493,5 @@
       "url": "https://github.com/zhouzypaul/auto_eval"
     }
   },
-  "updated_at": "2026-11-19 07:22 UTC"
+  "updated_at": "2026-11-19 07:25 UTC"
 }
