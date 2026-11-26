@@ -1,14 +1,19 @@
-"""Render README.md from templates/README.template.md + data/benchmarks.yaml + data/metrics.json.
+"""Render README.md and benchmarks/*.md from templates/ + data/benchmarks.yaml + data/metrics.json + data/open_source.json.
 
+The full tables live in one page per section because GitHub truncates a README beyond 500 KiB.
 Runs offline; network access is only needed by update_metrics.py.
-Use `--check` in CI to fail when README.md is out of date.
+Use `--check` in CI to fail when a generated file is out of date.
 """
 from __future__ import annotations
 
+import re
 import sys
 import urllib.parse
+from pathlib import Path
 
-from common import README, TEMPLATE, iter_entries, load_data, load_metrics, normalize_repo, paper_key, plain_name
+from common import (README, SECTION_PAGES, SECTION_TEMPLATES, TEMPLATE, code_words, data_words, found_nothing, has_code,
+                    has_data, has_open, iter_entries, license_words, load_data, load_metrics, load_open, normalize_repo,
+                    open_info, paper_key, plain_name)
 
 TOP_N = 20
 
@@ -54,11 +59,15 @@ def stars_cell(entry: dict, metrics: dict) -> str:
             f"(https://github.com/{slug})")
 
 
+def to_markdown(header: list[str], rows: list[list[str]]) -> str:
+    return "\n".join(["| " + " | ".join(header) + " |", "|" + "---|" * len(header)] + ["| " + " | ".join(r) + " |" for r in rows])
+
+
 def render_table(table: dict, metrics: dict) -> str:
+    """Platform, dataset, survey and starter tables."""
     cols = list(table["columns"])
     with_metrics = table.get("metrics", True)
-    header = cols + (["Paper", "Citations", "GitHub ⭐"] if with_metrics else [])
-    out = ["| " + " | ".join(header) + " |", "|" + "---|" * len(header)]
+    rows = []
     for e in table["entries"]:
         cells = list(e["cells"]) + [""] * (len(cols) - len(e["cells"]))
         if with_metrics:
@@ -66,8 +75,74 @@ def render_table(table: dict, metrics: dict) -> str:
                 cells += ["", "", ""]
             else:
                 cells += [paper_cell(e, metrics), citation_cell(e, metrics), stars_cell(e, metrics)]
-        out.append("| " + " | ".join(cells) + " |")
-    return "\n".join(out)
+        rows.append(cells)
+    return to_markdown(cols + (["Paper", "Citations", "GitHub ⭐"] if with_metrics else []), rows)
+
+
+def render_benchmark_table(table: dict, metrics: dict, store: dict) -> str:
+    """Code and Data come right after the type so they stay on screen; stars sit in the Code cell."""
+    cols = list(table["columns"])
+    rows = []
+    for e in table["entries"]:
+        cells = [c if c != "|" else "" for c in e["cells"]] + [""] * (len(cols) - len(e["cells"]))
+        info = open_info(e, store)
+        paper = citations = ""
+        code = " · ".join(filter(None, [code_words(info), license_words(info)]))
+        if not (e.get("no_paper") and not e.get("link") and not e.get("github")):
+            paper, citations, stars = paper_cell(e, metrics), citation_cell(e, metrics), stars_cell(e, metrics)
+            if stars != "—":
+                code = stars if code in ("", "Not found") else f"{code} {stars}"
+        rows.append([*cells[:3], code, data_words(info), *cells[3:], paper, citations])
+    return to_markdown([*cols[:3], "Code", "Data", *cols[3:], "Paper", "Citations"], rows)
+
+
+def open_rows(tables: list[dict], store: dict) -> list[dict]:
+    return [i for t in tables if has_open(t) for e in t["entries"] if (i := open_info(e, store)) is not None]
+
+
+def render_open_summary(data: dict, store: dict) -> str:
+    rows = open_rows(data["tables"], store)
+    if not rows:
+        return "pending"
+    return (f"of {len(rows):,} rows checked by {store['checked']}, {sum(map(has_code, rows)):,} have code, "
+            f"{sum(map(has_data, rows)):,} have data or test files, {sum(has_code(r) and has_data(r) for r in rows):,} have both, "
+            f"and nothing was found for {sum(map(found_nothing, rows)):,}")
+
+
+def load_sections(by_id: dict) -> list[dict]:
+    """One dict per templates/sections/*.md: number, title, template text, page path and its tables."""
+    out = []
+    for path in sorted(SECTION_TEMPLATES.glob("*.md")):
+        text = path.read_text(encoding="utf-8")
+        number, title = re.match(r"# (\d+)\. (.+)", text).groups()
+        out.append({"number": number, "title": title, "text": text, "page": SECTION_PAGES / path.name,
+                    "tables": [by_id[t] for t in re.findall(r"<!-- TABLE:(t\d+) -->", text)]})
+    return out
+
+
+def page_link(section: dict) -> str:
+    return f"{SECTION_PAGES.name}/{section['page'].name}"
+
+
+def render_sections(sections: list[dict], store: dict) -> str:
+    rows, total = [], [0, 0, 0, 0]
+    for s in sections:
+        found = open_rows(s["tables"], store)
+        counts = [len(found), sum(map(has_code, found)), sum(map(has_data, found)), sum(map(found_nothing, found))]
+        total = [a + b for a, b in zip(total, counts)]
+        rows.append([f"[{s['number']}. {s['title']}]({page_link(s)})", *(f"{c:,}" for c in counts)])
+    rows.append(["**Total**", *(f"**{c:,}**" for c in total)])
+    return to_markdown(["Section", "Benchmarks", "With code", "With data", "Nothing found"], rows)
+
+
+def render_widely_used(sections: list[dict], store: dict) -> str:
+    rows = []
+    for s in sections:
+        for e in (e for t in s["tables"] for e in t["entries"] if "🔥" in e["cells"][0]):
+            name, year, _, highlights = e["cells"][:4]
+            info = open_info(e, store)
+            rows.append([name, f"[{s['number']}]({page_link(s)})", year, highlights, code_words(info), data_words(info)])
+    return to_markdown(["Benchmark", "Section", "Year / Venue", "Highlights", "Code", "Data"], rows)
 
 
 def render_top_lists(data: dict, metrics: dict) -> str:
@@ -99,25 +174,45 @@ def render_top_lists(data: dict, metrics: dict) -> str:
     return "\n".join(rows)
 
 
-def render() -> str:
-    data = load_data()
-    metrics = load_metrics()
+def render() -> dict[Path, str]:
+    data, metrics, store = load_data(), load_metrics(), load_open()
+    by_id = {t["id"]: t for t in data["tables"]}
+    sections = load_sections(by_id)
+    out = {}
+    for s in sections:
+        text = s["text"]
+        for t in s["tables"]:
+            text = text.replace(f"<!-- TABLE:{t['id']} -->", render_benchmark_table(t, metrics, store))
+        out[s["page"]] = (f"<!-- Generated by scripts/render_readme.py; edit data/benchmarks.yaml or {SECTION_TEMPLATES.parent.name}/"
+                          f"{SECTION_TEMPLATES.name}/{s['page'].name} -->\n\n[← Overview and label guide](../README.md)\n\n" + text)
     text = TEMPLATE.read_text(encoding="utf-8")
     for table in data["tables"]:
         text = text.replace(f"<!-- TABLE:{table['id']} -->", render_table(table, metrics))
+    text = text.replace("<!-- SECTIONS -->", render_sections(sections, store))
+    text = text.replace("<!-- WIDELY_USED -->", render_widely_used(sections, store))
     text = text.replace("<!-- TOP_LISTS -->", render_top_lists(data, metrics))
+    text = text.replace("<!-- OPEN_SUMMARY -->", render_open_summary(data, store))
     text = text.replace("<!-- METRICS_UPDATED -->", metrics.get("updated_at") or "pending first run")
-    return text
+    out[README] = text
+    placed = [t["id"] for s in sections for t in s["tables"]]
+    missing = [t["id"] for t in data["tables"] if has_open(t) and placed.count(t["id"]) != 1]
+    if missing:
+        sys.exit(f"tables that are not in exactly one section template: {missing}")
+    return out
 
 
 def main() -> None:
-    new = render()
+    files = render()
+    stale = sorted(set(SECTION_PAGES.glob("*.md")) - set(files))
     if "--check" in sys.argv:
-        if README.read_text(encoding="utf-8") != new:
-            sys.exit("README.md is out of date: run `python scripts/render_readme.py`")
+        old = [p.name for p, new in files.items() if not p.exists() or p.read_text(encoding="utf-8") != new]
+        if old or stale:
+            sys.exit(f"out of date: {', '.join(old + [p.name for p in stale])}: run `python scripts/render_readme.py`")
         return
-    README.write_text(new, encoding="utf-8")
-    print("README.md rendered")
+    SECTION_PAGES.mkdir(exist_ok=True)
+    for path, new in files.items():
+        path.write_text(new, encoding="utf-8")
+    print(f"rendered {len(files)} files" + (f"; no template for {', '.join(p.name for p in stale)}" if stale else ""))
 
 
 if __name__ == "__main__":
