@@ -10,29 +10,25 @@
 > **Citations** (from [Semantic Scholar](https://www.semanticscholar.org/), falling back to [OpenAlex](https://openalex.org/)) are refreshed **daily** by a [GitHub Action](.github/workflows/update-metrics.yml) · last refresh: **<!-- METRICS_UPDATED -->**.
 > **GitHub ⭐** badges are rendered live by [shields.io](https://shields.io/) on every page view.
 > Repos not listed by hand are auto-discovered from the paper's Hugging Face / arXiv page. `arXiv search` links mark papers whose arXiv ID has not been verified yet.
+> **Code** and **Data** link to what the authors have released. *Data* means what the benchmark tests on: tasks, scenes, questions or demonstrations. *Tasks in code*: code found, but no separate data files. *Same-name dataset (unverified)*: a Hugging Face dataset with the same name, uploader not checked. *Announced*: the paper says it is or will be released, with no link found. *Not found* does not mean closed. Links were matched by script and only a sample was checked by hand. So far, <!-- OPEN_SUMMARY -->.
 > PRs that fix links or add benchmarks are very welcome — edit [`data/benchmarks.yaml`](data/benchmarks.yaml), see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
-## Contents
+## Benchmarks by section
+
+Each section has its own page with the full table and direct links to code and data.
+
+<!-- SECTIONS -->
+
+**Widely used (🔥)**
+
+<!-- WIDELY_USED -->
+
+## Also on this page
 
 - [Leaderboard: Most Cited & Most Starred (引用/Star 排行)](#leaderboard-most-cited--most-starred-引用star-排行)
 - [Taxonomy at a Glance (分类总览)](#taxonomy-at-a-glance-分类总览)
-- [1. Tabletop & General Manipulation — Simulation (桌面/通用操作·仿真)](#1-tabletop--general-manipulation--simulation-桌面通用操作仿真)
-- [2. VLA Generalization, Robustness & Benchmark Auditing (VLA 泛化/鲁棒性/评测可信度)](#2-vla-generalization-robustness--benchmark-auditing-vla-泛化鲁棒性评测可信度)
-- [3. Long-Horizon, Memory & Compositional Tasks (长程/记忆/组合)](#3-long-horizon-memory--compositional-tasks-长程记忆组合)
-- [4. Bimanual, Dexterous & Grasping (双臂/灵巧手/抓取)](#4-bimanual-dexterous--grasping-双臂灵巧手抓取)
-- [5. Deformable, Tactile & Contact-Rich Manipulation (柔性物体/触觉/接触密集)](#5-deformable-tactile--contact-rich-manipulation-柔性物体触觉接触密集)
-- [6. Real-World Manipulation Benchmarks & Evaluation Protocols (真实世界评测)](#6-real-world-manipulation-benchmarks--evaluation-protocols-真实世界评测)
-- [7. Real-to-Sim, World-Model Evaluators & World-Model Benchmarks (Real2Sim/世界模型评测)](#7-real-to-sim-world-model-evaluators--world-model-benchmarks-real2sim世界模型评测)
-- [8. Mobile Manipulation & Household Activities (移动操作/家庭任务)](#8-mobile-manipulation--household-activities-移动操作家庭任务)
-- [9. Humanoid & Whole-Body Loco-Manipulation (人形/全身控制)](#9-humanoid--whole-body-loco-manipulation-人形全身控制)
-- [10. Legged Locomotion & Continuous Control (足式运动/连续控制)](#10-legged-locomotion--continuous-control-足式运动连续控制)
-- [11. Embodied Navigation — VLN / ObjectNav / Social (具身导航)](#11-embodied-navigation--vln--objectnav--social-具身导航)
-- [12. Aerial / UAV Embodied Benchmarks (无人机)](#12-aerial--uav-embodied-benchmarks-无人机)
-- [13. Embodied Reasoning, Spatial Understanding & Planning for (M)LLMs (具身推理/空间理解/规划)](#13-embodied-reasoning-spatial-understanding--planning-for-mllms-具身推理空间理解规划)
-- [14. Multi-Agent & Human-Robot Collaboration (多智能体/人机协作)](#14-multi-agent--human-robot-collaboration-多智能体人机协作)
-- [15. Safety, Security & Trustworthiness (安全/对抗/可信)](#15-safety-security--trustworthiness-安全对抗可信)
 - [16. Simulation Platforms & Unified Benchmark Frameworks (仿真平台/统一框架)](#16-simulation-platforms--unified-benchmark-frameworks-仿真平台统一框架)
 - [17. Companion Datasets Often Used for Evaluation (常用于评测的数据集)](#17-companion-datasets-often-used-for-evaluation-常用于评测的数据集)
 - [18. Competitions & Challenges (竞赛)](#18-competitions--challenges-竞赛)
@@ -70,116 +66,6 @@ Robot / Embodied AI Benchmarks
     ├── World model ── learned video/world models as evaluators
     └── QA          ── offline question answering / pointing over robot-centric images & videos
 ```
-
----
-
-## 1. Tabletop & General Manipulation — Simulation (桌面/通用操作·仿真)
-
-Classic and widely used simulated manipulation suites. 经典的仿真操作基准，多数 VLA/模仿学习论文都会在这里报分。
-
-<!-- TABLE:t01 -->
-
----
-
-## 2. VLA Generalization, Robustness & Benchmark Auditing (VLA 泛化/鲁棒性/评测可信度)
-
-LIBERO / SIMPLER 等分数接近饱和后，社区开始系统性地扰动、审计和"去记忆化"这些基准。
-
-<!-- TABLE:t02 -->
-
----
-
-## 3. Long-Horizon, Memory & Compositional Tasks (长程/记忆/组合)
-
-<!-- TABLE:t03 -->
-
----
-
-## 4. Bimanual, Dexterous & Grasping (双臂/灵巧手/抓取)
-
-<!-- TABLE:t04 -->
-
----
-
-## 5. Deformable, Tactile & Contact-Rich Manipulation (柔性物体/触觉/接触密集)
-
-### 5.1 Deformable objects (cloth, rope, fluids, plasticine)
-
-<!-- TABLE:t05 -->
-
-### 5.2 Tactile & contact-rich
-
-<!-- TABLE:t06 -->
-
----
-
-## 6. Real-World Manipulation Benchmarks & Evaluation Protocols (真实世界评测)
-
-<!-- TABLE:t07 -->
-
----
-
-## 7. Real-to-Sim, World-Model Evaluators & World-Model Benchmarks (Real2Sim/世界模型评测)
-
-真实评测昂贵，2024 起出现两条替代路线：(a) 与真实场景对齐的仿真 (SIMPLER, Gaussian splat)；(b) 用视频世界模型直接"推演"策略。核心指标是与真实成功率的 Pearson 相关性和排序一致性 (MMRV)。本节也收录评测世界模型本身的基准 (EWMBench, WorldArena, World-in-World 等)。
-
-<!-- TABLE:t08 -->
-
----
-
-## 8. Mobile Manipulation & Household Activities (移动操作/家庭任务)
-
-<!-- TABLE:t09 -->
-
----
-
-## 9. Humanoid & Whole-Body Loco-Manipulation (人形/全身控制)
-
-<!-- TABLE:t10 -->
-
----
-
-## 10. Legged Locomotion & Continuous Control (足式运动/连续控制)
-
-<!-- TABLE:t11 -->
-
----
-
-## 11. Embodied Navigation — VLN / ObjectNav / Social (具身导航)
-
-<!-- TABLE:t12 -->
-
----
-
-## 12. Aerial / UAV Embodied Benchmarks (无人机)
-
-<!-- TABLE:t13 -->
-
----
-
-## 13. Embodied Reasoning, Spatial Understanding & Planning for (M)LLMs (具身推理/空间理解/规划)
-
-评测"机器人大脑"——VLM/LLM 在具身场景下的感知、空间推理、指点、可供性、任务规划与失败分析。
-
-### 13.1 Embodied QA, spatial reasoning & pointing
-
-<!-- TABLE:t14 -->
-
-### 13.2 Task planning & agentic evaluation
-
-<!-- TABLE:t15 -->
-
----
-
-## 14. Multi-Agent & Human-Robot Collaboration (多智能体/人机协作)
-
-<!-- TABLE:t16 -->
-
----
-
-## 15. Safety, Security & Trustworthiness (安全/对抗/可信)
-
-<!-- TABLE:t17 -->
 
 ---
 
